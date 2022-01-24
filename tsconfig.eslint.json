@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig",
   "exclude": [],
-  "include": [".eslintrc.js", "*.config.js"],
+  "include": [".eslintrc.cjs", "*.config.js", "*.config.ts", "*.config.cjs"],
   "compilerOptions": {}
 }

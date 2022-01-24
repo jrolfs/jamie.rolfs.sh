@@ -2,6 +2,7 @@
   "name": "jamie.rolfs.sh",
   "version": "0.0.1",
   "main": "index.js",
+  "type": "module",
   "repository": "git@github.com:jrolfs/jamie.rolfs.sh.git",
   "author": "Jamie Rolfs <jamie@rolfs.sh>",
   "license": "MIT",
