@@ -1,0 +1,28 @@
+{
+  "name": "@jrolfs/site",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git+ssh://github.com/jrolfs/jamie.rolfs.sh/tree/master/applications/site",
+  "author": "Jamie Rolfs <jamie@rolfs.sh>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "run-p 'build:*'",
+    "build:source": "",
+    "build:types": "tsc",
+    "commit": "hover-scripts commit",
+    "format": "hover-scripts format",
+    "lint": "hover-scripts lint",
+    "pre-commit": "hover-scripts pre-commit",
+    "start": "run-p 'start:*'",
+    "start:source": "",
+    "start:types": "tsc -b -w --preserveWatchOutput",
+    "test": "hover-scripts test",
+    "test:update": "hover-scripts test --updateSnapshot"
+  },
+  "devDependencies": {
+    "@hover/javascript": "^6.66.0",
+    "typescript": "^4.5.5"
+  }
+}

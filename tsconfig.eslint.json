@@ -1,6 +1,14 @@
 {
-  "extends": "./tsconfig",
-  "exclude": [],
-  "include": [".eslintrc.cjs", "*.config.js", "*.config.ts", "*.config.cjs"],
-  "compilerOptions": {}
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "**/*.config.cjs",
+    "**/*.config.js",
+    "**/*.config.ts",
+    "**/.eslintrc.cjs",
+    "**/bin/*.cjs",
+    "**/bin/*.js",
+    "**/jest.setup.ts",
+    "**/jest.setup.cjs",
+    "./types/**/*.ts"
+  ]
 }

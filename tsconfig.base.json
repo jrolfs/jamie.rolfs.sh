@@ -1,0 +1,9 @@
+{
+  "extends": "@hover/javascript/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "downlevelIteration": true,
+    "isolatedModules": true,
+    "noEmit": true
+  }
+}
