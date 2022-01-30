@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://json.schemastore.org/eslintrc.json
+
+extends: ../../.eslintrc.cjs
+rules:
+  react/function-component-definition:
+    - error
+    - namedComponents: arrow-function
+      unnamedComponents: arrow-function
+  react/jsx-props-no-spreading: off
+  react/jsx-sort-props:
+    - error
+    - reservedFirst: false
+  react/prop-types: off
+  react/react-in-jsx-scope: off
+  react/require-default-props: off
