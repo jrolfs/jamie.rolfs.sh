@@ -1049,6 +1049,7 @@ __metadata:
   resolution: "@jrolfs/core@workspace:packages/core"
   dependencies:
     "@hover/javascript": ^6.66.0
+    npm-run-all: ^4.1.5
     typescript: ^4.5.5
   languageName: unknown
   linkType: soft
@@ -1058,6 +1059,7 @@ __metadata:
   resolution: "@jrolfs/emulator@workspace:applications/emulator"
   dependencies:
     "@hover/javascript": ^6.66.0
+    npm-run-all: ^4.1.5
     typescript: ^4.5.5
   languageName: unknown
   linkType: soft
@@ -1067,9 +1069,11 @@ __metadata:
   resolution: "@jrolfs/site@workspace:applications/site"
   dependencies:
     "@hover/javascript": ^6.66.0
+    "@preconstruct/next": ^3.0.1
     "@types/react": ^17
     "@types/react-dom": ^17
     next: ^12.0.9
+    npm-run-all: ^4.1.5
     react: ^17.0.2
     react-dom: ^17.0.2
     typescript: ^4.5.5
@@ -1331,6 +1335,13 @@ __metadata:
     pirates: ^4.0.1
     source-map-support: ^0.5.16
   checksum: 5043b0d8a09d370f955b713d350fa01d3f4d9a6f2c8a88019ba239d584981e6610e6eda75fb235aab00839afd23ded6bfcfdc0a492d73e697bd58b3cf2bc534e
+  languageName: node
+  linkType: hard
+
+"@preconstruct/next@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@preconstruct/next@npm:3.0.1"
+  checksum: ea6d7c46e613d3edefc740f025a605b498db9922e09c55fa8856fd1223fd980bc39a26a73eddb28c7fc7a270f7f89468ed8e707e48a2679826e65667a632ab27
   languageName: node
   linkType: hard
 
