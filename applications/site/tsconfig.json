@@ -1,9 +1,15 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["src", "test", "test"],
+  "include": ["src", "test"],
   "compilerOptions": {
     "baseUrl": "src",
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "module": "ESNext",
     "noEmit": true,
-    "paths": { "src/*": ["./*"] }
-  }
+    "paths": { "src/*": ["./*"] },
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
 }
