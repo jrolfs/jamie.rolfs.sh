@@ -22,7 +22,7 @@
     "test:update": "hover-scripts test --updateSnapshot"
   },
   "devDependencies": {
-    "@hover/javascript": "^6.66.0",
+    "@hover/javascript": "^6.74.1",
     "@preconstruct/next": "^3.0.1",
     "@types/react": "^17",
     "@types/react-dom": "^17",
