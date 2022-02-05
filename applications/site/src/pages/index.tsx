@@ -1,4 +1,4 @@
-import { Box } from '../components/three';
+import { Box } from '@jrolfs/three';
 
 const IndexPage = () => (
   <>

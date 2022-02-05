@@ -1041,8 +1041,8 @@ __metadata:
   resolution: "@jrolfs/site@workspace:applications/site"
   dependencies:
     "@hover/javascript": ^6.74.1
+    "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^3.0.1
-    "@react-three/drei": ^8.8.0
     "@react-three/fiber": ^7.0.26
     "@types/react": ^17
     "@types/react-dom": ^17
@@ -1055,6 +1055,28 @@ __metadata:
     react-dom: ^17.0.2
     three: ^0.137.5
     typescript: ^4.5.5
+  languageName: unknown
+  linkType: soft
+
+"@jrolfs/three@0.0.1, @jrolfs/three@workspace:packages/three":
+  version: 0.0.0-use.local
+  resolution: "@jrolfs/three@workspace:packages/three"
+  dependencies:
+    "@hover/javascript": ^6.74.1
+    "@preconstruct/hook": ^0.4.0
+    "@react-three/drei": ^8.8.0
+    "@react-three/fiber": ^7.0.26
+    "@react-three/test-renderer": ^7.0.25
+    "@types/three": ^0.137.0
+    npm-run-all: ^4.1.5
+    react: ^17.0.2
+    three: ^0.137.5
+    typescript: ^4.5.5
+  peerDependencies:
+    "@react-three/fiber": ^7.0.26
+    "@types/three": ^0.137.0
+    react: ^17.0.2
+    three: ^0.137.5
   languageName: unknown
   linkType: soft
 
@@ -1445,6 +1467,17 @@ __metadata:
     react-dom:
       optional: true
   checksum: 72548c6d2aaf911f501ff7e53ab685934f734008b6c59a35c2d8941cea5211648e3e9d8ccecc10666f82349c7cc6d2a3eac4f8c581dde63c34ea07650769dc41
+  languageName: node
+  linkType: hard
+
+"@react-three/test-renderer@npm:^7.0.25":
+  version: 7.0.25
+  resolution: "@react-three/test-renderer@npm:7.0.25"
+  peerDependencies:
+    "@react-three/fiber": ">=7.0.26"
+    react: ">=17.0"
+    three: ">=0.126"
+  checksum: acd2c6b4b68ff1e2e7484ddb88d5ac5b92c404e58fc717203b433d191c10c5712873ef921e1470706c719bc361161d3aabbb1d8cae67eef60ac86a6488d57f9c
   languageName: node
   linkType: hard
 
