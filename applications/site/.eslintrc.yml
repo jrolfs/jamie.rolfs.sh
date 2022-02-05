@@ -5,7 +5,6 @@ rules:
   react/jsx-sort-props:
     - error
     - reservedFirst: false
-  react/react-in-jsx-scope: off
 ignorePatterns:
   - next-env.d.ts
 overrides:

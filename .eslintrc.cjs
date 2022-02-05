@@ -1,3 +1,4 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   extends: [
     require.resolve('@hover/javascript/eslint/strict'),
@@ -11,5 +12,8 @@ module.exports = {
       'packages/**/tsconfig.json',
       'tsconfig.eslint.json',
     ],
+  },
+  rules: {
+    'react/react-in-jsx-scope': 'off',
   },
 };
