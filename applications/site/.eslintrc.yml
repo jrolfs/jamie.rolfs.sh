@@ -8,3 +8,8 @@ rules:
   react/react-in-jsx-scope: off
 ignorePatterns:
   - next-env.d.ts
+overrides:
+  - files:
+      - './src/pages/**/*'
+    rules:
+      no-restricted-exports: off
