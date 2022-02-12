@@ -42,5 +42,9 @@
     "packages": [
       "packages/*"
     ]
+  },
+  "resolutions": {
+    "@mdx-js/loader": "^2.0.0",
+    "@mdx-js/react": "^2.0.0"
   }
 }
