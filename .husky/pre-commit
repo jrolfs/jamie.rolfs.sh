@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn workspaces foreach -v --since=HEAD run pre-commit
+yarn workspaces foreach --verbose --since run pre-commit
