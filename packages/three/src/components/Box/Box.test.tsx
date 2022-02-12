@@ -1,5 +1,6 @@
 import ReactThreeTestRenderer from '@react-three/test-renderer';
-import { Box } from './Box';
+
+import { Box } from '.';
 
 test('mesh to have two children', async () => {
   const renderer = await ReactThreeTestRenderer.create(<Box />);

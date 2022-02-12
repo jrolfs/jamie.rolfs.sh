@@ -1,0 +1,1 @@
+export { withStage } from './stage';

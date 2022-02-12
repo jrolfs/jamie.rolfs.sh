@@ -3,7 +3,6 @@
   "include": ["src", "test", "test"],
   "compilerOptions": {
     "baseUrl": "src",
-    "noEmit": true,
-    "paths": { "src/*": ["./*"] }
+    "noEmit": true
   }
 }

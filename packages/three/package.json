@@ -8,15 +8,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "run-p 'build:*'",
-    "build:source": "",
+    "build:storybook": "build-storybook",
     "build:types": "tsc",
     "commit": "hover-scripts commit",
     "format": "hover-scripts format",
     "lint": "hover-scripts lint",
     "pre-commit": "hover-scripts pre-commit",
     "start": "run-p 'start:*'",
-    "start:source": "",
+    "start:source": "start-storybook --ci -p 6006",
     "start:types": "tsc -b -w --preserveWatchOutput",
     "test": "hover-scripts test",
     "test:update": "hover-scripts test --updateSnapshot"
@@ -28,17 +27,30 @@
     "three": "^0.137.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.0",
     "@hover/javascript": "^6.74.1",
     "@preconstruct/hook": "^0.4.0",
     "@react-three/fiber": "^7.0.26",
     "@react-three/test-renderer": "^7.0.25",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/addons": "^6.4.18",
+    "@storybook/builder-webpack5": "^6.4.18",
+    "@storybook/react": "^6.4.18",
+    "@types/babel__core": "^7",
+    "@types/react-dom": "^17",
+    "@types/react-reconciler": "^0.26.4",
     "@types/three": "^0.137.0",
+    "babel-loader": "^8.2.3",
     "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "three": "^0.137.5",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0"
   },
   "dependencies": {
-    "@react-three/drei": "^8.8.0"
+    "@react-three/drei": "^8.8.0",
+    "@storybook/manager-webpack5": "^6.4.18",
+    "tslib": "^2.3.1"
   }
 }

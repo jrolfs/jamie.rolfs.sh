@@ -18,9 +18,10 @@
     "pre-commit": "hover-scripts pre-commit",
     "prepare": "node ./bin/prepare.cjs",
     "rp": "manypkg run",
-    "start": "run-p 'start:*'",
+    "start": "run-p start:site start:three",
     "start:emulator": "yarn workspace @jrolfs/emulator run start",
     "start:site": "yarn workspace @jrolfs/site run start",
+    "start:three": "yarn workspace @jrolfs/three run start",
     "start:types": "yarn workspaces foreach -v run start:types",
     "test": "yarn workspaces foreach -v run test --no-watch"
   },

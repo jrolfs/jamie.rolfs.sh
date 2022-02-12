@@ -5,10 +5,13 @@
     "**/*.config.js",
     "**/*.config.ts",
     "**/.eslintrc.cjs",
+    "**/.storybook/**/*.js",
+    "**/.storybook/**/*.ts",
+    "**/.storybook/**/*.tsx",
     "**/bin/*.cjs",
     "**/bin/*.js",
-    "**/jest.setup.ts",
     "**/jest.setup.cjs",
+    "**/jest.setup.ts",
     "./types/**/*.ts"
   ]
 }
