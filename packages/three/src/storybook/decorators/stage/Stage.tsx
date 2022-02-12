@@ -15,6 +15,11 @@ export interface StageProps {
   debugLights?: boolean;
 }
 
+/**
+ * Configurable 3D scene for @react-three/fiber-based stories
+ *
+ * @see https://github.com/winkerVSbecks/storybook-blocks
+ */
 const Stage: FunctionComponent<StageProps> = ({
   children,
   cameraPosition = new Vector3(-5, 5, 5),
