@@ -1,10 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["src"],
+  "include": ["src", "test"],
   "compilerOptions": {
     "baseUrl": "src",
     "jsx": "react-jsx",
     "noEmit": true,
+    "paths": { "test/*": ["../test/*"] },
     "skipLibCheck": true
   }
 }
