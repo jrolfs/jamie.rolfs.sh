@@ -1,10 +1,18 @@
+import { theme } from '@jrolfs/core';
 import { MeshProps, useFrame } from '@react-three/fiber';
 import { FunctionComponent, useRef, useState } from 'react';
 import { Object3D } from 'three';
 
-export interface BoxProps extends MeshProps {}
+export interface BoxProps extends MeshProps {
+  color?: theme.Color;
+  hover?: theme.Color;
+}
 
-const Box: FunctionComponent<BoxProps> = props => {
+const Box: FunctionComponent<BoxProps> = ({
+  color = theme.colors.blue[600],
+  hover = theme.colors.purple[600],
+  ...props
+}) => {
   const ref = useRef<Object3D>(null!);
 
   const [isHovered, setIsHovered] = useState(false);
@@ -25,7 +33,7 @@ const Box: FunctionComponent<BoxProps> = props => {
       scale={isClicked ? 1.5 : 1}
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={isHovered ? 'hotpink' : 'orange'} />
+      <meshStandardMaterial color={isHovered ? hover : color} />
     </mesh>
   );
 };
