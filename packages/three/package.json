@@ -49,6 +49,7 @@
     "webpack": "^5.68.0"
   },
   "dependencies": {
+    "@jrolfs/core": "workspace:^",
     "@react-three/drei": "^8.8.0",
     "@storybook/manager-webpack5": "^6.4.18",
     "tslib": "^2.3.1"

@@ -2464,7 +2464,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jrolfs/core@workspace:packages/core":
+"@jrolfs/core@workspace:^, @jrolfs/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@jrolfs/core@workspace:packages/core"
   dependencies:
@@ -2513,6 +2513,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.17.0
     "@hover/javascript": ^6.74.1
+    "@jrolfs/core": "workspace:^"
     "@preconstruct/hook": ^0.4.0
     "@react-three/drei": ^8.8.0
     "@react-three/fiber": ^7.0.26

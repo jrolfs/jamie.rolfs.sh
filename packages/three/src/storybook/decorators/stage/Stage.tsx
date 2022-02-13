@@ -1,3 +1,4 @@
+import { theme } from '@jrolfs/core';
 import { Center, OrbitControls, OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { FunctionComponent } from 'react';
@@ -6,6 +7,7 @@ import { Vector3 } from 'three';
 import { Lights } from './Lights';
 
 export interface StageProps {
+  background?: string;
   cameraPosition?: Vector3;
   zoom?: number;
   controls?: boolean;
@@ -21,6 +23,7 @@ export interface StageProps {
  * @see https://github.com/winkerVSbecks/storybook-blocks
  */
 const Stage: FunctionComponent<StageProps> = ({
+  background = theme.colors.neutral[700],
   children,
   cameraPosition = new Vector3(-5, 5, 5),
   zoom = 10,
@@ -32,7 +35,7 @@ const Stage: FunctionComponent<StageProps> = ({
   ...props
 }) => (
   <Canvas dpr={window.devicePixelRatio} shadows {...props}>
-    <color args={['#06092c']} attach="background" />
+    <color args={[background]} attach="background" />
     <OrthographicCamera makeDefault position={cameraPosition} zoom={zoom} />
     {center ? <Center>{children}</Center> : children}
     {lights && <Lights debug={debugLights} position={lightPosition} />}
