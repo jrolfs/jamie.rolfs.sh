@@ -1,6 +1,10 @@
 import ReactThreeTestRenderer from '@react-three/test-renderer';
 
+import { itForwardsRef } from 'test/helpers';
+
 import { Box } from '.';
+
+itForwardsRef(<Box />, result => result.scene.children[0].instance);
 
 test('mesh to have two children', async () => {
   const renderer = await ReactThreeTestRenderer.create(<Box />);
