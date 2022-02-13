@@ -1,7 +1,7 @@
 import { theme } from '@jrolfs/core';
 import { Center, OrbitControls, OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent, useEffect } from 'react';
 import { Vector3 } from 'three';
 
 import { Lights } from './Lights';
@@ -33,14 +33,24 @@ const Stage: FunctionComponent<StageProps> = ({
   center = false,
   debugLights = false,
   ...props
-}) => (
-  <Canvas dpr={window.devicePixelRatio} shadows {...props}>
-    <color args={[background]} attach="background" />
-    <OrthographicCamera makeDefault position={cameraPosition} zoom={zoom} />
-    {center ? <Center>{children}</Center> : children}
-    {lights && <Lights debug={debugLights} position={lightPosition} />}
-    {controls && <OrbitControls />}
-  </Canvas>
-);
+}) => {
+  useEffect(() => {
+    ['#root', 'html', 'body'].forEach(selector => {
+      const element = document.querySelector<HTMLElement>(selector);
+
+      if (element) element.style.height = '100%';
+    });
+  }, []);
+
+  return (
+    <Canvas dpr={window.devicePixelRatio} shadows {...props}>
+      <color args={[background]} attach="background" />
+      <OrthographicCamera makeDefault position={cameraPosition} zoom={zoom} />
+      {center ? <Center>{children}</Center> : children}
+      {lights && <Lights debug={debugLights} position={lightPosition} />}
+      {controls && <OrbitControls />}
+    </Canvas>
+  );
+};
 
 export { Stage };
