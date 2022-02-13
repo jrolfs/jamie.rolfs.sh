@@ -17,3 +17,4 @@ const Template: ComponentStory<typeof Box> = args => <Box {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};
+Default.storyName = 'Box';
