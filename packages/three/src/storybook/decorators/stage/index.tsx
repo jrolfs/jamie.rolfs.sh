@@ -1,13 +1,14 @@
-import { StoryContext, StoryFn } from '@storybook/addons';
-import React from 'react';
+import { StoryContext, StoryFn } from '@storybook/react';
 
-import { Stage } from './Stage';
+import { Stage, StageProps } from './Stage';
 
-const withStage = (Story: StoryFn<JSX.Element>, context: StoryContext) => (
-  <Stage>
-    {/* @ts-expect-error */}
-    <Story {...context} />
-  </Stage>
-);
+const withStage =
+  (props: StageProps = {}) =>
+  (Story: StoryFn, context: StoryContext) =>
+    (
+      <Stage {...props}>
+        <Story {...context} />
+      </Stage>
+    );
 
 export { withStage };

@@ -7,7 +7,7 @@ import { Box } from './Box';
 export default {
   title: 'Box',
   component: Box,
-  decorators: [withStage],
+  decorators: [withStage({ zoom: 100 })],
   argTypes: {
     color: { control: 'color' },
   },
