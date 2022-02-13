@@ -52,6 +52,7 @@
     "@jrolfs/core": "workspace:^",
     "@react-three/drei": "^8.8.0",
     "@storybook/manager-webpack5": "^6.4.18",
+    "react-merge-refs": "^1.1.0",
     "tslib": "^2.3.1"
   }
 }
