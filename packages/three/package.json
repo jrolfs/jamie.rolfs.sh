@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "main": "dist/jrolfs-three.cjs.js",
   "module": "dist/jrolfs-three.esm.js",
+  "exports": {
+    ".": {
+      "require": "./dist/jrolfs-three.cjs.js",
+      "import": "./dist/jrolfs-three.esm.js",
+      "default": "./dist/jrolfs-three.cjs.js"
+    }
+  },
   "repository": "git+ssh://github.com/jrolfs/jamie.rolfs.sh/tree/master/packages/three",
   "author": "Jamie Rolfs <jamie@rolfs.sh>",
   "license": "MIT",
