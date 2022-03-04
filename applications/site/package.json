@@ -11,6 +11,7 @@
     "build": "run-p 'build:*'",
     "build:source": "next build",
     "build:types": "tsc",
+    "clean": "rimraf ./.next",
     "commit": "hover-scripts commit",
     "format": "hover-scripts format",
     "lint": "hover-scripts lint",
@@ -29,6 +30,7 @@
     "@vanilla-extract/babel-plugin": "^1.1.4",
     "@vanilla-extract/next-plugin": "^2.0.1",
     "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   },
   "dependencies": {
