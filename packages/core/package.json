@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "main": "dist/jrolfs-core.cjs.js",
   "module": "dist/jrolfs-core.esm.js",
+  "exports": {
+    ".": {
+      "require": "./dist/jrolfs-core.cjs.js",
+      "import": "./dist/jrolfs-core.esm.js",
+      "default": "./dist/jrolfs-core.cjs.js"
+    }
+  },
   "type": "module",
   "repository": "git+ssh://github.com/jrolfs/jamie.rolfs.sh/tree/master/packages/core",
   "author": "Jamie Rolfs <jamie@rolfs.sh>",
