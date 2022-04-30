@@ -2,7 +2,7 @@ import { keys, split, theme } from '@jrolfs/core';
 import { Center, OrbitControls, OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { button, useControls } from 'leva';
-import { FunctionComponent, useEffect } from 'react';
+import { FunctionComponent, Suspense, useEffect } from 'react';
 import { Vector3 } from 'three';
 
 import { Lights } from './Lights';
@@ -105,22 +105,24 @@ const Stage: FunctionComponent<StageProps> = props => {
   }, []);
 
   return (
-    <Canvas dpr={window.devicePixelRatio} shadows {...rest}>
-      <color args={[controls.background]} attach="background" />
-      <OrthographicCamera
-        makeDefault
-        position={controlToVector(controls.cameraPosition)}
-        zoom={controls.zoom}
-      />
-      {controls.center ? <Center>{children}</Center> : children}
-      {controls.lights && (
-        <Lights
-          debug={controls.debugLights}
-          position={controlToVector(lightPosition)}
+    <Suspense fallback="loading...">
+      <Canvas dpr={window.devicePixelRatio} shadows {...rest}>
+        <color args={[controls.background]} attach="background" />
+        <OrthographicCamera
+          makeDefault
+          position={controlToVector(controls.cameraPosition)}
+          zoom={controls.zoom}
         />
-      )}
-      {controls.orbit && <OrbitControls />}
-    </Canvas>
+        {controls.center ? <Center>{children}</Center> : children}
+        {controls.lights && (
+          <Lights
+            debug={controls.debugLights}
+            position={controlToVector(lightPosition)}
+          />
+        )}
+        {controls.orbit && <OrbitControls />}
+      </Canvas>
+    </Suspense>
   );
 };
 
