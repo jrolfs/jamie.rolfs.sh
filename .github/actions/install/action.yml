@@ -13,7 +13,7 @@ runs:
       run: echo "::set-output name=path::$(yarn config get cacheFolder)"
 
     - name: Setup node
-      uses: actions/setup-node@master
+      uses: actions/setup-node@v3
       with:
         node-version-file: .node-version
 
