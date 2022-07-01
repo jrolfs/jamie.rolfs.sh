@@ -39,7 +39,7 @@
     "@hover/javascript": "^6.74.1",
     "@preconstruct/hook": "^0.4.0",
     "@react-spring/three": "^9.4.3",
-    "@react-three/fiber": "^7.0.26",
+    "@react-three/fiber": "^7.0.29",
     "@react-three/test-renderer": "^7.0.25",
     "@storybook/addon-essentials": "^6.4.18",
     "@storybook/addons": "^6.4.18",

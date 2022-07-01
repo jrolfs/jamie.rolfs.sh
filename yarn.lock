@@ -2526,7 +2526,7 @@ __metadata:
     "@hover/javascript": ^6.74.1
     "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^3.0.1
-    "@react-three/fiber": ^7.0.26
+    "@react-three/fiber": ^7.0.29
     "@types/react": ^17
     "@types/react-dom": ^17
     "@types/three": ^0.137.0
@@ -2553,7 +2553,7 @@ __metadata:
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.4.3
     "@react-three/drei": ^8.8.0
-    "@react-three/fiber": ^7.0.26
+    "@react-three/fiber": ^7.0.29
     "@react-three/test-renderer": ^7.0.25
     "@storybook/addon-essentials": ^6.4.18
     "@storybook/addons": ^6.4.18
@@ -3434,11 +3434,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/fiber@npm:^7.0.26":
-  version: 7.0.26
-  resolution: "@react-three/fiber@npm:7.0.26"
+"@react-three/fiber@npm:^7.0.29":
+  version: 7.0.29
+  resolution: "@react-three/fiber@npm:7.0.29"
   dependencies:
     "@babel/runtime": ^7.13.10
+    "@types/react-reconciler": ^0.26.2
     react-merge-refs: ^1.1.0
     react-reconciler: ^0.26.2
     react-three-fiber: 0.0.0-deprecated
@@ -3455,7 +3456,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 72548c6d2aaf911f501ff7e53ab685934f734008b6c59a35c2d8941cea5211648e3e9d8ccecc10666f82349c7cc6d2a3eac4f8c581dde63c34ea07650769dc41
+  checksum: 79b760b41c4076666b4546c9ee6713cdd815e6cb9e05a90702ba911306180f3968a31cb7ac024cc7683bc6e2af7dd0e55125db26b0dc238647628ad5d9dbd877
   languageName: node
   linkType: hard
 
@@ -5259,6 +5260,15 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: 4d5730dffbef86c887cecad7e3cecda424ce6a64d0b5441c63b5b015d48219868660a2bb1aa15e897e565ad8867fa6b885d4358b04e1c4e589ba4c07c3fda55c
+  languageName: node
+  linkType: hard
+
+"@types/react-reconciler@npm:^0.26.2":
+  version: 0.26.7
+  resolution: "@types/react-reconciler@npm:0.26.7"
+  dependencies:
+    "@types/react": "*"
+  checksum: 4122d2b08580f775d0aeae9bd10b68248f894096ed14c0ebbc143ef712e21b159e89d0c628bd95dd3329947fc1ee94a0cb1d2d32b32b1d5d225e70030e91e58f
   languageName: node
   linkType: hard
 
