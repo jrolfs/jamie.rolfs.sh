@@ -28,7 +28,7 @@
   "dependencies": {
     "@hover/javascript": "^6.74.1",
     "@manypkg/cli": "0.19.1",
-    "@preconstruct/cli": "^2.1.5",
+    "@preconstruct/cli": "^2.1.6",
     "@preconstruct/hook": "^0.4.0",
     "@types/eslint": "^8.4.1",
     "husky": "^7.0.4",
