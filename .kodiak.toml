@@ -1,0 +1,11 @@
+version = 1
+
+[merge]
+method = "rebase"
+
+[approve]
+auto_approve_usernames = ["renovate", "jrolfs"]
+
+[update]
+ignored_usernames = ["renovate"]
+autoupdate_label = "autoupdate"
