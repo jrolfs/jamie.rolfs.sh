@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-action.json
+
+name: Install + Build
+description: Install dependencies
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: Get yarn cache directory path
+      shell: bash
+      id: yarn-cache-path
+      run: echo "::set-output name=path::$(yarn config get cacheFolder)"
+
+    - name: Setup node
+      uses: actions/setup-node@master
+      with:
+        node-version: 16.x
+
+    - uses: actions/cache@v3
+      id: yarn-cache
+      with:
+        path: ${{ steps.yarn-cache-path.outputs.path }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
+    - name: Install dependencies
+      shell: bash
+      run: yarn install --immutable
