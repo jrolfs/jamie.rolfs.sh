@@ -1,7 +1,7 @@
 import { theme } from '@jrolfs/core';
 import { MeshProps, useFrame } from '@react-three/fiber';
 import { forwardRef, useRef, useState } from 'react';
-import mergeRefs from 'react-merge-refs';
+import { mergeRefs } from 'react-merge-refs';
 import { Object3D } from 'three';
 
 export interface BoxProps extends MeshProps {
