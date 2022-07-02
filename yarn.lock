@@ -2530,7 +2530,7 @@ __metadata:
     "@types/react": ^17
     "@types/react-dom": ^17
     "@types/three": ^0.137.0
-    "@vanilla-extract/babel-plugin": ^1.1.4
+    "@vanilla-extract/babel-plugin": ^1.1.7
     "@vanilla-extract/css": ^1.6.8
     "@vanilla-extract/next-plugin": ^2.0.1
     next: ^12.0.9
@@ -5598,14 +5598,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/babel-plugin@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "@vanilla-extract/babel-plugin@npm:1.1.4"
+"@vanilla-extract/babel-plugin@npm:^1.1.7":
+  version: 1.1.7
+  resolution: "@vanilla-extract/babel-plugin@npm:1.1.7"
   dependencies:
     "@babel/core": ^7.13.10
     "@babel/template": ^7.12.13
-    "@vanilla-extract/integration": ^2.0.1
-  checksum: ef439d07150197853c18b08f00f910299bddfe36cfc473aa212c9f460d4236b972bfce16868c3bb79417dbb24cf341f3007e30424dcb1cca5ae2b1cc541e8022
+    "@vanilla-extract/integration": ^5.0.0
+  checksum: 0fd00a1190c9413320d82ef797ef3149ba89e64eaa18d0d09d0235c025d6ab41b453718654e390c84aca322b883d663e3300d672bae9d74157838f73244ba94b
   languageName: node
   linkType: hard
 
@@ -5627,6 +5627,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "@vanilla-extract/css@npm:1.7.2"
+  dependencies:
+    "@emotion/hash": ^0.8.0
+    "@vanilla-extract/private": ^1.0.3
+    chalk: ^4.1.1
+    css-what: ^5.0.1
+    cssesc: ^3.0.0
+    csstype: ^3.0.7
+    deep-object-diff: ^1.1.0
+    deepmerge: ^4.2.2
+    escape-string-regexp: ^4.0.0
+    media-query-parser: ^2.0.2
+    outdent: ^0.8.0
+  checksum: 7e0f4b77532ae6c42de14237eea0f3a0269648f1515c7bf52bcbc45205179060b18530d44452fcf4031e990d60c450c6673b27fadf1d16fe8c202503e809fffd
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/integration@npm:^2.0.1":
   version: 2.0.1
   resolution: "@vanilla-extract/integration@npm:2.0.1"
@@ -5640,6 +5659,21 @@ __metadata:
     lodash: ^4.17.21
     outdent: ^0.8.0
   checksum: f7b49435716083a1fb0b2b6ecb0316c989dbe5292f61c381f81dbcb3cf388fb1475501e53f0f4e352b18ae296a2d2f7541776bdf586c9c34844b714ad2dd56c8
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/integration@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@vanilla-extract/integration@npm:5.0.0"
+  dependencies:
+    "@vanilla-extract/css": ^1.7.2
+    esbuild: ^0.11.16
+    eval: 0.1.6
+    find-up: ^5.0.0
+    javascript-stringify: ^2.0.1
+    lodash: ^4.17.21
+    outdent: ^0.8.0
+  checksum: fc8d6ea3a36be1520b66f8bb4e060bc3d4d40256a8c0f8a8e8153b1ee346adba7ab3e9772ca2901c3f80531786468de377ef02a1d4dc7edc56b0c0a6a85fd373
   languageName: node
   linkType: hard
 
@@ -10022,7 +10056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eval@npm:^0.1.6":
+"eval@npm:0.1.6, eval@npm:^0.1.6":
   version: 0.1.6
   resolution: "eval@npm:0.1.6"
   dependencies:
@@ -14315,6 +14349,15 @@ __metadata:
   version: 1.0.1
   resolution: "mdurl@npm:1.0.1"
   checksum: 71731ecba943926bfbf9f9b51e28b5945f9411c4eda80894221b47cc105afa43ba2da820732b436f0798fd3edbbffcd1fc1415843c41a87fea08a41cc1e3d02b
+  languageName: node
+  linkType: hard
+
+"media-query-parser@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "media-query-parser@npm:2.0.2"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+  checksum: 8ef956d9e63fe6f4041988beda69843b3a6bb48228ea2923a066f6e7c8f7c5dba75fae357318c48a97ed5beae840b8425cb7e727fc1bb77acc65f2005f8945ab
   languageName: node
   linkType: hard
 
