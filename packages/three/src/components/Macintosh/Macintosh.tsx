@@ -1,7 +1,7 @@
 import { useGLTF } from '@react-three/drei';
 import { GroupProps } from '@react-three/fiber';
 import { forwardRef } from 'react';
-import { Group } from 'three';
+import { Group, MeshStandardMaterial } from 'three';
 import type { GLTF } from 'three-stdlib';
 
 export type UseGLTF = GLTF & {
@@ -16,6 +16,13 @@ const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
     '/models/macintosh-classic--computer.glb',
   ) as UseGLTF;
 
+  // TODO: come up with good looking materials for everything
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const casePlastic: MeshStandardMaterial = Object.assign(
+    materials['case-plastic'],
+    { roughness: 100 },
+  );
+
   return (
     <group ref={ref} {...props} dispose={null}>
       <group scale={1}>
@@ -26,9 +33,10 @@ const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
         />
         <mesh
           geometry={nodes['computer-body'].geometry}
-          material={materials['case-plastic']}
           position={[-1.16, 16.62, 1.5]}
-        />
+        >
+          <meshStandardMaterial color="#cacab2" />
+        </mesh>
         <mesh
           geometry={nodes['computer-feet'].geometry}
           material={materials['legs-rubber']}
