@@ -40,7 +40,7 @@
     "@preconstruct/hook": "^0.4.0",
     "@react-spring/three": "^9.4.5",
     "@react-three/fiber": "^7.0.29",
-    "@react-three/test-renderer": "^7.0.25",
+    "@react-three/test-renderer": "^7.0.27",
     "@storybook/addon-essentials": "^6.4.18",
     "@storybook/addons": "^6.4.18",
     "@storybook/builder-webpack5": "^6.4.18",
