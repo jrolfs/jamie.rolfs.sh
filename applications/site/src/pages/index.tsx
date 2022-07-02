@@ -1,12 +1,5 @@
-import { Box } from '@jrolfs/three';
+import { Macintosh } from '@jrolfs/three';
 
-const IndexPage = () => (
-  <>
-    <ambientLight />
-    <pointLight position={[10, 10, 10]} />
-    <Box position={[-1.2, 0, 0]} />
-    <Box position={[1.2, 0, 0]} />
-  </>
-);
+const IndexPage = () => <Macintosh scale={0.05} />;
 
 export default IndexPage;
