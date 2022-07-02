@@ -2820,7 +2820,7 @@ __metadata:
     "@storybook/react": ^6.4.18
     "@types/babel__core": ^7
     "@types/react-dom": ^17
-    "@types/react-reconciler": ^0.26.4
+    "@types/react-reconciler": ^0.28.0
     "@types/three": ^0.137.0
     babel-loader: ^8.2.5
     leva: ^0.9.28
@@ -5531,12 +5531,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-reconciler@npm:^0.26.4":
-  version: 0.26.4
-  resolution: "@types/react-reconciler@npm:0.26.4"
+"@types/react-reconciler@npm:^0.28.0":
+  version: 0.28.0
+  resolution: "@types/react-reconciler@npm:0.28.0"
   dependencies:
     "@types/react": "*"
-  checksum: 5ebb72f8aa70824b69030ae7f4c21828c0fb5c1cc5873a606eb7f7ac50cf5dd52502edcd32bf1eead2f149d076ee1798c86f1ffaebfa8b31d523343368d351e0
+  checksum: d7b3f870a9c2c0f6f9c27e3fedd4cb495bd377312d856ee846475152e8a817b032e47f8d349ec2a51a95be5c674a288288173ef658e469369d6fec1f77159cbb
   languageName: node
   linkType: hard
 
