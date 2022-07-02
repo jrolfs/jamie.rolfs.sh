@@ -84,6 +84,6 @@ const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
   );
 });
 
-useGLTF.preload('/models/macintosh-classic.glb');
+useGLTF.preload('/models/macintosh-classic--computer.glb');
 
 export { Macintosh };
