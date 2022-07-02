@@ -29,7 +29,7 @@
   },
   "peerDependencies": {
     "@react-spring/three": "^9.4.5",
-    "@react-three/fiber": "^7.0.26",
+    "@react-three/fiber": "^7.0.29",
     "@types/three": "^0.137.0",
     "react": "^17.0.2",
     "three": "^0.137.5"
