@@ -1,5 +1,7 @@
 import { useGLTF } from '@react-three/drei';
-import React, { useRef } from 'react';
+import { GroupProps } from '@react-three/fiber';
+import { forwardRef } from 'react';
+import { Group } from 'three';
 import type { GLTF } from 'three-stdlib';
 
 export type UseGLTF = GLTF & {
@@ -7,14 +9,15 @@ export type UseGLTF = GLTF & {
   materials: Record<string, THREE.MeshStandardMaterial>;
 };
 
-const Macintosh = ({ ...props }) => {
-  const group = useRef();
+export interface MacintoshProps extends GroupProps {}
+
+const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
   const { nodes, materials } = useGLTF(
     '/models/macintosh-classic--computer.glb',
   ) as UseGLTF;
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={ref} {...props} dispose={null}>
       <group scale={1}>
         <mesh
           geometry={nodes['computer-black'].geometry}
@@ -79,7 +82,7 @@ const Macintosh = ({ ...props }) => {
       </group>
     </group>
   );
-};
+});
 
 useGLTF.preload('/models/macintosh-classic.glb');
 
