@@ -2531,7 +2531,7 @@ __metadata:
     "@types/react-dom": ^17
     "@types/three": ^0.137.0
     "@vanilla-extract/babel-plugin": ^1.1.7
-    "@vanilla-extract/css": ^1.6.8
+    "@vanilla-extract/css": ^1.7.2
     "@vanilla-extract/next-plugin": ^2.0.2
     next: ^12.0.9
     npm-run-all: ^4.1.5
@@ -5606,24 +5606,6 @@ __metadata:
     "@babel/template": ^7.12.13
     "@vanilla-extract/integration": ^5.0.0
   checksum: 0fd00a1190c9413320d82ef797ef3149ba89e64eaa18d0d09d0235c025d6ab41b453718654e390c84aca322b883d663e3300d672bae9d74157838f73244ba94b
-  languageName: node
-  linkType: hard
-
-"@vanilla-extract/css@npm:^1.6.8":
-  version: 1.6.8
-  resolution: "@vanilla-extract/css@npm:1.6.8"
-  dependencies:
-    "@emotion/hash": ^0.8.0
-    "@vanilla-extract/private": ^1.0.3
-    chalk: ^4.1.1
-    css-what: ^5.0.1
-    cssesc: ^3.0.0
-    csstype: ^3.0.7
-    deep-object-diff: ^1.1.0
-    deepmerge: ^4.2.2
-    escape-string-regexp: ^4.0.0
-    outdent: ^0.8.0
-  checksum: 1bee577c83ef11e3bdba1cb1b29fee2c07774eed3b304c4f6d674ad5ebcebe755278db5de00de0ed98463484c74982318e777acba9aed4770833e1c9383d45f3
   languageName: node
   linkType: hard
 
