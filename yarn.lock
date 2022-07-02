@@ -3208,6 +3208,7 @@ __metadata:
     "@hover/javascript": ^6.90.0
     "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^4.0.0
+    "@react-three/drei": ^9.14.3
     "@react-three/fiber": ^8.0.27
     "@types/react": ^18.0.22
     "@types/react-dom": ^18.0.7
