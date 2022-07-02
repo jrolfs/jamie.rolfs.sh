@@ -5,7 +5,11 @@ globalStyle('html, body, #__next', {
   height: '100vh',
 });
 
-export const cssCanvas = style({
+globalStyle('canvas', {
+  touchAction: 'none',
+});
+
+export const canvas = style({
   height: '100%',
   width: '100%',
 });
