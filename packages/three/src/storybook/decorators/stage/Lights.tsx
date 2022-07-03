@@ -1,7 +1,7 @@
 import { useHelper } from '@react-three/drei';
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent, useRef } from 'react';
 import * as THREE from 'three';
-import { Vector3 } from 'three';
+import { SpotLight, Vector3 } from 'three';
 
 export interface LightsProps {
   position: Vector3;
@@ -12,7 +12,7 @@ const Lights: FunctionComponent<LightsProps> = ({
   position,
   debug = false,
 }) => {
-  const light = React.useRef();
+  const light = useRef<SpotLight>(null!);
 
   useHelper(light, THREE.SpotLightHelper, 'yellow');
 

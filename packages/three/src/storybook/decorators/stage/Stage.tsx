@@ -2,7 +2,12 @@ import { keys, split, theme } from '@jrolfs/core';
 import { Center, OrbitControls, OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { button, useControls } from 'leva';
-import { FunctionComponent, Suspense, useEffect } from 'react';
+import {
+  FunctionComponent,
+  PropsWithChildren,
+  Suspense,
+  useEffect,
+} from 'react';
 import { Vector3 } from 'three';
 
 import { Lights } from './Lights';
@@ -41,7 +46,7 @@ const defaults: Required<StageProps> = {
  *
  * @see https://github.com/winkerVSbecks/storybook-blocks
  */
-const Stage: FunctionComponent<StageProps> = props => {
+const Stage: FunctionComponent<PropsWithChildren<StageProps>> = props => {
   const [options, { children, ...rest }] = split(props, keys(defaults));
 
   const {
