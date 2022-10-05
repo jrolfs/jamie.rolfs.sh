@@ -2485,15 +2485,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hover/javascript@npm:7.0.0-beta.5":
-  version: 7.0.0-beta.5
-  resolution: "@hover/javascript@npm:7.0.0-beta.5"
+"@hover/javascript@npm:7.0.0-beta.6":
+  version: 7.0.0-beta.6
+  resolution: "@hover/javascript@npm:7.0.0-beta.6"
   dependencies:
     "@commitlint/cli": ^16.1.0
     "@commitlint/config-conventional": ^16.2.1
     "@commitlint/prompt": ^16.1.0
-    "@swc/core": ^1.2.248
-    "@swc/jest": ^0.2.22
+    "@swc-node/jest": ^1.5.2
+    "@swc/core": ^1.3.3
     "@types/jest": ^29.0.0
     "@types/lodash.has": ^4.5.6
     "@types/mkdirp": ^1.0.2
@@ -2542,7 +2542,7 @@ __metadata:
       optional: true
   bin:
     hover-scripts: dist/index.js
-  checksum: cad7682c696f7b6369c62b733adc4f9f76440fa9a05d7970e79b4c8aef55edc83e59dcbcabd2d4ce58e446e3108275e1519eee5b21253a77748918a472fe35d2
+  checksum: 16de49bd576e5421bf09b196542df8bc086a1be38ee7451bb67a929cf67523f337742208ebc97863d3bdd2161dc3f7b5b7c1f0f3996ea3a0699740b1e1244b49
   languageName: node
   linkType: hard
 
@@ -2636,15 +2636,6 @@ __metadata:
     node-notifier:
       optional: true
   checksum: 411a994ae0df96262c911c894b231a3148280ae39cf0a5d1132c126e708925a3aa89d3f75be628260916a5c38c6ee1ce27979cf78171a393f3c3bbac019149d9
-  languageName: node
-  linkType: hard
-
-"@jest/create-cache-key-function@npm:^27.4.2":
-  version: 27.5.1
-  resolution: "@jest/create-cache-key-function@npm:27.5.1"
-  dependencies:
-    "@jest/types": ^27.5.1
-  checksum: a6c3a8c769aca6f66f5dc80f1c77e66980b4f213a6b2a15a92ba3595f032848a1261c06c9c798dcf2b672b1ffbefad5085af89d130548741c85ddbe0cf4284e7
   languageName: node
   linkType: hard
 
@@ -2846,19 +2837,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/types@npm:^27.5.1":
-  version: 27.5.1
-  resolution: "@jest/types@npm:27.5.1"
-  dependencies:
-    "@types/istanbul-lib-coverage": ^2.0.0
-    "@types/istanbul-reports": ^3.0.0
-    "@types/node": "*"
-    "@types/yargs": ^16.0.0
-    chalk: ^4.0.0
-  checksum: d1f43cc946d87543ddd79d49547aab2399481d34025d5c5f2025d3d99c573e1d9832fa83cef25e9d9b07a8583500229d15bbb07b8e233d127d911d133e2f14b1
-  languageName: node
-  linkType: hard
-
 "@jest/types@npm:^29.0.3":
   version: 29.0.3
   resolution: "@jest/types@npm:29.0.3"
@@ -2956,7 +2934,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jrolfs/core@workspace:packages/core"
   dependencies:
-    "@hover/javascript": 7.0.0-beta.5
+    "@hover/javascript": 7.0.0-beta.6
     npm-run-all: ^4.1.5
     typescript: ^4.5.5
   languageName: unknown
@@ -2966,7 +2944,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jrolfs/emulator@workspace:applications/emulator"
   dependencies:
-    "@hover/javascript": 7.0.0-beta.5
+    "@hover/javascript": 7.0.0-beta.6
     npm-run-all: ^4.1.5
     typescript: ^4.5.5
   languageName: unknown
@@ -2976,7 +2954,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@jrolfs/site@workspace:applications/site"
   dependencies:
-    "@hover/javascript": 7.0.0-beta.5
+    "@hover/javascript": 7.0.0-beta.6
     "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^4.0.0
     "@react-three/fiber": ^8.0.27
@@ -3001,7 +2979,7 @@ __metadata:
   resolution: "@jrolfs/three@workspace:packages/three"
   dependencies:
     "@babel/core": ^7.18.6
-    "@hover/javascript": 7.0.0-beta.5
+    "@hover/javascript": 7.0.0-beta.6
     "@jrolfs/core": 0.0.1
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.4.5
@@ -3240,6 +3218,145 @@ __metadata:
   version: 12.2.5
   resolution: "@next/swc-win32-x64-msvc@npm:12.2.5"
   conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-android-arm-eabi@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-android-arm-eabi@npm:1.2.1"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-android-arm64@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-android-arm64@npm:1.2.1"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-darwin-arm64@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-darwin-arm64@npm:1.2.1"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-darwin-x64@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-darwin-x64@npm:1.2.1"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-freebsd-x64@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-freebsd-x64@npm:1.2.1"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-arm-gnueabihf@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-linux-arm-gnueabihf@npm:1.2.1"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-arm64-gnu@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-linux-arm64-gnu@npm:1.2.1"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-arm64-musl@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-linux-arm64-musl@npm:1.2.1"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-x64-gnu@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-linux-x64-gnu@npm:1.2.1"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-linux-x64-musl@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-linux-x64-musl@npm:1.2.1"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-win32-arm64-msvc@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-win32-arm64-msvc@npm:1.2.1"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-win32-ia32-msvc@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-win32-ia32-msvc@npm:1.2.1"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash-win32-x64-msvc@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash-win32-x64-msvc@npm:1.2.1"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/xxhash@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@node-rs/xxhash@npm:1.2.1"
+  dependencies:
+    "@node-rs/xxhash-android-arm-eabi": 1.2.1
+    "@node-rs/xxhash-android-arm64": 1.2.1
+    "@node-rs/xxhash-darwin-arm64": 1.2.1
+    "@node-rs/xxhash-darwin-x64": 1.2.1
+    "@node-rs/xxhash-freebsd-x64": 1.2.1
+    "@node-rs/xxhash-linux-arm-gnueabihf": 1.2.1
+    "@node-rs/xxhash-linux-arm64-gnu": 1.2.1
+    "@node-rs/xxhash-linux-arm64-musl": 1.2.1
+    "@node-rs/xxhash-linux-x64-gnu": 1.2.1
+    "@node-rs/xxhash-linux-x64-musl": 1.2.1
+    "@node-rs/xxhash-win32-arm64-msvc": 1.2.1
+    "@node-rs/xxhash-win32-ia32-msvc": 1.2.1
+    "@node-rs/xxhash-win32-x64-msvc": 1.2.1
+  dependenciesMeta:
+    "@node-rs/xxhash-android-arm-eabi":
+      optional: true
+    "@node-rs/xxhash-android-arm64":
+      optional: true
+    "@node-rs/xxhash-darwin-arm64":
+      optional: true
+    "@node-rs/xxhash-darwin-x64":
+      optional: true
+    "@node-rs/xxhash-freebsd-x64":
+      optional: true
+    "@node-rs/xxhash-linux-arm-gnueabihf":
+      optional: true
+    "@node-rs/xxhash-linux-arm64-gnu":
+      optional: true
+    "@node-rs/xxhash-linux-arm64-musl":
+      optional: true
+    "@node-rs/xxhash-linux-x64-gnu":
+      optional: true
+    "@node-rs/xxhash-linux-x64-musl":
+      optional: true
+    "@node-rs/xxhash-win32-arm64-msvc":
+      optional: true
+    "@node-rs/xxhash-win32-ia32-msvc":
+      optional: true
+    "@node-rs/xxhash-win32-x64-msvc":
+      optional: true
+  checksum: ebfa5121d267e08e8824e5585cd803546d172ad9863d1400fee59dd9e08a391e46c561fc6513f3f1ebbfd3d4a1258db398ee2aa52a5f1e54657f247c4674fdad
   languageName: node
   linkType: hard
 
@@ -5212,126 +5329,173 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-android-arm-eabi@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-android-arm-eabi@npm:1.3.3"
+"@swc-node/core@npm:^1.9.1":
+  version: 1.9.1
+  resolution: "@swc-node/core@npm:1.9.1"
+  peerDependencies:
+    "@swc/core": ">= 1.3"
+  checksum: 4e76fd36002a64aa386288771ddc2b3c0e9a0e09bb8a4fc32d3e358181ad4dc8b945658cc47af036ba0bff4320b347db10191f8ffce73069be7e17f9c5745859
+  languageName: node
+  linkType: hard
+
+"@swc-node/jest@npm:^1.5.2":
+  version: 1.5.3
+  resolution: "@swc-node/jest@npm:1.5.3"
+  dependencies:
+    "@node-rs/xxhash": ^1.2.1
+    "@swc-node/core": ^1.9.1
+    "@swc-node/register": ^1.5.2
+  peerDependencies:
+    "@swc/core": ">= 1.3"
+  checksum: 873feaceb79934015cad042ee41683ae68a27f64555e45bb9c4335a1643e8e7f47b9f7824b4b9f13c985a759a813b067ede992540fe3b4d9c3d1397738d33536
+  languageName: node
+  linkType: hard
+
+"@swc-node/register@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "@swc-node/register@npm:1.5.2"
+  dependencies:
+    "@swc-node/core": ^1.9.1
+    "@swc-node/sourcemap-support": ^0.2.1
+    colorette: ^2.0.19
+    debug: ^4.3.4
+    pirates: ^4.0.5
+    tslib: ^2.4.0
+  peerDependencies:
+    typescript: ">= 4.3"
+  checksum: b4da0c107211b409c86ab6110462cdf84859f22dc61632a128c3ae8647844d7af774d3fb8f5b7e74e7042c66e4991e45fa09329c1af118f5d4a5eb06b39972aa
+  languageName: node
+  linkType: hard
+
+"@swc-node/sourcemap-support@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@swc-node/sourcemap-support@npm:0.2.1"
+  dependencies:
+    source-map-support: ^0.5.21
+  checksum: 766120209b48be080ca0b2b927fb16afb9739a11656f28ec62465c320a755ce797fd97f3ad56940303b73bcdc3b7e7b883940aa4e45b70fd44a200e2e083a807
+  languageName: node
+  linkType: hard
+
+"@swc/core-android-arm-eabi@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-android-arm-eabi@npm:1.3.4"
   dependencies:
     "@swc/wasm": 1.2.122
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-android-arm64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-android-arm64@npm:1.3.3"
+"@swc/core-android-arm64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-android-arm64@npm:1.3.4"
   dependencies:
     "@swc/wasm": 1.2.130
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-darwin-arm64@npm:1.3.3"
+"@swc/core-darwin-arm64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-darwin-arm64@npm:1.3.4"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-darwin-x64@npm:1.3.3"
+"@swc/core-darwin-x64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-darwin-x64@npm:1.3.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-freebsd-x64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-freebsd-x64@npm:1.3.3"
+"@swc/core-freebsd-x64@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-freebsd-x64@npm:1.3.4"
   dependencies:
     "@swc/wasm": 1.2.130
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.3"
+"@swc/core-linux-arm-gnueabihf@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.4"
   dependencies:
     "@swc/wasm": 1.2.130
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.3"
+"@swc/core-linux-arm64-gnu@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.4"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-linux-arm64-musl@npm:1.3.3"
+"@swc/core-linux-arm64-musl@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-arm64-musl@npm:1.3.4"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-linux-x64-gnu@npm:1.3.3"
+"@swc/core-linux-x64-gnu@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-x64-gnu@npm:1.3.4"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-linux-x64-musl@npm:1.3.3"
+"@swc/core-linux-x64-musl@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-linux-x64-musl@npm:1.3.4"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.3"
+"@swc/core-win32-arm64-msvc@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.4"
   dependencies:
     "@swc/wasm": 1.2.130
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.3"
+"@swc/core-win32-ia32-msvc@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.4"
   dependencies:
     "@swc/wasm": 1.2.130
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@swc/core-win32-x64-msvc@npm:1.3.3"
+"@swc/core-win32-x64-msvc@npm:1.3.4":
+  version: 1.3.4
+  resolution: "@swc/core-win32-x64-msvc@npm:1.3.4"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.2.248":
-  version: 1.3.3
-  resolution: "@swc/core@npm:1.3.3"
+"@swc/core@npm:^1.3.3":
+  version: 1.3.4
+  resolution: "@swc/core@npm:1.3.4"
   dependencies:
-    "@swc/core-android-arm-eabi": 1.3.3
-    "@swc/core-android-arm64": 1.3.3
-    "@swc/core-darwin-arm64": 1.3.3
-    "@swc/core-darwin-x64": 1.3.3
-    "@swc/core-freebsd-x64": 1.3.3
-    "@swc/core-linux-arm-gnueabihf": 1.3.3
-    "@swc/core-linux-arm64-gnu": 1.3.3
-    "@swc/core-linux-arm64-musl": 1.3.3
-    "@swc/core-linux-x64-gnu": 1.3.3
-    "@swc/core-linux-x64-musl": 1.3.3
-    "@swc/core-win32-arm64-msvc": 1.3.3
-    "@swc/core-win32-ia32-msvc": 1.3.3
-    "@swc/core-win32-x64-msvc": 1.3.3
+    "@swc/core-android-arm-eabi": 1.3.4
+    "@swc/core-android-arm64": 1.3.4
+    "@swc/core-darwin-arm64": 1.3.4
+    "@swc/core-darwin-x64": 1.3.4
+    "@swc/core-freebsd-x64": 1.3.4
+    "@swc/core-linux-arm-gnueabihf": 1.3.4
+    "@swc/core-linux-arm64-gnu": 1.3.4
+    "@swc/core-linux-arm64-musl": 1.3.4
+    "@swc/core-linux-x64-gnu": 1.3.4
+    "@swc/core-linux-x64-musl": 1.3.4
+    "@swc/core-win32-arm64-msvc": 1.3.4
+    "@swc/core-win32-ia32-msvc": 1.3.4
+    "@swc/core-win32-x64-msvc": 1.3.4
   dependenciesMeta:
     "@swc/core-android-arm-eabi":
       optional: true
@@ -5361,7 +5525,7 @@ __metadata:
       optional: true
   bin:
     swcx: run_swcx.js
-  checksum: bead8463cd7c11e2cd87d3835045e4a245e755409e912a40c575026a0475cc0010fa6ef48936ea5f7e62c84cdc63c21a83d61755813f2ba9b565d397fad7c5f5
+  checksum: 24b4ca4a096fea53056ed227a8aa09aa38cfe5eef344451397e66a2d183ded119872cf4fc8c671c0a6eb34985537cbf8d8a7e742b9e27dad0735426693d11dc8
   languageName: node
   linkType: hard
 
@@ -5371,17 +5535,6 @@ __metadata:
   dependencies:
     tslib: ^2.4.0
   checksum: 5c2f173e950dd3929d84ae48b3586a274d5a874e7cf2013b3d8081e4f8c723fa3a4d4e63b263e84bb7f06431f87b640e91a12655410463c81a3dc2bbc15eceda
-  languageName: node
-  linkType: hard
-
-"@swc/jest@npm:^0.2.22":
-  version: 0.2.22
-  resolution: "@swc/jest@npm:0.2.22"
-  dependencies:
-    "@jest/create-cache-key-function": ^27.4.2
-  peerDependencies:
-    "@swc/core": "*"
-  checksum: c624cfcc9325a719fc7d811536011c4bde0c63c808827b47d7bbcc57621323146cb3891d8702fd01c1bebfc54a9148692f772af4db8e839eb2c6ccd7850fa5f5
   languageName: node
   linkType: hard
 
@@ -6023,15 +6176,6 @@ __metadata:
   dependencies:
     "@types/yargs-parser": "*"
   checksum: 8e358aeb8f0c3758e59e2b8fcfdee5627ab2fe3d92f50f380503d966c7f33287be3322155516a50d27727fde1ad3878f48f60cd6648439126d4b0bbb1a1153ed
-  languageName: node
-  linkType: hard
-
-"@types/yargs@npm:^16.0.0":
-  version: 16.0.4
-  resolution: "@types/yargs@npm:16.0.4"
-  dependencies:
-    "@types/yargs-parser": "*"
-  checksum: caa21d2c957592fe2184a8368c8cbe5a82a6c2e2f2893722e489f842dc5963293d2f3120bc06fe3933d60a3a0d1e2eb269649fd6b1947fe1820f8841ba611dd9
   languageName: node
   linkType: hard
 
@@ -8699,6 +8843,13 @@ __metadata:
   version: 2.0.16
   resolution: "colorette@npm:2.0.16"
   checksum: cd55596a3a2d1071c1a28eee7fd8a5387593ff1bd10a3e8d0a6221499311fe34a9f2b9272d77c391e0e003dcdc8934fb2f8d106e7ef1f7516f8060c901d41a27
+  languageName: node
+  linkType: hard
+
+"colorette@npm:^2.0.19":
+  version: 2.0.19
+  resolution: "colorette@npm:2.0.19"
+  checksum: 888cf5493f781e5fcf54ce4d49e9d7d698f96ea2b2ef67906834bb319a392c667f9ec69f4a10e268d2946d13a9503d2d19b3abaaaf174e3451bfe91fb9d82427
   languageName: node
   linkType: hard
 
@@ -13428,7 +13579,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "jamie.rolfs.sh@workspace:."
   dependencies:
-    "@hover/javascript": 7.0.0-beta.5
+    "@hover/javascript": 7.0.0-beta.6
     "@manypkg/cli": 0.19.1
     "@preconstruct/cli": ^2.1.6
     "@preconstruct/hook": ^0.4.0
@@ -18795,7 +18946,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:^0.5.16, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.20":
+"source-map-support@npm:^0.5.16, source-map-support@npm:^0.5.21, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.20":
   version: 0.5.21
   resolution: "source-map-support@npm:0.5.21"
   dependencies:

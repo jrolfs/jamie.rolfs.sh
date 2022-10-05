@@ -6,7 +6,7 @@ const config = require('@hover/javascript/jest');
 module.exports = {
   ...config,
   coverageThreshold: null,
-  transform: { '^.+\\.(t|j|mj)sx?$': ['@swc/jest'] },
+  transform: { '^.+\\.(t|j|mj)sx?$': ['@swc-node/jest'] },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.cjs'],
   transformIgnorePatterns: ['/node_modules/(?!(react-merge-refs)/)'],
 };
