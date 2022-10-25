@@ -2978,7 +2978,7 @@ __metadata:
     "@react-spring/three": ^9.4.5
     "@react-three/drei": ^9.14.3
     "@react-three/fiber": ^8.0.27
-    "@react-three/test-renderer": ^8.0.16
+    "@react-three/test-renderer": ^8.0.17
     "@storybook/addon-essentials": ^6.5.9
     "@storybook/addons": ^6.5.9
     "@storybook/builder-webpack5": ^6.5.9
@@ -4002,14 +4002,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/test-renderer@npm:^8.0.16":
-  version: 8.0.16
-  resolution: "@react-three/test-renderer@npm:8.0.16"
+"@react-three/test-renderer@npm:^8.0.17":
+  version: 8.0.17
+  resolution: "@react-three/test-renderer@npm:8.0.17"
   peerDependencies:
-    "@react-three/fiber": ">=8.0.26"
+    "@react-three/fiber": ">=8.0.0"
     react: ">=17.0"
     three: ">=0.126"
-  checksum: 5e114f6e68b2af364fc1d500446f6eb20b1ce15167ed42b2095778236f25e47a2db0f204d0d4cb0ca9503977027f9bdbee8d3440d5b44081c0e06a1157738375
+  checksum: c95f90c898c94fdc65c936b876c9213f0909f48f3089a801baba1cec1afab2182cb6230d7afead8ae3ad52964f2e5b38e57b25717be926ced392c88da3269f47
   languageName: node
   linkType: hard
 
