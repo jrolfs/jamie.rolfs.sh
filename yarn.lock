@@ -3445,9 +3445,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preconstruct/cli@npm:^2.1.6":
-  version: 2.1.6
-  resolution: "@preconstruct/cli@npm:2.1.6"
+"@preconstruct/cli@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@preconstruct/cli@npm:2.2.2"
   dependencies:
     "@babel/code-frame": ^7.5.5
     "@babel/core": ^7.7.7
@@ -3457,7 +3457,7 @@ __metadata:
     "@rollup/plugin-alias": ^3.1.1
     "@rollup/plugin-commonjs": ^15.0.0
     "@rollup/plugin-json": ^4.1.0
-    "@rollup/plugin-node-resolve": ^9.0.0
+    "@rollup/plugin-node-resolve": ^11.2.1
     "@rollup/plugin-replace": ^2.4.1
     builtin-modules: ^3.1.0
     chalk: ^4.1.0
@@ -3488,7 +3488,7 @@ __metadata:
     v8-compile-cache: ^2.1.1
   bin:
     preconstruct: bin.js
-  checksum: f4bc2f9f3a76b174ee0f588eebf5a64c5da40c72b775ab24711586d2819328036eb4bc0490180c312ed6af010fe90e95946c33eac6a8fd8ad735d7fc0b0dbc40
+  checksum: 6cc89bd472d7d95dc97e447f6b01923217bdc7af8b7361183c33904018600d30daa5956d79bdbfe54fdbd5b17b8b70f4ca62f6f9fc9daa0c8234558438721acf
   languageName: node
   linkType: hard
 
@@ -4052,19 +4052,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-node-resolve@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "@rollup/plugin-node-resolve@npm:9.0.0"
+"@rollup/plugin-node-resolve@npm:^11.2.1":
+  version: 11.2.1
+  resolution: "@rollup/plugin-node-resolve@npm:11.2.1"
   dependencies:
     "@rollup/pluginutils": ^3.1.0
     "@types/resolve": 1.17.1
     builtin-modules: ^3.1.0
     deepmerge: ^4.2.2
     is-module: ^1.0.0
-    resolve: ^1.17.0
+    resolve: ^1.19.0
   peerDependencies:
     rollup: ^1.20.0||^2.0.0
-  checksum: 5f05cb85b9f92d1cedf118ff7e1350bafebb48a95e8a4642b49d0836397e1db84df744b64b09cbc3d1b69d9f1ede77e299b9cad60f769d00b6966b0a9cc35800
+  checksum: 6f3b3ecf9a0596a5db4212984bdeb13bb7612693602407e9457ada075dea5a5f2e4e124c592352cf27066a88b194de9b9a95390149b52cf335d5b5e17b4e265b
   languageName: node
   linkType: hard
 
@@ -13929,7 +13929,7 @@ __metadata:
   dependencies:
     "@hover/javascript": 7.0.0-beta.6
     "@manypkg/cli": 0.19.2
-    "@preconstruct/cli": ^2.1.6
+    "@preconstruct/cli": ^2.2.2
     "@preconstruct/hook": ^0.4.0
     "@types/eslint": ^8.4.1
     husky: ^7.0.4
