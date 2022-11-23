@@ -8,6 +8,7 @@ overrides:
       - './src/storybook/**/*.ts?(x)'
       - '**/*.stories.tsx'
       - './test/**/*.ts?(x)'
+      - './jest.setup.cjs'
     rules:
       import/no-extraneous-dependencies:
         - error
