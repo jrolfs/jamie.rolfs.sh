@@ -3,6 +3,12 @@
 name: Install + Build
 description: Install dependencies
 
+inputs:
+  args:
+    description: 'Arguments to pass to `yarn install`'
+    default: ''
+    required: false
+
 runs:
   using: 'composite'
 
@@ -27,4 +33,4 @@ runs:
 
     - name: Install dependencies
       shell: bash
-      run: yarn install --immutable
+      run: yarn install ${{ inputs.args }}

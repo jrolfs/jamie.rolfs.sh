@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-action.json
+
+name: 🔧 Dependencies
+description: Fix dependencies with manypkg
+
+inputs:
+  token:
+    description: 'Personal access token for GitHub (not GITHUB_TOKEN)'
+    required: true
+  email:
+    description: 'Email for dependency fix commit'
+    default: 'jamie@rolfs.sh'
+  name:
+    description: 'Name for dependency fix commit'
+    default: 'manypkg'
+  commit:
+    description: 'Message for dependency fix commit'
+    default: 'build(deps): fix dependencies with manypkg'
+  branch:
+    description: 'Branch prefix for dependency upgrades'
+    default: 'renovate'
+
+runs:
+  using: 'composite'
+
+  steps:
+    - name: Set branch variables
+      shell: bash
+      id: vars
+      run: |
+        echo ::set-output name=branch::${{ github.head_ref }}
+        echo ::set-output name=is_upgrade::${{ startsWith(github.head_ref, inputs.branch) }}
+
+    - uses: actions/checkout@v3
+      if: steps.vars.outputs.is_upgrade == 'true'
+      with:
+        # We need to use a personal access token (not the default
+        # `secrets.GITHUB_TOKEN`) so that when we push after fixing the
+        # dependencies it triggers another workflow run and status is
+        # reported properly on the pull request
+        token: ${{ inputs.token }}
+        ref: ${{ github.head_ref }}
+
+    - name: Setup node
+      if: steps.vars.outputs.is_upgrade == 'true'
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: '.node-version'
+
+    - name: Check dependencies
+      shell: bash
+      if: steps.vars.outputs.is_upgrade == 'true'
+      id: check
+      run: npx @manypkg/cli@0.19.1 check
+      continue-on-error: true
+
+      # See below, we should never get here, but this is here just in case so
+      # this job doesn't trigger it self recursively more than once
+
+    - name: ♾ → ☠
+      shell: bash
+      if: contains(github.head_commit, inputs.commit)
+      run: exit 1
+
+    - name: Install dependencies
+      uses: ./.github/actions/install
+      if: steps.check.outcome == 'failure'
+      continue-on-error: true
+      with:
+        args: '--no-immutable'
+      env:
+        YARN_ENABLE_IMMUTABLE_INSTALLS: 'false'
+
+    - name: Fix dependencies
+      shell: bash
+      if: steps.check.outcome == 'failure'
+      run: yarn manypkg fix
+      env:
+        YARN_ENABLE_IMMUTABLE_INSTALLS: 'false'
+
+    - name: Add updated files
+      shell: bash
+      if: steps.check.outcome == 'failure'
+      run: git add .
+
+    - name: Setup Git user
+      shell: bash
+      if: steps.check.outcome == 'failure'
+      run: |
+        git config --global user.email "${{ inputs.email }}"
+        git config --global user.name "${{ inputs.name }}"
+
+    - name: Commit updated files
+      shell: bash
+      if: steps.check.outcome == 'failure'
+      run: |
+        git commit -m "${{ inputs.commit }}"
+
+    - name: Push
+      shell: bash
+      if: steps.check.outcome == 'failure'
+      run: git push origin ${{ steps.vars.outputs.branch }}
+
+      # After pushing up the fixed dependencies, we fail the job because the
+      # push will trigger another run and if we continue the status reported
+      # from the jobs doesn't report correctly in pull requests... recurse!
+
+    - name: Fail
+      shell: bash
+      if: steps.check.outcome == 'failure'
+      run: exit 1
