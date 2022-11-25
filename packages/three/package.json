@@ -65,6 +65,6 @@
     "@storybook/manager-webpack5": "^6.5.13",
     "react-merge-refs": "^2.0.1",
     "require-from-string": "^2.0.2",
-    "tslib": "^2.4.0"
+    "tslib": "^2.4.1"
   }
 }
