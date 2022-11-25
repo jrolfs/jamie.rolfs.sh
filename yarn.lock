@@ -2341,7 +2341,7 @@ __metadata:
     "@hover/javascript": 7.0.0-beta.6
     "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^4.0.0
-    "@react-three/drei": ^9.43.2
+    "@react-three/drei": ^9.43.3
     "@react-three/fiber": ^8.0.27
     "@types/react": ^18.0.22
     "@types/react-dom": ^18.0.7
@@ -2368,7 +2368,7 @@ __metadata:
     "@jrolfs/core": 0.0.1
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.4.5
-    "@react-three/drei": ^9.43.2
+    "@react-three/drei": ^9.43.3
     "@react-three/fiber": ^8.0.27
     "@react-three/test-renderer": ^8.0.17
     "@storybook/addon-essentials": ^6.5.13
@@ -3259,7 +3259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:^9.43.2":
+"@react-three/drei@npm:^9.43.3":
   version: 9.43.3
   resolution: "@react-three/drei@npm:9.43.3"
   dependencies:
