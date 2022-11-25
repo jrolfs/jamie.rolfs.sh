@@ -2344,7 +2344,7 @@ __metadata:
     "@react-three/drei": ^9.43.3
     "@react-three/fiber": ^8.0.27
     "@types/react": ^18.0.25
-    "@types/react-dom": ^18.0.7
+    "@types/react-dom": ^18.0.9
     "@types/three": ^0.137.0
     "@vanilla-extract/babel-plugin": ^1.1.7
     "@vanilla-extract/css": ^1.7.2
@@ -2377,7 +2377,7 @@ __metadata:
     "@storybook/manager-webpack5": ^6.5.13
     "@storybook/react": ^6.5.13
     "@types/babel__core": ^7
-    "@types/react-dom": ^18.0.7
+    "@types/react-dom": ^18.0.9
     "@types/react-reconciler": ^0.28.0
     "@types/three": ^0.137.0
     babel-loader: ^8.2.5
@@ -5282,12 +5282,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.7":
-  version: 18.0.7
-  resolution: "@types/react-dom@npm:18.0.7"
+"@types/react-dom@npm:^18.0.9":
+  version: 18.0.9
+  resolution: "@types/react-dom@npm:18.0.9"
   dependencies:
     "@types/react": "*"
-  checksum: 4fd47dd114d61e7228637de9bee685b81ea18b89b220a67662b05ebe74f69aad7cd929ebe69e8fd572cc8e0e9adf9bba1ea5586cfd37eb9045778851e78bcd66
+  checksum: e744e3feba25fc43733289d4df4d9c0e59fcca7f34e8c89d75f81a339accb2bd70236d69382d47d2c0ad06a1529b2e56aa6171fe175854d60e07156ddceedfcb
   languageName: node
   linkType: hard
 
