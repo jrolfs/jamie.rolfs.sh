@@ -2388,7 +2388,7 @@ __metadata:
     react-merge-refs: ^2.0.1
     require-from-string: ^2.0.2
     three: ^0.137.5
-    three-stdlib: ^2.12.1
+    three-stdlib: ^2.19.0
     tslib: ^2.4.1
     typescript: ^4.5.5
     webpack: ^5.73.0
@@ -18583,7 +18583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.12.1, three-stdlib@npm:^2.18.1":
+"three-stdlib@npm:^2.18.1, three-stdlib@npm:^2.19.0":
   version: 2.19.0
   resolution: "three-stdlib@npm:2.19.0"
   dependencies:
