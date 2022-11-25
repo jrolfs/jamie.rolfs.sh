@@ -23,12 +23,7 @@ const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({
         speed={1.5}
         zoom={0.7}
       >
-        <Stage
-          contactShadow={false}
-          environment={null}
-          intensity={1}
-          shadowBias={-0.0015}
-        >
+        <Stage environment="warehouse" intensity={1}>
           {children}
         </Stage>
         <mesh rotation={[-Math.PI / 2, 0, 0]}>
