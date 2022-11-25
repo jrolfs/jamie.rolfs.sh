@@ -27,7 +27,7 @@
     "test": "yarn workspaces foreach -v run test --no-watch"
   },
   "dependencies": {
-    "@hover/javascript": "7.0.0-next.2",
+    "@hover/javascript": "7.0.0-beta.6",
     "@manypkg/cli": "0.19.2",
     "@preconstruct/cli": "^2.2.2",
     "@preconstruct/hook": "^0.4.0",
