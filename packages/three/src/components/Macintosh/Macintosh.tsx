@@ -2,9 +2,8 @@ import { useGLTF } from '@react-three/drei';
 import { GroupProps } from '@react-three/fiber';
 import { forwardRef } from 'react';
 import { Group, MeshStandardMaterial } from 'three';
-import type { GLTF } from 'three-stdlib';
 
-export type UseGLTF = GLTF & {
+export type UseGLTF = ReturnType<typeof useGLTF> & {
   nodes: Record<string, THREE.Mesh>;
   materials: Record<string, THREE.MeshStandardMaterial>;
 };
