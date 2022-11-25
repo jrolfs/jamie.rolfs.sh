@@ -2512,7 +2512,7 @@ __metadata:
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.4.5
     "@react-three/drei": ^9.43.3
-    "@react-three/fiber": ^8.0.27
+    "@react-three/fiber": ^8.9.1
     "@react-three/test-renderer": ^8.0.17
     "@storybook/addon-essentials": ^6.5.13
     "@storybook/addons": ^6.5.13
@@ -3467,6 +3467,41 @@ __metadata:
     react-native:
       optional: true
   checksum: 2346c5a7aed78c0bf30731a6c7756a4e653f53bf98ca71342d8413ffd1748fa3c2a31abbbffc0616349cef24b82b48dc4389a0de1ef0eb341f1163f25825ad8a
+  languageName: node
+  linkType: hard
+
+"@react-three/fiber@npm:^8.9.1":
+  version: 8.9.1
+  resolution: "@react-three/fiber@npm:8.9.1"
+  dependencies:
+    "@babel/runtime": ^7.17.8
+    "@types/react-reconciler": ^0.26.7
+    its-fine: ^1.0.6
+    react-reconciler: ^0.27.0
+    react-use-measure: ^2.1.1
+    scheduler: ^0.21.0
+    suspend-react: ^0.0.8
+    zustand: ^3.7.1
+  peerDependencies:
+    expo: ">=43.0"
+    expo-asset: ">=8.4"
+    expo-gl: ">=11.0"
+    react: ">=18.0"
+    react-dom: ">=18.0"
+    react-native: ">=0.64"
+    three: ">=0.133"
+  peerDependenciesMeta:
+    expo:
+      optional: true
+    expo-asset:
+      optional: true
+    expo-gl:
+      optional: true
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 75aabbc206a306bc5e46cc491327cd1e409fd46f2eb95864a0c8925097cef9c7f076547ff19c530ccf3192bd36451a28d5eefa0b0c21b60c49638b8a32dbd454
   languageName: node
   linkType: hard
 
@@ -12655,6 +12690,17 @@ __metadata:
     es-get-iterator: ^1.0.2
     iterate-iterator: ^1.0.1
   checksum: 446a4181657df1872e5020713206806757157db6ab375dee05eb4565b66e1244d7a99cd36ce06862261ad4bd059e66ba8192f62b5d1ff41d788c3b61953af6c3
+  languageName: node
+  linkType: hard
+
+"its-fine@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "its-fine@npm:1.0.6"
+  dependencies:
+    "@types/react-reconciler": ^0.28.0
+  peerDependencies:
+    react: ">=18.0"
+  checksum: bfd4f775084dc1f301280e85fdbfa5b75dff72603fe6d03e7e0181b0e3369ad2cdcb5be9015d21e6990ddd79fcef2e0f075a52023492545215661d125f980bf4
   languageName: node
   linkType: hard
 
