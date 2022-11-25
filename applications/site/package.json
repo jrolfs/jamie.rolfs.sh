@@ -36,7 +36,7 @@
   "dependencies": {
     "@jrolfs/three": "0.0.1",
     "@react-three/drei": "^9.43.3",
-    "@react-three/fiber": "^8.0.27",
+    "@react-three/fiber": "^8.9.1",
     "@types/three": "^0.137.0",
     "@vanilla-extract/css": "^1.7.2",
     "next": "^12.2.5",
