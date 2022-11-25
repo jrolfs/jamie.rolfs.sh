@@ -47,6 +47,6 @@
   "resolutions": {
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
-    "@types/react": "^18.0.22"
+    "@types/react": "^18.0.25"
   }
 }
