@@ -2343,7 +2343,7 @@ __metadata:
     "@preconstruct/next": ^4.0.0
     "@react-three/drei": ^9.43.3
     "@react-three/fiber": ^8.0.27
-    "@types/react": ^18.0.22
+    "@types/react": ^18.0.25
     "@types/react-dom": ^18.0.7
     "@types/three": ^0.137.0
     "@vanilla-extract/babel-plugin": ^1.1.7
@@ -5309,14 +5309,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.0.22":
-  version: 18.0.22
-  resolution: "@types/react@npm:18.0.22"
+"@types/react@npm:^18.0.25":
+  version: 18.0.25
+  resolution: "@types/react@npm:18.0.25"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: e9e294c1b5467c502936f964be68e7284ec6a5d40c703e7429037d9b39ba5f9b0299d303dde06d0468e4e79957ac71ab5ab3ee8252bf6ff3cc09c2ee03695789
+  checksum: 231d658c45abdef044a716b4502774f1585d8336d73b2f5bd68f181acbfc874b7a457686ecd29b415b43ed0922c309bab7e2cf96832d188a3f4f1b02f2af760a
   languageName: node
   linkType: hard
 
