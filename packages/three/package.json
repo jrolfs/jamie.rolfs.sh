@@ -28,7 +28,7 @@
     "test:update": "hover-scripts test --updateSnapshot"
   },
   "peerDependencies": {
-    "@react-spring/three": "^9.4.5",
+    "@react-spring/three": "^9.5.5",
     "@react-three/fiber": "^8",
     "@types/three": "^0.137.0",
     "react": "^18",
@@ -38,7 +38,7 @@
     "@babel/core": "^7.20.2",
     "@hover/javascript": "7.0.0-beta.6",
     "@preconstruct/hook": "^0.4.0",
-    "@react-spring/three": "^9.4.5",
+    "@react-spring/three": "^9.5.5",
     "@react-three/fiber": "^8.0.27",
     "@react-three/test-renderer": "^8.0.17",
     "@storybook/addon-essentials": "^6.5.13",
