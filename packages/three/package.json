@@ -30,9 +30,9 @@
   "peerDependencies": {
     "@react-spring/three": "^9.5.5",
     "@react-three/fiber": "^8",
-    "@types/three": "^0.137.0",
+    "@types/three": "^0.146.0",
     "react": "^18",
-    "three": "^0.137.5"
+    "three": "^0.147.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
@@ -48,13 +48,13 @@
     "@types/babel__core": "^7",
     "@types/react-dom": "^18.0.9",
     "@types/react-reconciler": "^0.28.0",
-    "@types/three": "^0.137.0",
+    "@types/three": "^0.146.0",
     "babel-loader": "^8.3.0",
     "leva": "^0.9.28",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "three": "^0.137.5",
+    "three": "^0.147.0",
     "three-stdlib": "^2.19.0",
     "typescript": "^4.5.5",
     "webpack": "^5.73.0"
