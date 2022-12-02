@@ -1,6 +1,3 @@
-/** @typedef {import('ts-jest/dist/types').InitialOptionsTsJest} JestConfig */
+/** @typedef {import('jest').Config} JestConfig */
 
-const config = require('@hover/javascript/jest');
-
-/** @type {JestConfig} */
-module.exports = config;
+module.exports = require('../../jest.config.cjs');
