@@ -25,7 +25,7 @@ test('click event makes box bigger', async () => {
 });
 
 test('rotates', async () => {
-  const renderer = await ReactThreeTestRenderer.create(<Box />);
+  const renderer = await ReactThreeTestRenderer.create(<Box spin />);
   const mesh = renderer.scene.children[0];
 
   const { x, y, z } = mesh.instance.rotation;

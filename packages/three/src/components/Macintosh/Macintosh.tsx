@@ -1,7 +1,17 @@
 import { useGLTF } from '@react-three/drei';
 import { GroupProps } from '@react-three/fiber';
-import { forwardRef } from 'react';
-import { Group, MeshStandardMaterial } from 'three';
+import { forwardRef, useEffect, useRef } from 'react';
+import {
+  BufferGeometry,
+  Group,
+  Material,
+  Mesh,
+  MeshStandardMaterial,
+  Texture,
+  Vector2,
+} from 'three';
+
+import { image2, image3 } from './test-image';
 
 export type UseGLTF = ReturnType<typeof useGLTF> & {
   nodes: Record<string, THREE.Mesh>;
@@ -10,10 +20,16 @@ export type UseGLTF = ReturnType<typeof useGLTF> & {
 
 export interface MacintoshProps extends GroupProps {}
 
+const base64ToSrc = (data: string) => `data:image/png;base64,${data}`;
+
 const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
   const { nodes, materials } = useGLTF(
     '/models/macintosh-classic--computer.glb',
   ) as UseGLTF;
+
+  const screenImageRef = useRef<HTMLImageElement>(new Image());
+  const screenRef = useRef<MeshStandardMaterial>(null!);
+  const screenTextureRef = useRef<Texture>(new Texture(screenImageRef.current));
 
   // TODO: come up with good looking materials for everything
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -21,6 +37,24 @@ const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
     materials['case-plastic'],
     { roughness: 100 },
   );
+
+  const bodyRef = useRef<Mesh<BufferGeometry, Material>>(null!);
+
+  useEffect(() => {
+    const texture = screenTextureRef.current;
+    const image = screenImageRef.current;
+
+    texture.center = new Vector2(1, 1);
+    texture.flipY = false;
+    texture.offset.y = 0.0155;
+    texture.offset.x = 0.01;
+    texture.repeat.set(1.02, 1.39);
+
+    image.src = base64ToSrc(image2);
+    image.onload = () => {
+      texture.needsUpdate = true;
+    };
+  }, []);
 
   return (
     <group ref={ref} {...props} dispose={null}>
@@ -33,6 +67,7 @@ const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
         <mesh
           geometry={nodes['computer-body'].geometry}
           position={[-1.16, 16.62, 1.5]}
+          ref={bodyRef}
         >
           <meshStandardMaterial color="#cacab2" />
         </mesh>
@@ -79,8 +114,21 @@ const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
         <mesh
           geometry={nodes['computer-screen'].geometry}
           material={materials['display-glass']}
+          onClick={({ unprojectedPoint }) => {
+            // TODO: how do we get the mouse coordinates relative
+            // to the screen top/left to forward to VNC session?
+            // eslint-disable-next-line no-console
+            console.log(unprojectedPoint);
+
+            screenImageRef.current.src = base64ToSrc(image3);
+          }}
           position={[-1.05, 22.73, 12.08]}
-        />
+        >
+          <meshStandardMaterial
+            map={screenTextureRef.current}
+            ref={screenRef}
+          />
+        </mesh>
         <mesh
           geometry={nodes['computer-screws'].geometry}
           material={nodes['computer-screws'].material}
