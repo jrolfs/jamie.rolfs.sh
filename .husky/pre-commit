@@ -1,4 +1,15 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn workspaces foreach --verbose --since run pre-commit
+# Since `--filter[HEAD^1]` doesn't seem to reproduce the behavior of `--since`
+# from Yarn 3, so this is a pretty silly amalgamation of the two tools
+function get_filters_for_changed_workspaces() {
+  yarn workspaces list --since \
+    | awk '{ print $3 }' \
+    | grep -v Done \
+    | awk -v d=" --filter=./" '{s=(s d)$0}END{print s}' \
+    | sed 's/\.\/\./\/\//'
+}
+
+# Caching doesn't seem to be working for this yet...
+yarn turbo pre-commit --concurrency=1 $(get_filters_for_changed_workspaces)

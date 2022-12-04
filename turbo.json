@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build:source": {
+      "outputs": [".next/**"],
+      "dependsOn": ["//#build:packages"]
+    },
+    "//#build:packages": {
+      "outputs": ["**/dist/**"]
+    },
+    "build:types": {
+      "outputs": [],
+      "dependsOn": ["^build:types"]
+    },
+    "format": { "outputs": [] },
+    "pre-commit": {
+      "inputs": [
+        "**/*.+(js|jsx|json|json5|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx|vue)"
+      ],
+      "outputs": []
+    },
+    "lint": { "outputs": [] },
+    "test": { "outputs": [] }
+  }
+}
