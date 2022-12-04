@@ -18,8 +18,9 @@
     "start": "run-p 'start:*'",
     "start:source": "",
     "start:types": "tsc -b -w --preserveWatchOutput",
-    "test": "hover-scripts test",
-    "test:update": "hover-scripts test --updateSnapshot"
+    "test": "hover-scripts test --no-watch",
+    "test:update": "hover-scripts test --updateSnapshot",
+    "test:watch": "hover-scripts test"
   },
   "devDependencies": {
     "@hover/javascript": "7.0.0-beta.6",
