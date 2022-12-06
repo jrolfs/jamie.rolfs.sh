@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  emulator:
+    container_name: emulator
+    build:
+      context: .
+      dockerfile: applications/emulator/Dockerfile
+      target: production
+    networks:
+      - local
+    platform: "linux/amd64"
+    ports:
+      - 4000:4000
+      - 59000:59000
+
+networks:
+  local:
+    driver: bridge

@@ -1,0 +1,16 @@
+{
+  "name": "emulator",
+
+  "dockerComposeFile": [
+    ".docker/docker-compose.yml",
+    ".docker/docker-compose.development.yml"
+  ],
+
+  "forwardPorts": [59000],
+  "service": "emulator",
+
+  "remoteUser": "ubuntu",
+  "workspaceFolder": "/workspace/applications/emulator",
+
+  "shutdownAction": "stopCompose"
+}
