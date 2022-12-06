@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.1",
   "main": "index.js",
-  "type": "module",
   "repository": "git+ssh://github.com/jrolfs/jamie.rolfs.sh/tree/master/applications/emulator",
   "author": "Jamie Rolfs <jamie@rolfs.sh>",
   "license": "MIT",
@@ -15,8 +14,9 @@
     "format": "hover-scripts format",
     "lint": "hover-scripts lint",
     "pre-commit": "hover-scripts pre-commit --test-command 'hover-scripts test --findRelatedTests --passWithNoTests'",
-    "start": "run-p 'start:*'",
-    "start:source": "",
+    "start": "run-p start:source start:types",
+    "start:source": "docker compose -f ../../docker-compose.yml -f docker-compose.yml up --build",
+    "start:develop": "nodemon src/index.ts",
     "start:types": "tsc -b -w --preserveWatchOutput",
     "test": "hover-scripts test --no-watch",
     "test:update": "hover-scripts test --updateSnapshot",
@@ -24,8 +24,22 @@
   },
   "devDependencies": {
     "@hover/javascript": "7.0.0-beta.9",
+    "@preconstruct/hook": "^0.4.0",
+    "@swc-node/register": "^1.5.4",
+    "@swc/core": "^1.3.22",
+    "@types/getenv": "^1",
     "@types/node": "^18.11.17",
+    "nodemon": "^2.0.20",
     "npm-run-all": "^4.1.5",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@jrolfs/utilities": "0.15.0",
+    "dotenv": "^16.0.3",
+    "dotenv-expand": "^9.0.0",
+    "fastify": "^4.10.2",
+    "getenv": "^1.0.0",
+    "pino-pretty": "^9.1.1",
+    "tiny-invariant": "^1.3.1"
   }
 }

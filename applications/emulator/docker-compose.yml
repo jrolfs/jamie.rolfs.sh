@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  emulator:
+    build:
+      target: development
+    tty: true
+    volumes:
+      - .:/workspace
+      - node-modules:/workspace/node_modules
+
+volumes:
+  node-modules:

@@ -1,0 +1,18 @@
+--------- GRY SIGNED TEXT ---------
+
+signed with
+https://www.gryphel.com/c/keys/k4.html
+
+custom variation : 221205_053141_109
+of : Mini vMac
+options : -br 37 -t lx64 -var-fullscreen 0 -magnify 1 -sound 0 -iid 1 -speed z -mem 2M
+time : Mon Dec  5 05:31:41 2022
+file name : m221205_053141_109.bin.tgz
+size in bytes : 47478
+md5 checksum : 7e439d5b406d70930c8e8a2efd8581cb
+
+------- BEGIN GRY SIGNATURE -------
+Gry/nUU60LqH9A2V/ML9w4o1vYa0o3Q7Xy0wjbd4fFCVuZANVo0rPLI4iRCJBUOb
+bHjVw5FkNR2IZi/3zCM4WnOC0tCJjAgpo6UXbVCm4oRqAUxuryityCZcJid9VqnE
+FhtZPjvG0WdgpI9MNynnVTjjN5sKByMF4HVbNoySC/89JahnMo5cQQz2ghRgPerq
+-------- END GRY SIGNATURE --------
