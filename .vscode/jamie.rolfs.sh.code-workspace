@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "name": "root",
+      "path": "../"
+    },
+    {
+      "name": "emulator",
+      "path": "../applications/emulator"
+    },
+    {
+      "name": "site",
+      "path": "../applications/site"
+    },
+    {
+      "name": "@jrolfs/core",
+      "path": "../packages/core"
+    },
+    {
+      "name": "@jrolfs/three",
+      "path": "../packages/three/"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "applications/": true,
+      "packages/": true
+    }
+  }
+}
