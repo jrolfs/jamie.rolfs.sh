@@ -4994,13 +4994,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^8.4.1":
+"@types/eslint@npm:*":
   version: 8.4.1
   resolution: "@types/eslint@npm:8.4.1"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
   checksum: b5790997ee9d3820d16350192d41849b0e2448c9e93650acac672ddf502e35c0a5a25547172a9eec840a96687cd94ba1cee672cbd86640f8f4ff1b65960d2ab9
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:^8.4.10":
+  version: 8.4.10
+  resolution: "@types/eslint@npm:8.4.10"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: 21e009ed9ed9bc8920fdafc6e11ff321c4538b4cc18a56fdd59dc5184ea7bbf363c71638c9bdb59fc1254dddcdd567485136ed68b0ee4750948d4e32cb79c689
   languageName: node
   linkType: hard
 
@@ -12583,7 +12593,7 @@ __metadata:
     "@manypkg/cli": 0.19.2
     "@preconstruct/cli": ^2.2.2
     "@preconstruct/hook": ^0.4.0
-    "@types/eslint": ^8.4.1
+    "@types/eslint": ^8.4.10
     husky: ^8.0.2
     npm-run-all: ^4.1.5
     three: ^0.147.0
