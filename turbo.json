@@ -9,8 +9,8 @@
       "outputs": ["**/dist/**"]
     },
     "build:types": {
-      "outputs": [],
-      "dependsOn": ["^build:types"]
+      "inputs": ["tsconfig.json", "**/*.ts", "**/*.tsx", "**/*.js"],
+      "outputs": []
     },
     "format": { "outputs": [] },
     "pre-commit": {
