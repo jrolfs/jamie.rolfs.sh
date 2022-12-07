@@ -2329,6 +2329,7 @@ __metadata:
   resolution: "@jrolfs/emulator@workspace:applications/emulator"
   dependencies:
     "@hover/javascript": 7.0.0-beta.6
+    "@types/node": ^18.11.11
     npm-run-all: ^4.1.5
     typescript: ^4.9.3
   languageName: unknown
@@ -5218,6 +5219,13 @@ __metadata:
   version: 16.11.42
   resolution: "@types/node@npm:16.11.42"
   checksum: a1746910cf27c9e8597805556c943bde5e630c5c4e03bdd2513ccd7fe5fce1ed912f51f5d0ce5dcda0583e5539177f76ad35a19caa9525307d7a722aa9962631
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.11.11":
+  version: 18.11.11
+  resolution: "@types/node@npm:18.11.11"
+  checksum: c4b1176a8f1714a3ee3fc2a5e1d568b0cd50209000282db5c68154b3c975952928dbb834ef3a0ce55bd7b345ae29f2cbf4a34635a070294d135a24254231386a
   languageName: node
   linkType: hard
 
