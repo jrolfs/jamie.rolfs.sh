@@ -72,8 +72,8 @@ const Stage: FunctionComponent<PropsWithChildren<StageProps>> = props => {
     defaults: button(() =>
       set({
         ...defaults,
-        cameraPosition: vectorToControl(defaults.cameraPosition).value,
-        lightPosition: vectorToControl(defaults.lightPosition).value,
+        cameraPosition,
+        lightPosition,
       }),
     ),
   }));
@@ -81,10 +81,10 @@ const Stage: FunctionComponent<PropsWithChildren<StageProps>> = props => {
   useEffect(() => {
     set({
       background,
-      cameraPosition: vectorToControl(cameraPosition),
+      cameraPosition,
       center,
       debugLights,
-      lightPosition: vectorToControl(lightPosition),
+      lightPosition,
       lights,
       orbit,
       zoom,
