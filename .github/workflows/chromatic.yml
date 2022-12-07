@@ -1,71 +1,23 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 
-name: Pull Request
-env:
-  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+name: Chromatic
 
-on:
-  workflow_dispatch:
-  pull_request:
-    branches:
-      - main
-      - next
+on: push
 
 jobs:
-  dependencies:
-    name: Fix Dependencies
+  publish-three:
+    name: Publish @jrolfs/three
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - uses: ./.github/actions/fix-dependencies
         with:
-          token: ${{ secrets.MANYPKG_TOKEN }}
-
-  compile:
-    name: Compile
-    needs: dependencies
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+          fetch-depth: 0
 
       - uses: ./.github/actions/install
 
-      - name: Check types
-        run: yarn build:types
-
-  lint:
-    name: Lint
-    needs: dependencies
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - uses: ./.github/actions/install
-
-      - name: Run lint
-        run: yarn lint
-
-  test:
-    name: Test
-    needs: dependencies
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - uses: ./.github/actions/install
-
-      - name: Run tests
-        run: yarn test
+      - name: Publish @jrolfs/three to Chromatic
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN__THREE }}
+          workingDir: packages/three
