@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@jrolfs/core": "0.0.1",
-    "@react-three/drei": "^9.46.2",
+    "@react-three/drei": "^9.46.3",
     "@storybook/manager-webpack5": "^6.5.14",
     "react-merge-refs": "^2.0.1",
     "require-from-string": "^2.0.2",
