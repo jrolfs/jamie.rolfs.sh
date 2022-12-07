@@ -7,10 +7,15 @@ module.exports = {
       1,
       'always',
       [
+        // Build scopes, e.g: `build(scope)`
+        'turbo',
+        'typescript',
+        ...scopes.build(),
+
+        // General scopes
         'assets',
         ...ls.dirs('./packages'),
         ...ls.dirs('./applications'),
-        ...scopes.build(),
       ],
     ],
   },
