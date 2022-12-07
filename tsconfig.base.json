@@ -2,6 +2,8 @@
   "extends": "@hover/javascript/tsconfig",
   "compilerOptions": {
     "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
     "isolatedModules": true,
     "noEmit": true
   }
