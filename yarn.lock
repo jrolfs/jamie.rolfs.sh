@@ -1858,10 +1858,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discoveryjs/json-ext@npm:^0.5.3":
-  version: 0.5.6
-  resolution: "@discoveryjs/json-ext@npm:0.5.6"
-  checksum: e97df618511fb202dffa2eb0d23e17dfb02943a70e5bc38f6b9603ad1cb1d6b525aa2b07ff9fb00b041abe425b341146ddd9e487f1e35ddadc8c6b8c56358ae0
+"@discoveryjs/json-ext@npm:^0.5.3, @discoveryjs/json-ext@npm:^0.5.7":
+  version: 0.5.7
+  resolution: "@discoveryjs/json-ext@npm:0.5.7"
+  checksum: 2176d301cc258ea5c2324402997cf8134ebb212469c0d397591636cea8d3c02f2b3cf9fd58dcb748c7a0dade77ebdc1b10284fa63e608c033a1db52fddc69918
   languageName: node
   linkType: hard
 
@@ -2382,6 +2382,7 @@ __metadata:
     "@types/react-reconciler": ^0.28.0
     "@types/three": ^0.146.0
     "@vanilla-extract/css": ^1.9.2
+    chromatic: ^6.12.0
     leva: ^0.9.34
     npm-run-all: ^4.1.5
     react: ^18.2.0
@@ -5418,10 +5419,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webpack-env@npm:^1.16.0":
-  version: 1.16.3
-  resolution: "@types/webpack-env@npm:1.16.3"
-  checksum: faefa7c0a75289fb469b9a5ae44059a00009de840e0e62d13b3f837d77647da76808e7839cdc414b8c585969cf6b6a7f290dc2cb437a9ccdf04cb214c68f3223
+"@types/webpack-env@npm:^1.16.0, @types/webpack-env@npm:^1.17.0":
+  version: 1.18.0
+  resolution: "@types/webpack-env@npm:1.18.0"
+  checksum: ecf4daa31cb37d474ac0ce058d83a3cadeb9881ca8107ae93c2299eaa9954943aae09b43e143c62ccbe4288a14db00c918c9debd707afe17c3998f873eaabc59
   languageName: node
   linkType: hard
 
@@ -7726,6 +7727,20 @@ __metadata:
   version: 2.0.0
   resolution: "chownr@npm:2.0.0"
   checksum: c57cf9dd0791e2f18a5ee9c1a299ae6e801ff58fee96dc8bfd0dcb4738a6ce58dd252a3605b1c93c6418fe4f9d5093b28ffbf4d66648cb2a9c67eaef9679be2f
+  languageName: node
+  linkType: hard
+
+"chromatic@npm:^6.12.0":
+  version: 6.12.0
+  resolution: "chromatic@npm:6.12.0"
+  dependencies:
+    "@discoveryjs/json-ext": ^0.5.7
+    "@types/webpack-env": ^1.17.0
+  bin:
+    chroma: bin/main.cjs
+    chromatic: bin/main.cjs
+    chromatic-cli: bin/main.cjs
+  checksum: 01192b5ce1275848f48121add48d92a07b1863c3c2427f0ab9fcf31abf4cb48790a7be26445ceff8f74c964fa3ff1e53b957a594eea61e96b7629eac3a7cebfb
   languageName: node
   linkType: hard
 
@@ -18638,28 +18653,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.18.1":
-  version: 2.20.3
-  resolution: "three-stdlib@npm:2.20.3"
-  dependencies:
-    "@babel/runtime": ^7.16.7
-    "@types/offscreencanvas": ^2019.6.4
-    "@webgpu/glslang": ^0.0.15
-    chevrotain: ^10.1.2
-    draco3d: ^1.4.1
-    fflate: ^0.6.9
-    ktx-parse: ^0.4.5
-    mmd-parser: ^1.0.4
-    opentype.js: ^1.3.3
-    potpack: ^1.0.1
-    zstddec: ^0.0.2
-  peerDependencies:
-    three: ">=0.122.0"
-  checksum: 814146eb94d2347588951de7c8c509ce9c673bbdee7e604ffbbe98451673e5ea60aeded455705cbb6efa0ece18b9fa785393b5ebf77156eda5f18d1e587b9bb7
-  languageName: node
-  linkType: hard
-
-"three-stdlib@npm:^2.20.4":
+"three-stdlib@npm:^2.18.1, three-stdlib@npm:^2.20.4":
   version: 2.20.4
   resolution: "three-stdlib@npm:2.20.4"
   dependencies:
