@@ -2342,7 +2342,7 @@ __metadata:
     "@hover/javascript": 7.0.0-beta.6
     "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^4.0.0
-    "@react-three/drei": ^9.46.3
+    "@react-three/drei": ^9.46.4
     "@react-three/fiber": ^8.9.1
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.9
@@ -2369,7 +2369,7 @@ __metadata:
     "@jrolfs/core": 0.0.1
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.5.5
-    "@react-three/drei": ^9.46.3
+    "@react-three/drei": ^9.46.4
     "@react-three/fiber": ^8.9.1
     "@react-three/test-renderer": ^8.0.17
     "@storybook/addon-essentials": ^6.5.14
@@ -3262,25 +3262,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:^9.46.3":
-  version: 9.46.3
-  resolution: "@react-three/drei@npm:9.46.3"
+"@react-three/drei@npm:^9.46.4":
+  version: 9.46.4
+  resolution: "@react-three/drei@npm:9.46.4"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
     "@use-gesture/react": ^10.2.0
-    detect-gpu: ^4.0.36
+    detect-gpu: ^5.0.1
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
     lodash.pick: ^4.4.0
-    meshline: ^2.0.4
+    meshline: ^3.0.4
     react-composer: ^5.0.3
     react-merge-refs: ^1.1.0
     stats.js: ^0.17.0
     suspend-react: ^0.0.8
-    three-mesh-bvh: ^0.5.15
-    three-stdlib: ^2.18.1
+    three-mesh-bvh: ^0.5.19
+    three-stdlib: ^2.20.4
     troika-three-text: ^0.46.4
     utility-types: ^3.10.0
     zustand: ^3.5.13
@@ -3292,7 +3292,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 091e6389b566d0666f2918ecc8f4791566149f0b706bf11c7a7e65ad836cbdb0f91381adfb37679b8458d920052050f704ffdce3dae8fc129b8602dab81d0a5e
+  checksum: 1d86d01a134caa3fc3522c8fa080420430c77255c445d50bce006083d2f2e310784a5b8eeebcdf49ec57ec0fcfe3871470f5399a4e5880d2664c9445fc53fb8d
   languageName: node
   linkType: hard
 
@@ -8953,12 +8953,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^4.0.36":
-  version: 4.0.49
-  resolution: "detect-gpu@npm:4.0.49"
+"detect-gpu@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "detect-gpu@npm:5.0.1"
   dependencies:
     webgl-constants: ^1.1.1
-  checksum: d83ba54cae03608b4192a7760c61519ad37e1ae20f7fc27d68e5036fc8f9d79058aaf9758855e8fdacf6a96f43cbc2f81479317e9da6b5a361f904429da116cf
+  checksum: 191002b1356779e1e803835e6de705981b2553515dbc4c50d4b309ae257ee0fb5caf475192eeb998ade29f8a015faa9611e21e9c6e380656a5f0e53468c2fe11
   languageName: node
   linkType: hard
 
@@ -14195,12 +14195,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meshline@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "meshline@npm:2.0.4"
+"meshline@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "meshline@npm:3.0.4"
   peerDependencies:
     three: ">=0.137"
-  checksum: c861f06336ddf2ac038fcb4ad6714bb46763f050451bdfd0b4bbb3b30c528029b2c990992e34f0574cae76a4402b538a27c93c7acc0446062500e7edba2eb180
+  checksum: 3d2e39ef37003325802c81da2e45b26a86eca605ba702b852696bc334c8b9e0150de20982f87d5b95e59657e9a4fc93026e3e83dc2c9f1a56355228dec5ada7b
   languageName: node
   linkType: hard
 
@@ -18651,16 +18651,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-mesh-bvh@npm:^0.5.15":
-  version: 0.5.18
-  resolution: "three-mesh-bvh@npm:0.5.18"
+"three-mesh-bvh@npm:^0.5.19":
+  version: 0.5.19
+  resolution: "three-mesh-bvh@npm:0.5.19"
   peerDependencies:
     three: ">= 0.123.0"
-  checksum: 4e66147f036b31b17f0d20704d5e2438fce28b2187f2f4fad4b91af029b2469704cadccc4f07a9aa032b6b5c42670ba8975c456a35dbff0f9e1313508f5b3bd0
+  checksum: ea2c5deecb5ef1aab524e7b8b49e87d2380113b5ed617d92212069dc7e02001606f1185a01173c698ab02f9ee1f866e605714cb06523220715413e6cbc3ff853
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.18.1, three-stdlib@npm:^2.20.4":
+"three-stdlib@npm:^2.20.4":
   version: 2.20.4
   resolution: "three-stdlib@npm:2.20.4"
   dependencies:
