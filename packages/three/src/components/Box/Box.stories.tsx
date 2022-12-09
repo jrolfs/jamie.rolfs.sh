@@ -1,4 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import isChromatic from 'chromatic/isChromatic';
 
 import { withStage } from '../../storybook';
 
@@ -20,4 +21,4 @@ Default.args = {};
 Default.storyName = 'Box';
 
 export const Spinning = Template.bind({});
-Spinning.args = { spin: true };
+Spinning.args = { spin: !isChromatic() };
