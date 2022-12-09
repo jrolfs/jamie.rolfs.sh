@@ -11,6 +11,8 @@ module.exports = {
         'turbo',
         'typescript',
         ...scopes.build(),
+        ...ls.dirs('./packages', 'deps'),
+        ...ls.dirs('./applications', 'deps-dev'),
 
         // General scopes
         'assets',
