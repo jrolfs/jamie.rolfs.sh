@@ -1,0 +1,7 @@
+extends: ../../.eslintrc.cjs
+overrides:
+  # We use lone blocks to test types without polluting scope
+  - files:
+      - '**/__tests__/**/*.ts'
+    rules:
+      no-lone-blocks: off
