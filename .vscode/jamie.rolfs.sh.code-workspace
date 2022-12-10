@@ -23,12 +23,18 @@
     {
       "name": "@jrolfs/utilities",
       "path": "../packages/utilities"
-    },
+    }
   ],
   "settings": {
     "files.exclude": {
+      "**/*.tsbuildinfo": true,
       "applications/": true,
       "packages/": true
+    },
+    "search.exclude": {
+      "**/.turbo": true,
+      "**/dist": true,
+      "**/.yarn": true
     }
   }
 }
