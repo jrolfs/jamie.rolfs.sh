@@ -1,12 +1,12 @@
 {
-  "name": "@jrolfs/emulator",
+  "name": "emulator",
+  "private": true,
   "version": "0.0.1",
   "main": "index.js",
   "type": "module",
   "repository": "git+ssh://github.com/jrolfs/jamie.rolfs.sh/tree/master/applications/emulator",
   "author": "Jamie Rolfs <jamie@rolfs.sh>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "build": "run-p 'build:*'",
     "build:source": "",
