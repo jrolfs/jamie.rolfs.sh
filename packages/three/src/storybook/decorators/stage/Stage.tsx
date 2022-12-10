@@ -1,4 +1,5 @@
-import { keys, split, theme } from '@jrolfs/core';
+import { theme } from '@jrolfs/core';
+import { keys, split } from '@jrolfs/utilities';
 import { Center, OrbitControls, OrthographicCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { button, useControls } from 'leva';

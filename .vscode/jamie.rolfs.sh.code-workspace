@@ -19,7 +19,11 @@
     {
       "name": "@jrolfs/three",
       "path": "../packages/three/"
-    }
+    },
+    {
+      "name": "@jrolfs/utilities",
+      "path": "../packages/utilities"
+    },
   ],
   "settings": {
     "files.exclude": {

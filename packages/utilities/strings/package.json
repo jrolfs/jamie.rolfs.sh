@@ -1,0 +1,4 @@
+{
+  "main": "dist/jrolfs-utilities-strings.cjs.js",
+  "module": "dist/jrolfs-utilities-strings.esm.js"
+}

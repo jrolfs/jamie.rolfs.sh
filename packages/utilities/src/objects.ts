@@ -1,3 +1,5 @@
+import { includes } from './guards';
+
 /**
  * Contruct a type by picking the set of
  * properties with values matching `Value`
@@ -19,7 +21,7 @@ export type Entries<Type> = {
  * narrower types in the resulting tuple entries
  *
  * @example
- * const o = { a: 1, b: 2 }
+ * const o = { a: 1, b: 2 };
  *
  * Object.entries(o) // -> [string, number][]
  * entries(o) // -> ['a' | 'b', number][]
@@ -29,22 +31,49 @@ export type Entries<Type> = {
  * cannot have additional properties, so this should only
  * be used when you know that won't be the case
  */
-export const entries = <Object extends {}>(object: Object) =>
-  Object.entries(object) as Entries<Object>;
+export const entries = <O extends {}>(object: O) =>
+  Object.entries(object) as Entries<O>;
+
+/**
+ * A version of `Object.fromEntries` for immutable sets of entries that
+ * preserves a narrower type for the keys of the resulting object
+ *
+ * @example
+ * const e = [['a', 1] as const, ['b', 2] as const];
+ *
+ * Object.fromEntries(e) // -> { [k: string]: number }
+ * fromEntries(e) // -> { [k: 'a' | 'b']: number }
+ */
+export const fromEntries = <
+  E extends (readonly [K, V])[],
+  K extends string | number | symbol,
+  V extends unknown,
+>(
+  e: E,
+) => Object.fromEntries(e) as { [Key in E[number][0]]: E[number][1] };
+
+/**
+ * Return subset of object including specified keys
+ *
+ */
+export const pick = <O extends {}, K extends keyof O>(object: O, keys: K[]) =>
+  Object.fromEntries(
+    entries(object).filter(([key]) => includes(keys, key)),
+  ) as {
+    [Key in K]: O[Key];
+  };
+
+/**
+ * Apply function to all values of an object
+ */
+export const mapValues = <V, K extends string | number, R>(
+  object: Record<K, V>,
+  fn: (value: V) => R,
+): Record<K, R> =>
+  fromEntries(entries(object).map(([key, value]) => [key, fn(value)] as const));
 
 export const keys = <Object extends {}>(object: Object) =>
   Object.keys(object) as (keyof Object)[];
-
-/**
- * Returns a partial copy of an object containing only the keys specified
- */
-export const pick = <Object extends {}, Keys extends (keyof Object)[]>(
-  object: Object,
-  include: Keys,
-) =>
-  Object.fromEntries(
-    entries(object).filter(([key]) => include.includes(key)),
-  ) as Pick<Object, Keys[number]>;
 
 /**
  * Returns a partial copy of an object omitting the keys specified

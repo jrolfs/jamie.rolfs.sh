@@ -5,6 +5,7 @@ rules:
   react/jsx-sort-props:
     - error
     - reservedFirst: false
+  react/no-unknown-property: off
   react/require-default-props: off
 ignorePatterns:
   - next-env.d.ts
