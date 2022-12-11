@@ -29,10 +29,16 @@
     "test": "turbo run test"
   },
   "dependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@hover/javascript": "7.0.0-beta.9",
     "@manypkg/cli": "0.19.2",
     "@preconstruct/cli": "^2.2.2",
     "@preconstruct/hook": "^0.4.0",
+    "@types/babel__core": "^7",
+    "@types/babel__preset-env": "^7",
     "@types/eslint": "^8.4.10",
     "husky": "^8.0.2",
     "npm-run-all": "^4.1.5",
