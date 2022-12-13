@@ -2342,7 +2342,7 @@ __metadata:
     "@hover/javascript": 7.0.0-beta.6
     "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^4.0.0
-    "@react-three/drei": ^9.46.4
+    "@react-three/drei": ^9.46.5
     "@react-three/fiber": ^8.9.1
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.9
@@ -2369,7 +2369,7 @@ __metadata:
     "@jrolfs/core": 0.0.1
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.5.5
-    "@react-three/drei": ^9.46.4
+    "@react-three/drei": ^9.46.5
     "@react-three/fiber": ^8.9.1
     "@react-three/test-renderer": ^8.0.17
     "@storybook/addon-essentials": ^6.5.14
@@ -3262,9 +3262,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:^9.46.4":
-  version: 9.46.4
-  resolution: "@react-three/drei@npm:9.46.4"
+"@react-three/drei@npm:^9.46.5":
+  version: 9.46.5
+  resolution: "@react-three/drei@npm:9.46.5"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
@@ -3274,7 +3274,7 @@ __metadata:
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
     lodash.pick: ^4.4.0
-    meshline: ^3.0.4
+    meshline: ^3.1.6
     react-composer: ^5.0.3
     react-merge-refs: ^1.1.0
     stats.js: ^0.17.0
@@ -3292,7 +3292,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 1d86d01a134caa3fc3522c8fa080420430c77255c445d50bce006083d2f2e310784a5b8eeebcdf49ec57ec0fcfe3871470f5399a4e5880d2664c9445fc53fb8d
+  checksum: f231558208052501fc7ff3da700b7449ffcf4f97e2d49312db4c01a55eabaa38809c0ebd0047bec2677e879f8da43cd52cbd19bfcb7f2b7c9ec44d068acc835b
   languageName: node
   linkType: hard
 
@@ -14195,12 +14195,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meshline@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "meshline@npm:3.0.4"
+"meshline@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "meshline@npm:3.1.6"
   peerDependencies:
     three: ">=0.137"
-  checksum: 3d2e39ef37003325802c81da2e45b26a86eca605ba702b852696bc334c8b9e0150de20982f87d5b95e59657e9a4fc93026e3e83dc2c9f1a56355228dec5ada7b
+  checksum: 72b79908315650a57b5c97b846191ab73d1ee1551211154283a951eac7b08f9129adb6ce1b84d887b30b47617a52ff0878f9695037491c4d8350712c6655489a
   languageName: node
   linkType: hard
 
