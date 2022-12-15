@@ -19,7 +19,6 @@
     "packages:link": "preconstruct dev",
     "postinstall": "run-s commit:install packages:link packages:check",
     "pre-commit": "hover-scripts pre-commit",
-    "prepare": "node ./bin/prepare.cjs",
     "rp": "manypkg run",
     "start": "run-p start:site start:three",
     "start:emulator": "yarn workspace emulator run start",
