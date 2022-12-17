@@ -1,16 +1,25 @@
-import { configuration } from './configuration';
-import { fastify } from './server';
+import './configuration/register';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-fastify.get('/', async (_request, _reply) => ({ hello: 'mom' }));
+import { configuration } from './configuration';
+import { boot } from './server';
 
 const start = async () => {
   try {
-    await fastify.listen({ port: configuration.port, host: '0.0.0.0' });
-  } catch (error) {
-    fastify.log.error(error);
+    const server = await boot();
 
-    process.exit(1);
+    try {
+      await server.listen({
+        port: configuration.port,
+        host: configuration.ipv6 ? '::' : '0.0.0.0',
+      });
+    } catch (error) {
+      server.log.error(error);
+
+      process.exit(1);
+    }
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.error('server: boot error', error);
   }
 };
 
