@@ -35,6 +35,7 @@
       "**/.turbo": true,
       "**/dist": true,
       "**/.yarn": true
-    }
+    },
+    "typescript.tsdk": "root/node_modules/typescript/lib"
   }
 }
