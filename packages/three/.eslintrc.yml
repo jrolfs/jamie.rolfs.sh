@@ -2,6 +2,7 @@ extends:
   - '../../.eslintrc.cjs'
 rules:
   react/require-default-props: off
+  react/no-unknown-property: off
 overrides:
   - files:
       - '.storybook/*.ts'
