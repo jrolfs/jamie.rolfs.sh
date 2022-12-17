@@ -1,5 +1,12 @@
 const { ls, scopes } = require('@hover/javascript/api/commit');
 
+/**
+ * Apply build scopes to a directory
+ *
+ * @param {string} dir
+ */
+const nested = dir => scopes.build().flatMap(s => ls.dirs(dir, { prefix: s }));
+
 module.exports = {
   extends: ['@hover/javascript/commitlint'],
   rules: {
@@ -11,8 +18,8 @@ module.exports = {
         'turbo',
         'typescript',
         ...scopes.build(),
-        ...ls.dirs('./packages', 'deps'),
-        ...ls.dirs('./applications', 'deps-dev'),
+        ...nested('./packages'),
+        ...nested('./applications'),
 
         // General scopes
         'assets',
