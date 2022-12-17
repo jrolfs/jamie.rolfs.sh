@@ -15,7 +15,7 @@
     "lint": "hover-scripts lint",
     "pre-commit": "hover-scripts pre-commit --test-command 'hover-scripts test --findRelatedTests --passWithNoTests'",
     "start": "run-p start:source start:types",
-    "start:source": "docker compose -f ../../docker-compose.yml -f docker-compose.yml up --build",
+    "start:source": "docker compose -f ../../docker-compose.yml -f docker-compose.yml up --build emulator",
     "start:develop": "nodemon src/index.ts",
     "start:types": "tsc -b -w --preserveWatchOutput",
     "test": "hover-scripts test --no-watch",
