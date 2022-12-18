@@ -65,7 +65,7 @@
   "dependencies": {
     "@jrolfs/core": "0.0.1",
     "@jrolfs/utilities": "^0.15.0",
-    "@react-three/drei": "^9.46.7",
+    "@react-three/drei": "^9.47.1",
     "@storybook/manager-webpack5": "^6.5.14",
     "react-merge-refs": "^2.0.1",
     "require-from-string": "^2.0.2",
