@@ -26,7 +26,7 @@
     "@hover/javascript": "7.0.0-beta.10",
     "@preconstruct/hook": "^0.4.0",
     "@swc-node/register": "^1.5.4",
-    "@swc/core": "^1.3.22",
+    "@swc/core": "^1.3.23",
     "@types/getenv": "^1",
     "@types/node": "^18.11.17",
     "nodemon": "^2.0.20",
