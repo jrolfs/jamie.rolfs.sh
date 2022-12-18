@@ -2669,7 +2669,7 @@ __metadata:
   resolution: "@jrolfs/utilities@workspace:packages/utilities"
   dependencies:
     "@hover/javascript": 7.0.0-beta.10
-    expect-type: ^0.13.0
+    expect-type: ^0.15.0
     typescript: ^4.9.4
   languageName: unknown
   linkType: soft
@@ -10634,10 +10634,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect-type@npm:^0.13.0":
-  version: 0.13.0
-  resolution: "expect-type@npm:0.13.0"
-  checksum: 484f58fa8b256ee7316c3667874011e100307792d4494cc67b0781a501101af2e3fa6e05310320a6fb678ca5d4f5987751fefc4e5d8733836044edae3695c4dd
+"expect-type@npm:^0.15.0":
+  version: 0.15.0
+  resolution: "expect-type@npm:0.15.0"
+  checksum: f5d3733bb593d9f7cf302b393e34b19389fb7022d72963815e9a847a9517b65201faef733dd9006bed9e200486d77204fd958c8d29ef58b466bed2da076fc0ba
   languageName: node
   linkType: hard
 
