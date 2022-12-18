@@ -24,7 +24,7 @@
     "test:watch": "hover-scripts test"
   },
   "devDependencies": {
-    "@hover/javascript": "7.0.0-beta.6",
+    "@hover/javascript": "7.0.0-beta.10",
     "@preconstruct/next": "^4.0.0",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
