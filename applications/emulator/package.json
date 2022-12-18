@@ -38,7 +38,7 @@
     "@jrolfs/core": "^0.0.1",
     "@jrolfs/utilities": "0.15.0",
     "dotenv": "^16.0.3",
-    "dotenv-expand": "^9.0.0",
+    "dotenv-expand": "^10.0.0",
     "fastify": "^4.10.2",
     "fastify-jwt": "^4.2.0",
     "getenv": "^1.0.0",

@@ -9674,17 +9674,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv-expand@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "dotenv-expand@npm:10.0.0"
+  checksum: 2a38b470efe0abcb1ac8490421a55e1d764dc9440fd220942bce40965074f3fb00b585f4346020cb0f0f219966ee6b4ee5023458b3e2953fe5b3214de1b314ee
+  languageName: node
+  linkType: hard
+
 "dotenv-expand@npm:^5.1.0":
   version: 5.1.0
   resolution: "dotenv-expand@npm:5.1.0"
   checksum: 8017675b7f254384915d55f9eb6388e577cf0a1231a28d54b0ca03b782be9501b0ac90ac57338636d395fa59051e6209e9b44b8ddf169ce6076dffb5dea227d3
-  languageName: node
-  linkType: hard
-
-"dotenv-expand@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "dotenv-expand@npm:9.0.0"
-  checksum: 76f669b87da73d6980d1235cb18e9ccd94b294927784a0c06db5e9e98d1090b0605e75ade70880f0cd812af7f61e41367a80feea223d23fd3bd0b82f3409b9ed
   languageName: node
   linkType: hard
 
@@ -9821,7 +9821,7 @@ __metadata:
     "@types/getenv": ^1
     "@types/node": ^18.11.17
     dotenv: ^16.0.3
-    dotenv-expand: ^9.0.0
+    dotenv-expand: ^10.0.0
     fastify: ^4.10.2
     fastify-jwt: ^4.2.0
     getenv: ^1.0.0
