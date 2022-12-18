@@ -8,7 +8,7 @@
   "events": {
     "restart": ""
   },
-  "watch": ["src/**/*"],
+  "watch": ["src/**/*", ".env"],
   "env": {
     "NODE_ENV": "development"
   },

@@ -30,10 +30,13 @@ export { parsed as dotenv };
  * Application configuration
  */
 export const configuration = {
+  clientOrigin: getenv.string('CLIENT_ORIGIN'),
   environment,
   ipv6: getenv.bool('IPV6', false),
+  logLevel: getenv.string('LOG_LEVEL', 'info'),
   port: getenv.int('PORT', 3000),
   secret,
+  socketPath: getenv.string('SOCKET_PATH', '/socket'),
 } as const;
 
 export type Configuration = typeof configuration;

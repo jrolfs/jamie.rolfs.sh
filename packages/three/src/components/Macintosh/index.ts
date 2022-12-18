@@ -1,1 +1,2 @@
-export * from './Macintosh';
+export type { MacintoshProps, RefType } from './Macintosh';
+export { Macintosh } from './Macintosh';

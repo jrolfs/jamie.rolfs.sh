@@ -1,4 +1,4 @@
-import { Macintosh } from '@jrolfs/three';
+import { Macintosh } from '../components';
 
 const IndexPage = () => <Macintosh scale={0.05} />;
 
