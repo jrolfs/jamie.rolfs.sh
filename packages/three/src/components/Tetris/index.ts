@@ -1,1 +1,1 @@
-export { Tetris } from './Tetris';
+export * from './Tetris';
