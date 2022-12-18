@@ -29,7 +29,7 @@
     "test": "turbo run test"
   },
   "dependencies": {
-    "@hover/javascript": "7.0.0-beta.6",
+    "@hover/javascript": "7.0.0-beta.10",
     "@manypkg/cli": "0.19.2",
     "@preconstruct/cli": "^2.2.2",
     "@preconstruct/hook": "^0.4.0",
