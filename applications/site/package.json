@@ -19,7 +19,7 @@
     "start": "run-p 'start:*'",
     "start:source": "next dev",
     "start:types": "tsc -b -w --preserveWatchOutput",
-    "test": "hover-scripts test --no-watch",
+    "test": "hover-scripts test --no-watch --passWithNoTests",
     "test:update": "hover-scripts test --updateSnapshot",
     "test:watch": "hover-scripts test"
   },
