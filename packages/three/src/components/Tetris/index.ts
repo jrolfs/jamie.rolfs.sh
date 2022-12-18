@@ -1,1 +1,2 @@
-export * from './Tetris';
+export type { TetrisProps } from './Tetris';
+export { Tetris } from './Tetris';

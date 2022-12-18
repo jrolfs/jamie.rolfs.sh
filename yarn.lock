@@ -5239,6 +5239,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/debug@npm:^4":
+  version: 4.1.7
+  resolution: "@types/debug@npm:4.1.7"
+  dependencies:
+    "@types/ms": "*"
+  checksum: 0a7b89d8ed72526858f0b61c6fd81f477853e8c4415bb97f48b1b5545248d2ae389931680b94b393b993a7cfe893537a200647d93defe6d87159b96812305adc
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.3":
   version: 3.7.4
   resolution: "@types/eslint-scope@npm:3.7.4"
@@ -5461,6 +5470,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 72dedfb2d250f0e44ec964ac68ff6a4a03d7d9d6e83ae1d5ba6d212791af69cf051a5fac59846826242d099de56a18c8e0581861792fae8b845b3c9ad67ecdeb
+  languageName: node
+  linkType: hard
+
+"@types/ms@npm:*":
+  version: 0.7.31
+  resolution: "@types/ms@npm:0.7.31"
+  checksum: daadd354aedde024cce6f5aa873fefe7b71b22cd0e28632a69e8b677aeb48ae8caa1c60e5919bb781df040d116b01cb4316335167a3fc0ef6a63fa3614c0f6da
   languageName: node
   linkType: hard
 
@@ -18878,16 +18894,19 @@ __metadata:
   resolution: "site@workspace:applications/site"
   dependencies:
     "@hover/javascript": 7.0.0-beta.10
+    "@jrolfs/core": 0.0.1
     "@jrolfs/three": 0.0.1
     "@preconstruct/next": ^4.0.0
     "@react-three/drei": ^9.47.1
     "@react-three/fiber": ^8.9.1
+    "@types/debug": ^4
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.9
     "@types/three": ^0.146.0
     "@vanilla-extract/babel-plugin": ^1.2.0
     "@vanilla-extract/css": ^1.9.2
     "@vanilla-extract/next-plugin": ^2.1.1
+    debug: ^4.3.4
     next: ^13.0.7
     npm-run-all: ^4.1.5
     react: ^18.2.0

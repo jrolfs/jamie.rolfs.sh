@@ -19,6 +19,7 @@ export type UseGLTF = ReturnType<typeof useGLTF> & {
 };
 
 export interface MacintoshProps extends GroupProps {}
+export type RefType = Group;
 
 const base64ToSrc = (data: string) => `data:image/png;base64,${data}`;
 
