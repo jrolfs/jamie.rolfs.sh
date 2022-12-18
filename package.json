@@ -20,6 +20,7 @@
     "postinstall": "run-s commit:install packages:link packages:check",
     "pre-commit": "hover-scripts pre-commit",
     "rp": "manypkg run",
+    "validate": "turbo build:types lint test",
     "start": "run-p start:site start:three",
     "start:emulator": "yarn workspace emulator run start:source",
     "start:site": "yarn workspace site run start",
