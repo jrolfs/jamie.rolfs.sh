@@ -1,7 +1,7 @@
 #
 # Base
 
-FROM node:18.12.1-buster-slim as base
+FROM node:19.3.0-buster-slim as base
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ 'America/Los_Angeles'
