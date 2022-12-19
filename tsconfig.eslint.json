@@ -12,6 +12,7 @@
     "**/bin/*.js",
     "**/jest.setup.cjs",
     "**/jest.setup.ts",
-    "./types/**/*.ts"
+    "./types/**/*.ts",
+    "./jest/*.cjs"
   ]
 }
