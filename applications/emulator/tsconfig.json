@@ -3,6 +3,6 @@
   "include": ["src", "test", "types"],
   "compilerOptions": {
     "baseUrl": "src",
-    "paths": { "root:*": ["./*"] }
+    "paths": { "src/*": ["./*"] },
   }
 }

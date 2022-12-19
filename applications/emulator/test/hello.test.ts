@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 
-import { boot } from 'root:server/fastify';
+import { boot } from 'src/server/fastify';
 
 beforeEach(() => jest.spyOn(console, 'info'));
 
