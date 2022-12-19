@@ -2,10 +2,6 @@
 
 import { boot } from 'src/server/fastify';
 
-beforeEach(() => jest.spyOn(console, 'info'));
-
-afterEach(jest.restoreAllMocks);
-
 test('saying hi', async () => {
   const server = await boot();
 
