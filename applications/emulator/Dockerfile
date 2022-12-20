@@ -30,8 +30,7 @@ RUN sudo chmod +x /mini-vmac/start.sh \
 EXPOSE 4000
 EXPOSE 59000
 
-#
-# Development
+# Packages
 
 FROM base as packages
 
@@ -41,6 +40,9 @@ WORKDIR /workspace
 RUN --mount=type=bind,target=/docker-context \
   cd /docker-context/; \
   find . -name "package.json" -mindepth 0 -maxdepth 4 -exec cp --parents "{}" /workspace/ \;
+
+#
+# Development
 
 FROM base as development
 
@@ -52,8 +54,10 @@ COPY --from=packages /workspace/ .
 COPY .yarn/ .yarn/
 COPY .yarnrc.yml yarn.lock ./
 
-RUN npm pkg set scripts.postinstall="echo noop"
-RUN yarn workspaces focus jamie.rolfs.sh emulator
+RUN \
+  npm pkg set scripts.postinstall="echo noop" && \
+  yarn workspaces focus jamie.rolfs.sh emulator \
+  ;
 
 CMD ["yarn", "workspace", "emulator", "run", "start:develop"]
 
@@ -61,6 +65,44 @@ CMD ["yarn", "workspace", "emulator", "run", "start:develop"]
 #
 # Production
 
-FROM base as production
+# Build
 
+FROM base as build
+
+USER root
+WORKDIR /workspace
+
+COPY --from=packages /workspace/ .
+
+COPY .yarn/ .yarn/
+COPY .yarnrc.yml yarn.lock ./
+
+RUN \
+  npm pkg set scripts.postinstall="echo noop" && \
+  yarn workspaces focus --production jamie.rolfs.sh emulator && \
+  cp -R node_modules/ ../production_modules/ && \
+  yarn workspaces focus jamie.rolfs.sh emulator \
+  ;
+
+COPY . .
+
+RUN \
+  yarn build:emulator && \
+  rm -fr /production_modules/@jrolfs && \
+  cp -RL node_modules/@jrolfs ../production_modules/ \
+  ;
+
+# Release
+
+FROM base as release
+
+USER root
 WORKDIR /application
+
+COPY --from=build /production_modules ./node_modules
+COPY --from=build /workspace/applications/emulator/build .
+
+ENV PORT 4000
+EXPOSE ${PORT}
+
+CMD ["node", "./index.js"]
