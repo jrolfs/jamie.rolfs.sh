@@ -8,9 +8,10 @@ dockerfile = "applications/emulator/Dockerfile"
 CLIENT_ORIGIN = "https://site-three-lilac.vercel.app/"
 LOG_LEVEL = "debug"
 NODE_ENV = "production"
+PORT = 4000
 
 [[services]]
-internal_port = 3000
+internal_port = 4000
 protocol = "tcp"
 
 [[services.ports]]
