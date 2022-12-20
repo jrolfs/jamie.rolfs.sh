@@ -8,8 +8,10 @@
   "private": true,
   "scripts": {
     "build": "turbo build:source --filter='./applications/*'",
+    "build:emulator": "turbo build:source --filter=emulator",
     "build:packages": "turbo run build:preconstruct",
     "build:preconstruct": "preconstruct build",
+    "build:site": "turbo build:source --filter=site",
     "build:types": "turbo build:types",
     "commit": "hover-scripts commit",
     "commit:install": "node bin/commit:install.cjs",

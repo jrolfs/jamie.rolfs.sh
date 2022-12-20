@@ -1,0 +1,14 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    },
+    "paths": {
+       "src/*": ["./*"]
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "$schema": "https://json.schemastore.org/swcrc.json"
+}
