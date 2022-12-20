@@ -2,6 +2,8 @@
 .next/
 .git/
 
+/assets/
+
 .yarn/*
 !.yarn/patches
 !.yarn/releases
