@@ -32,6 +32,7 @@
     "start:three": "yarn workspace @jrolfs/three run start",
     "start:types": "yarn workspaces foreach -v run start:types",
     "test": "turbo run test",
+    "deploy:emulator": "flyctl deploy -c fly.emulator.toml",
     "validate": "turbo build:types lint test"
   },
   "dependencies": {
