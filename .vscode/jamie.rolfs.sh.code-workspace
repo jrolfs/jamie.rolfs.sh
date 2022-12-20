@@ -32,9 +32,10 @@
       "packages/": true
     },
     "search.exclude": {
+      "**/.next": true,
       "**/.turbo": true,
-      "**/dist": true,
-      "**/.yarn": true
+      "**/.yarn": true,
+      "**/dist": true
     },
     "typescript.tsdk": "root/node_modules/typescript/lib"
   }
