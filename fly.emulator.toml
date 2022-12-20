@@ -5,7 +5,7 @@ build-target = "release"
 dockerfile = "applications/emulator/Dockerfile"
 
 [env]
-CLIENT_ORIGIN = "https://site-three-lilac.vercel.app/"
+CLIENT_ORIGIN = "https://staging.jamie.rolfs.sh"
 LOG_LEVEL = "debug"
 NODE_ENV = "production"
 PORT = 4000
