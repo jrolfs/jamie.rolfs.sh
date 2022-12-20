@@ -14,8 +14,8 @@ import {
 import { image2, image3 } from './test-image';
 
 export type UseGLTF = ReturnType<typeof useGLTF> & {
-  nodes: Record<string, THREE.Mesh>;
-  materials: Record<string, THREE.MeshStandardMaterial>;
+  nodes: Record<string, Mesh>;
+  materials: Record<string, MeshStandardMaterial>;
 };
 
 export interface MacintoshProps extends GroupProps {}
