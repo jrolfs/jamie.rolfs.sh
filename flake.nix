@@ -20,6 +20,30 @@
           version = nixpkgs.lib.traceVal (nixpkgs.lib.strings.fileContents ./.node-version);
           sha256 = "T6QGRRvFJlmikOUs/bIWKnYL1UnaS4u+vmop8pbZON8=";
         };
+
+        vscodeWithExtensions = pkgs.vscode-with-extensions.override {
+          vscodeExtensions = with pkgs.vscode-extensions; [
+            bbenoist.nix
+            bungcip.better-toml
+            catppuccin.catppuccin-vsc
+            dbaeumer.vscode-eslint
+            eamodio.gitlens
+            ms-azuretools.vscode-docker
+          ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+            {
+              name = "customize-ui";
+              publisher = "iocave";
+              version = "0.1.65";
+              sha256 = "6VhsHDVOcxI0fehcAs3UC2jS74hh84g+F6MCQo6voy8=";
+            }
+            {
+              name = "monkey-patch";
+              publisher = "iocave";
+              version = "0.1.23";
+              sha256 = "RUXdQRpA2iUVZNqJFVzZV9sl/AoEe6+tWG9k41/V7xs=";
+            }
+          ];
+        };
       in
       {
         devShell = with pkgs; pkgs.mkShell {
