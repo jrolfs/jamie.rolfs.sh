@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build:source": {
-      "outputs": [".next/**"],
+      "outputs": [".next/**", "build/**"],
       "dependsOn": ["//#build:preconstruct"]
     },
     "//#build:preconstruct": {
