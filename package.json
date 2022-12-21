@@ -18,16 +18,18 @@
     "packages:check": "manypkg check",
     "packages:fix": "manypkg fix",
     "packages:link": "preconstruct dev",
+    "packages:publish": "changeset publish",
     "postinstall": "run-s commit:install packages:link packages:check",
     "pre-commit": "hover-scripts pre-commit",
+    "release": "run-s build:packages packages:publish",
     "rp": "manypkg run",
-    "validate": "turbo build:types lint test",
     "start": "run-p start:site start:three",
     "start:emulator": "yarn workspace emulator run start:source",
     "start:site": "yarn workspace site run start",
     "start:three": "yarn workspace @jrolfs/three run start",
     "start:types": "yarn workspaces foreach -v run start:types",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "validate": "turbo build:types lint test"
   },
   "dependencies": {
     "@babel/core": "^7.20.5",
