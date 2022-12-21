@@ -58,7 +58,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.147.0",
-    "three-stdlib": "^2.20.5",
+    "three-stdlib": "^2.21.0",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0"
   },
