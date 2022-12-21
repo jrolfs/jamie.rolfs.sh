@@ -2660,7 +2660,7 @@ __metadata:
     react-merge-refs: ^2.0.1
     require-from-string: ^2.0.2
     three: ^0.147.0
-    three-stdlib: ^2.21.0
+    three-stdlib: ^2.21.1
     tslib: ^2.4.1
     typescript: ^4.9.4
     webpack: ^5.75.0
@@ -20809,9 +20809,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.21.0":
-  version: 2.21.0
-  resolution: "three-stdlib@npm:2.21.0"
+"three-stdlib@npm:^2.21.1":
+  version: 2.21.1
+  resolution: "three-stdlib@npm:2.21.1"
   dependencies:
     "@babel/runtime": ^7.16.7
     "@types/offscreencanvas": ^2019.6.4
@@ -20826,7 +20826,7 @@ __metadata:
     zstddec: ^0.0.2
   peerDependencies:
     three: ">=0.122.0"
-  checksum: 821070f85eb7c8befc21228ff87312ad5ea2bb89e9a5938ab0b93f6ba839d42fe67fec58e147cbc44dd6167e3099ca7ecc9a790374219021e602949c40fc03b2
+  checksum: acd17886545202b72f74a2a360a496ddbeaea8338b9b7bb9095f090e096ef82e562d200abb6b27ffd65ca337fee5eb5068cb0581fdb2d3de14c5a093397d5b9e
   languageName: node
   linkType: hard
 
