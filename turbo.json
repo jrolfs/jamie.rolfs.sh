@@ -3,9 +3,9 @@
   "pipeline": {
     "build:source": {
       "outputs": [".next/**"],
-      "dependsOn": ["//#build:packages"]
+      "dependsOn": ["//#build:preconstruct"]
     },
-    "//#build:packages": {
+    "//#build:preconstruct": {
       "outputs": ["**/dist/**"]
     },
     "build:types": {
