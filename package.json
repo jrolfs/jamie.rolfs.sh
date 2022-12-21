@@ -8,7 +8,8 @@
   "private": true,
   "scripts": {
     "build": "turbo build:source --filter='./applications/*'",
-    "build:packages": "preconstruct build",
+    "build:packages": "turbo run build:preconstruct",
+    "build:preconstruct": "preconstruct build",
     "build:types": "turbo build:types",
     "commit": "hover-scripts commit",
     "commit:install": "husky install",
