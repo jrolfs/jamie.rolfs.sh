@@ -15,7 +15,8 @@
     "precommit": "hover-scripts pre-commit",
     "start": "run-p start:*",
     "start:types": "tsc -w --preserveWatchOutput",
-    "test": "hover-scripts test --no-watch"
+    "test": "hover-scripts test --no-watch",
+    "test:watch": "hover-scripts test"
   },
   "devDependencies": {
     "@hover/javascript": "7.0.0-beta.10",
