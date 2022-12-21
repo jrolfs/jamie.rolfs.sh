@@ -1,4 +1,4 @@
-/** @typedef {import('ts-jest/dist/types').InitialOptionsTsJest} JestConfig */
+/** @typedef {import('jest').Config} JestConfig */
 
 const path = require('path');
 
