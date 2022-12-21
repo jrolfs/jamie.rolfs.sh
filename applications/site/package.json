@@ -15,7 +15,7 @@
     "commit": "hover-scripts commit",
     "format": "hover-scripts format",
     "lint": "hover-scripts lint",
-    "pre-commit": "hover-scripts pre-commit --test-command 'hover-scripts test --findRelatedTests --passWithNoTests'",
+    "pre-commit": "hover-scripts pre-commit",
     "start": "run-p 'start:*'",
     "start:source": "next dev",
     "start:types": "tsc -b -w --preserveWatchOutput",
