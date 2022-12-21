@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - next
+
+jobs:
+  compile:
+    name: Compile
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+      - uses: ./.github/actions/install
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+      - name: Check types
+        run: yarn build:types
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+      - uses: ./.github/actions/install
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+      - name: Run lint
+        run: yarn lint
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+      - uses: ./.github/actions/install
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+      - name: Run tests
+        run: yarn test
+        if:
+          "!contains(github.event.head_commit.message, 'chore(release): version
+          packages')"
+
+  release:
+    name: Version + Publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [compile, lint, test]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: ./.github/actions/install
+
+      - name: Setup Release Git User
+        run: |
+          git config --global user.email "robot@rolfs.sh"
+          git config --global user.name "Robot Rolfs"
+
+      - name: Publish packages
+        uses: changesets/action@v1
+        with:
+          publish: yarn release
+          commit: |
+            chore(release): version packages
+          title: '📦 Version Packages'
+        env:
+          NPM_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CHANGESETS_TOKEN }}
