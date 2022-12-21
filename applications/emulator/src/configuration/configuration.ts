@@ -1,42 +1,62 @@
 import { includes } from '@jrolfs/utilities';
 import dotenv from 'dotenv';
-import { expand } from 'dotenv-expand';
+import { DotenvExpandOutput, expand } from 'dotenv-expand';
 import getenv from 'getenv';
 import invariant from 'tiny-invariant';
 
 import { environments } from '../environment';
 
-const { parsed } = expand(dotenv.config());
+// eslint-disable-next-line import/no-mutable-exports
+let parsed: Record<string, string> | undefined;
 
-const environment = getenv.string('NODE_ENV', 'development');
-const secret = getenv.string('SECRET', 'secret') as 'secret' | (string & {});
+const configure = (output: DotenvExpandOutput) => {
+  parsed = output.parsed;
 
-invariant(
-  includes(environments, environment),
-  `configuration: invalid environment specified (${environment})`,
-);
+  const environment = getenv.string('NODE_ENV', 'development');
+  const secret = getenv.string('SECRET', 'secret') as 'secret' | (string & {});
 
-invariant(
-  environment !== 'production' || secret !== 'secret',
-  'configuration: secret is required in production',
-);
+  invariant(
+    includes(environments, environment),
+    `configuration: invalid environment specified (${environment})`,
+  );
 
-/**
- * Parsed env file
- */
-export { parsed as dotenv };
+  invariant(
+    environment !== 'production' || secret !== 'secret',
+    'configuration: secret is required in production',
+  );
+
+  const clientOrigin = getenv.string('CLIENT_ORIGIN');
+
+  return {
+    clientOrigin: clientOrigin.includes(',')
+      ? getenv.array('CLIENT_ORIGIN', 'string', [clientOrigin])
+      : clientOrigin,
+    environment,
+    ipv6: getenv.bool('IPV6', false),
+    logLevel: getenv.string('LOG_LEVEL', 'info'),
+    port: getenv.int('PORT', 3000),
+    secret,
+    socketPath: getenv.string('SOCKET_PATH', '/socket'),
+  } as const;
+};
+
+export type Configuration = typeof configuration;
+
+export {
+  /**
+   * Parse configuration from environment. This is only
+   * intended to be run once when the application boots.
+   *
+   * @internal
+   */
+  configure,
+  /**
+   * Parsed env file
+   */
+  parsed as dotenv,
+};
 
 /**
  * Application configuration
  */
-export const configuration = {
-  clientOrigin: getenv.string('CLIENT_ORIGIN'),
-  environment,
-  ipv6: getenv.bool('IPV6', false),
-  logLevel: getenv.string('LOG_LEVEL', 'info'),
-  port: getenv.int('PORT', 3000),
-  secret,
-  socketPath: getenv.string('SOCKET_PATH', '/socket'),
-} as const;
-
-export type Configuration = typeof configuration;
+export const configuration = configure(expand(dotenv.config()));
