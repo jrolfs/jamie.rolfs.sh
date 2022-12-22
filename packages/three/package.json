@@ -37,7 +37,7 @@
     "three": "^0.147.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.5",
+    "@babel/core": "^7.20.7",
     "@hover/javascript": "7.0.0-beta.10",
     "@preconstruct/hook": "^0.4.0",
     "@react-spring/three": "^9.6.1",
