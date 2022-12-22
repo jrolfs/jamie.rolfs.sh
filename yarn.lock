@@ -2744,7 +2744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jrolfs/core@0.0.1, @jrolfs/core@^0.0.1, @jrolfs/core@workspace:packages/core":
+"@jrolfs/core@0.0.2, @jrolfs/core@^0.0.2, @jrolfs/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@jrolfs/core@workspace:packages/core"
   dependencies:
@@ -2754,13 +2754,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jrolfs/three@0.0.1, @jrolfs/three@workspace:packages/three":
+"@jrolfs/three@0.0.2, @jrolfs/three@workspace:packages/three":
   version: 0.0.0-use.local
   resolution: "@jrolfs/three@workspace:packages/three"
   dependencies:
     "@babel/core": ^7.20.7
     "@hover/javascript": 7.0.0-beta.10
-    "@jrolfs/core": 0.0.1
+    "@jrolfs/core": 0.0.2
     "@jrolfs/utilities": ^0.15.0
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.6.1
@@ -10299,7 +10299,7 @@ __metadata:
   resolution: "emulator@workspace:applications/emulator"
   dependencies:
     "@hover/javascript": 7.0.0-beta.10
-    "@jrolfs/core": ^0.0.1
+    "@jrolfs/core": ^0.0.2
     "@jrolfs/utilities": 0.15.0
     "@preconstruct/hook": ^0.4.0
     "@swc-node/register": ^1.5.4
@@ -19701,8 +19701,8 @@ __metadata:
   resolution: "site@workspace:applications/site"
   dependencies:
     "@hover/javascript": 7.0.0-beta.10
-    "@jrolfs/core": 0.0.1
-    "@jrolfs/three": 0.0.1
+    "@jrolfs/core": 0.0.2
+    "@jrolfs/three": 0.0.2
     "@preconstruct/next": ^4.0.0
     "@react-three/drei": ^9.47.1
     "@react-three/fiber": ^8.9.1

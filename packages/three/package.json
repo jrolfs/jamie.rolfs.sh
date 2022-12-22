@@ -1,6 +1,6 @@
 {
   "name": "@jrolfs/three",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/jrolfs-three.cjs.js",
   "module": "dist/jrolfs-three.esm.js",
   "exports": {
@@ -63,7 +63,7 @@
     "webpack": "^5.75.0"
   },
   "dependencies": {
-    "@jrolfs/core": "0.0.1",
+    "@jrolfs/core": "0.0.2",
     "@jrolfs/utilities": "^0.15.0",
     "@react-three/drei": "^9.47.1",
     "@storybook/manager-webpack5": "^6.5.15",

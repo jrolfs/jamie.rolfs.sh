@@ -1,6 +1,6 @@
 {
   "name": "@jrolfs/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/jrolfs-core.cjs.js",
   "module": "dist/jrolfs-core.esm.js",
   "exports": {
