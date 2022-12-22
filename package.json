@@ -12,7 +12,7 @@
     "build:preconstruct": "preconstruct build",
     "build:types": "turbo build:types",
     "commit": "hover-scripts commit",
-    "commit:install": "husky install",
+    "commit:install": "node bin/commit:install.cjs",
     "format": "turbo format",
     "lint": "turbo lint",
     "packages:check": "manypkg check",
