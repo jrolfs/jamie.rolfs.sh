@@ -105,10 +105,11 @@ jobs:
       - name: Publish packages
         uses: changesets/action@v1
         with:
-          publish: yarn release
           commit: |
             chore(release): version packages
+          publish: yarn release
           title: '📦 Version Packages'
+          version: yarn packages:version
         env:
           NPM_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_TOKEN }}
