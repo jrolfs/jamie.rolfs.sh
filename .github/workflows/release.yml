@@ -121,6 +121,8 @@ jobs:
     needs: [compile, lint, test]
 
     steps:
+      - uses: actions/checkout@v2
+
       - uses: dorny/paths-filter@v2
         id: changes
         with:
@@ -128,9 +130,6 @@ jobs:
             emulator:
               - 'applications/emulator/**'
               - fly.emulator.toml
-
-      - uses: actions/checkout@v2
-        if: steps.changes.outputs.emulator == 'true'
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
         if: steps.changes.outputs.emulator == 'true'
