@@ -5,6 +5,7 @@
   "main": "dist/jrolfs-utilities.cjs.js",
   "module": "dist/jrolfs-utilities.esm.js",
   "repository": "git+ssh://github.com/jrolfs/jamie.rolfs.sh/tree/master/packages/utilities",
+  "publishConfig": { "access": "public" },
   "author": "Jamie Rolfs <jamie.rolfs@hover.to>, Hover <blueprint@hover.to>",
   "license": "UNLICENSED",
   "scripts": {
