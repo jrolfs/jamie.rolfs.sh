@@ -113,3 +113,28 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_TOKEN }}
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [compile, lint, test]
+
+    steps:
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            emulator:
+              - 'applications/emulator/**'
+
+      - uses: actions/checkout@v2
+        if: steps.changes.outputs.emulator == 'true'
+
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+        if: steps.changes.outputs.emulator == 'true'
+
+      - run: flyctl deploy --remote-only
+        if: steps.changes.outputs.emulator == 'true'
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
