@@ -43,7 +43,7 @@
     "@types/three": "^0.146.0",
     "@vanilla-extract/css": "^1.9.2",
     "debug": "^4.3.4",
-    "next": "^13.0.7",
+    "next": "^13.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "socket.io-client": "^4.5.4",
