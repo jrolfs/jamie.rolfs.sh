@@ -1,4 +1,4 @@
-import { includes } from '@jrolfs/utilities';
+import { includes, parseRegExp } from '@jrolfs/utilities';
 import dotenv from 'dotenv';
 import { DotenvExpandOutput, expand } from 'dotenv-expand';
 import getenv from 'getenv';
@@ -29,8 +29,8 @@ const configure = (output: DotenvExpandOutput) => {
 
   return {
     clientOrigin: clientOrigin.includes(',')
-      ? getenv.array('CLIENT_ORIGIN', 'string', [clientOrigin])
-      : clientOrigin,
+      ? getenv.array('CLIENT_ORIGIN', 'string', [clientOrigin]).map(parseRegExp)
+      : parseRegExp(clientOrigin),
     environment,
     ipv6: getenv.bool('IPV6', false),
     logLevel: getenv.string('LOG_LEVEL', 'info'),

@@ -62,12 +62,37 @@ test('supports arrays for `clientOrigin`', () => {
         : mockGetenv('string')(name),
     );
 
-  const a = [] as string[];
+  const CLIENT_ORIGIN_ARRAY = ['https://foo.bar', 'https://bar.baz'];
 
-  jest
-    .mocked(getenv)
-    // @ts-ignore
-    .array.mockImplementation(name => (name === 'CLIENT_ORIGIN' ? a : []));
+  (getenv.array as jest.Mock).mockImplementation(name =>
+    name === 'CLIENT_ORIGIN' ? CLIENT_ORIGIN_ARRAY : [],
+  );
 
-  expect(configure({}).clientOrigin).toBe(a);
+  expect(configure({}).clientOrigin).toEqual(CLIENT_ORIGIN_ARRAY);
 });
+
+test.each<{
+  string: string;
+  array: string[];
+  expected: RegExp | (string | RegExp)[];
+}>`
+  case        | string                            | array                                  | expected
+  ${'single'} | ${'/\\.bar.baz/'}                 | ${[]}                                  | ${/\.bar.baz/}
+  ${'array'}  | ${'/\\.foo.bar/,/\\.bar.baz/'}    | ${['/\\.foo.bar/', '/\\.bar.baz/']}    | ${[/\.foo.bar/, /\.bar.baz/]}
+  ${'mixed'}  | ${'https://foo.bar,/\\.bar.baz/'} | ${['https://foo.bar', '/\\.bar.baz/']} | ${['https://foo.bar', /\.bar.baz/]}
+`(
+  'supports regular expressions for `clientOrigin` ($case)',
+  ({ string, array, expected }) => {
+    jest
+      .mocked(getenv)
+      .string.mockImplementation(name =>
+        name === 'CLIENT_ORIGIN' ? string : mockGetenv('string')(name),
+      );
+
+    (getenv.array as jest.Mock).mockImplementation(name =>
+      name === 'CLIENT_ORIGIN' ? array : [],
+    );
+
+    expect(configure({}).clientOrigin).toEqual(expected);
+  },
+);
