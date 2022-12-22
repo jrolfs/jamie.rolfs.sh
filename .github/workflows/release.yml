@@ -135,7 +135,8 @@ jobs:
       - uses: superfly/flyctl-actions/setup-flyctl@master
         if: steps.changes.outputs.emulator == 'true'
 
-      - run: flyctl deploy --remote-only
+      - name: Deploy Emulator
+        run: flyctl deploy . --remote-only --config fly.emulator.toml
         if: steps.changes.outputs.emulator == 'true'
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
