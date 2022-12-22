@@ -16,7 +16,7 @@
     "format": "turbo format",
     "lint": "turbo lint",
     "packages:check": "manypkg check",
-    "packages:version": "changeset version && yarn install",
+    "packages:version": "changeset version && yarn install --no-immutable",
     "packages:fix": "manypkg fix",
     "packages:link": "preconstruct dev",
     "packages:publish": "changeset publish",
