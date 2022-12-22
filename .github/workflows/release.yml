@@ -127,6 +127,7 @@ jobs:
           filters: |
             emulator:
               - 'applications/emulator/**'
+              - fly.emulator.toml
 
       - uses: actions/checkout@v2
         if: steps.changes.outputs.emulator == 'true'
