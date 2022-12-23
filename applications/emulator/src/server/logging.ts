@@ -5,10 +5,11 @@ import { Environment } from '../environment';
 
 type Logger = FastifyServerOptions['logger'];
 
-// TODO: apply `logLevel` to production logger
+const { logLevel: level } = configuration;
+
 export const loggers: Record<Environment, Logger> = {
   development: {
-    level: configuration.logLevel,
+    level,
     transport: {
       target: 'pino-pretty',
       options: {
@@ -18,6 +19,6 @@ export const loggers: Record<Environment, Logger> = {
       },
     },
   },
-  production: true,
+  production: { level },
   test: false,
 };
