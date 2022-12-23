@@ -50,7 +50,7 @@
     "@storybook/builder-webpack5": "^6.5.15",
     "@storybook/react": "^6.5.15",
     "@types/babel__core": "^7",
-    "@types/react-dom": "^18.0.9",
+    "@types/react-dom": "^18.0.10",
     "@types/react-reconciler": "^0.28.0",
     "@types/three": "^0.146.0",
     "@vanilla-extract/css": "^1.9.2",
