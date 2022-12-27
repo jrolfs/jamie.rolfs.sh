@@ -126,12 +126,15 @@ jobs:
       - name: Set branch variables
         shell: bash
         id: vars
-        run: echo "base=$(git tag --list 'emulator@deploy.*' --sort=version:refname | tail -1 | tr -d '\n')" >> $GITHUB_OUTPUT
+        run: echo "base=$(git rev-parse $(git tag --list 'emulator@deploy.*' --sort=version:refname | tail -1) | tr -d '\n')" >> $GITHUB_OUTPUT
+
+      - name: Echo
+        run: echo ${{ steps.vars.outputs.base }}
 
       - uses: dorny/paths-filter@v2
         id: changes
         with:
-          ref: ${{steps.vars.outputs.base }}
+          base: ${{ steps.vars.outputs.base }}
           filters: |
             emulator:
               - 'applications/emulator/**'
