@@ -131,7 +131,7 @@ jobs:
       - uses: dorny/paths-filter@v2
         id: changes
         with:
-          base: ${{steps.vars.outputs.base }}
+          ref: ${{steps.vars.outputs.base }}
           filters: |
             emulator:
               - 'applications/emulator/**'
@@ -141,21 +141,28 @@ jobs:
         if: steps.changes.outputs.emulator == 'true'
 
       - name: Deploy emulator
-        run: flyctl deploy . --remote-only --config fly.emulator.toml
         if: steps.changes.outputs.emulator == 'true'
+        run: flyctl deploy . --remote-only --config fly.emulator.toml
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 
+      - name: Install jq
+        if: steps.changes.outputs.emulator == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install jq
+
       - name: Get deployed version
-        uses: sergeysova/jq-action@v2
+        if: steps.changes.outputs.emulator == 'true'
         id: version
-        with:
-          cmd: "flyctl -c fly.emulator.toml info --json | jq '.Version' | tr -d '\n'"
+        run: echo "value=$(flyctl -c fly.emulator.toml info --json | jq '.Version' | tr -d '\n')" >> $GITHUB_OUTPUT
 
       - name: Tag deploy commit
+        if: steps.changes.outputs.emulator == 'true'
         shell: bash
         run: git tag "emulator@deploy.${{ steps.version.outputs.value }}"
 
       - name: Push tags
+        if: steps.changes.outputs.emulator == 'true'
         shell: bash
         run: git push --tags
