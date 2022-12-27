@@ -121,11 +121,17 @@ jobs:
     needs: [compile, lint, test]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+
+      - name: Set branch variables
+        shell: bash
+        id: vars
+        run: echo "base=$(git tag --list 'emulator@deploy.*' --sort=version:refname | tail -1 | tr -d '\n')" >> $GITHUB_OUTPUT
 
       - uses: dorny/paths-filter@v2
         id: changes
         with:
+          base: ${{steps.vars.outputs.base }}
           filters: |
             emulator:
               - 'applications/emulator/**'
@@ -134,8 +140,22 @@ jobs:
       - uses: superfly/flyctl-actions/setup-flyctl@master
         if: steps.changes.outputs.emulator == 'true'
 
-      - name: Deploy Emulator
+      - name: Deploy emulator
         run: flyctl deploy . --remote-only --config fly.emulator.toml
         if: steps.changes.outputs.emulator == 'true'
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+      - name: Get deployed version
+        uses: sergeysova/jq-action@v2
+        id: version
+        with:
+          cmd: "flyctl -c fly.emulator.toml info --json | jq '.Version' | tr -d '\n'"
+
+      - name: Tag deploy commit
+        shell: bash
+        run: git tag "emulator@deploy.${{ steps.version.outputs.value }}"
+
+      - name: Push tags
+        shell: bash
+        run: git push --tags
