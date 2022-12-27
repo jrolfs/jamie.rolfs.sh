@@ -28,8 +28,8 @@ runs:
       shell: bash
       id: vars
       run: |
-        echo ::set-output name=branch::${{ github.head_ref }}
-        echo ::set-output name=is_upgrade::${{ startsWith(github.head_ref, inputs.branch) }}
+        echo "branch=${{ github.head_ref }}" >> $GITHUB_OUTPUT
+        echo "is_upgrade=${{ startsWith(github.head_ref, inputs.branch) }}" >> $GITHUB_OUTPUT
 
     - uses: actions/checkout@v3
       if: steps.vars.outputs.is_upgrade == 'true'

@@ -16,7 +16,7 @@ runs:
     - name: Get yarn cache directory path
       shell: bash
       id: yarn-cache-path
-      run: echo "::set-output name=path::$(yarn config get cacheFolder)"
+      run: echo "path=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
 
     - name: Setup node
       uses: actions/setup-node@v3
