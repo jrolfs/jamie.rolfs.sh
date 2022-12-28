@@ -1,7 +1,7 @@
 {
   "name": "emulator",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "repository": "git+ssh://github.com/jrolfs/jamie.rolfs.sh/tree/master/applications/emulator",
   "author": "Jamie Rolfs <jamie@rolfs.sh>",
@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@jrolfs/core": "^0.0.2",
-    "@jrolfs/utilities": "0.15.0",
+    "@jrolfs/utilities": "0.16.0",
     "dotenv": "^16.0.3",
     "dotenv-expand": "^10.0.0",
     "fastify": "^4.10.2",
