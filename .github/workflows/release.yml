@@ -131,11 +131,6 @@ jobs:
         id: vars
         run: echo "base=$(git rev-parse $(git tag --list 'emulator@deploy.*' --sort=version:refname | tail -1) | tr -d '\n')" >> $GITHUB_OUTPUT
 
-      - name: Echo
-        run: |
-          echo ${{ steps.vars.outputs.base }}
-          echo "base=$(git rev-parse $(git tag --list 'emulator@deploy.*' --sort=version:refname | tail -1) | tr -d '\n')"
-
       - uses: dorny/paths-filter@v2
         id: changes
         with:
@@ -164,6 +159,8 @@ jobs:
         if: steps.changes.outputs.emulator == 'true'
         id: version
         run: echo "value=$(flyctl -c fly.emulator.toml info --json | jq '.Version' | tr -d '\n')" >> $GITHUB_OUTPUT
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 
       - name: Tag deploy commit
         if: steps.changes.outputs.emulator == 'true'
