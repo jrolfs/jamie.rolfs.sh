@@ -1,6 +1,6 @@
 {
   "name": "@jrolfs/utilities",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "Utility Belt",
   "main": "dist/jrolfs-utilities.cjs.js",
   "module": "dist/jrolfs-utilities.esm.js",
