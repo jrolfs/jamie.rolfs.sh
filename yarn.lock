@@ -2641,7 +2641,7 @@ __metadata:
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.6.1
     "@react-three/drei": ^9.47.1
-    "@react-three/fiber": ^8.9.1
+    "@react-three/fiber": ^8.9.2
     "@react-three/test-renderer": ^8.0.17
     "@storybook/addon-essentials": ^6.5.15
     "@storybook/addons": ^6.5.15
@@ -3616,6 +3616,41 @@ __metadata:
     react-native:
       optional: true
   checksum: 75aabbc206a306bc5e46cc491327cd1e409fd46f2eb95864a0c8925097cef9c7f076547ff19c530ccf3192bd36451a28d5eefa0b0c21b60c49638b8a32dbd454
+  languageName: node
+  linkType: hard
+
+"@react-three/fiber@npm:^8.9.2":
+  version: 8.9.2
+  resolution: "@react-three/fiber@npm:8.9.2"
+  dependencies:
+    "@babel/runtime": ^7.17.8
+    "@types/react-reconciler": ^0.26.7
+    its-fine: ^1.0.6
+    react-reconciler: ^0.27.0
+    react-use-measure: ^2.1.1
+    scheduler: ^0.21.0
+    suspend-react: ^0.0.8
+    zustand: ^3.7.1
+  peerDependencies:
+    expo: ">=43.0"
+    expo-asset: ">=8.4"
+    expo-gl: ">=11.0"
+    react: ">=18.0"
+    react-dom: ">=18.0"
+    react-native: ">=0.64"
+    three: ">=0.133"
+  peerDependenciesMeta:
+    expo:
+      optional: true
+    expo-asset:
+      optional: true
+    expo-gl:
+      optional: true
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 507dc9909af564127db776341e1b1e28c00b24be827e608d048b4e2fde9d13cce09d5772c90cdc62dbc13afef61e2eb4eb409474d5027e8d7773eaff9dd4a124
   languageName: node
   linkType: hard
 
