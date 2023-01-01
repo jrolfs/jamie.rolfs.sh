@@ -1,5 +1,6 @@
 import { useGLTF } from '@react-three/drei';
 import { GroupProps } from '@react-three/fiber';
+import debug from 'debug';
 import { forwardRef, useEffect, useRef } from 'react';
 import {
   BufferGeometry,
@@ -12,6 +13,8 @@ import {
 } from 'three';
 
 import { image2, image3 } from './test-image';
+
+const log = debug('three:macintosh');
 
 export type UseGLTF = ReturnType<typeof useGLTF> & {
   nodes: Record<string, Mesh>;
@@ -115,11 +118,8 @@ const Macintosh = forwardRef<Group, MacintoshProps>((props, ref) => {
         <mesh
           geometry={nodes['computer-screen'].geometry}
           material={materials['display-glass']}
-          onClick={({ unprojectedPoint }) => {
-            // TODO: how do we get the mouse coordinates relative
-            // to the screen top/left to forward to VNC session?
-            // eslint-disable-next-line no-console
-            console.log(unprojectedPoint);
+          onClick={({ uv }) => {
+            log(`x: ${uv?.x ?? '?'}, y: ${uv?.y ?? '?'}`);
 
             screenImageRef.current.src = base64ToSrc(image3);
           }}
