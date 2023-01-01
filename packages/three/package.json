@@ -50,6 +50,7 @@
     "@storybook/builder-webpack5": "^6.5.15",
     "@storybook/react": "^6.5.15",
     "@types/babel__core": "^7",
+    "@types/debug": "^4",
     "@types/react-dom": "^18.0.10",
     "@types/react-reconciler": "^0.28.0",
     "@types/three": "^0.146.0",
@@ -69,6 +70,7 @@
     "@jrolfs/utilities": "^0.15.0",
     "@react-three/drei": "^9.47.1",
     "@storybook/manager-webpack5": "^6.5.15",
+    "debug": "^4.3.4",
     "react-merge-refs": "^2.0.1",
     "require-from-string": "^2.0.2",
     "tslib": "^2.4.1"
