@@ -2663,7 +2663,7 @@ __metadata:
     react-merge-refs: ^2.0.1
     require-from-string: ^2.0.2
     three: ^0.147.0
-    three-stdlib: ^2.21.4
+    three-stdlib: ^2.21.5
     tslib: ^2.4.1
     typescript: ^4.9.4
     webpack: ^5.75.0
@@ -21483,7 +21483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.20.4, three-stdlib@npm:^2.21.4":
+"three-stdlib@npm:^2.20.4":
   version: 2.21.4
   resolution: "three-stdlib@npm:2.21.4"
   dependencies:
@@ -21501,6 +21501,27 @@ __metadata:
   peerDependencies:
     three: ">=0.122.0"
   checksum: 0ec8bb799a49422067e1855af020805ed540849f135f86e17099c9f3614d0269d63150bf64f96b526b5ff469592de2d74889d1aeadb5bf48ffda374ff7f330dc
+  languageName: node
+  linkType: hard
+
+"three-stdlib@npm:^2.21.5":
+  version: 2.21.5
+  resolution: "three-stdlib@npm:2.21.5"
+  dependencies:
+    "@babel/runtime": ^7.16.7
+    "@types/offscreencanvas": ^2019.6.4
+    "@webgpu/glslang": ^0.0.15
+    chevrotain: ^10.1.2
+    draco3d: ^1.4.1
+    fflate: ^0.6.9
+    ktx-parse: ^0.4.5
+    mmd-parser: ^1.0.4
+    opentype.js: ^1.3.3
+    potpack: ^1.0.1
+    zstddec: ^0.0.2
+  peerDependencies:
+    three: ">=0.122.0"
+  checksum: 1d757032edd10a7cb16419c5fec2df18d0b1b78b2efef89c901bd45a46b923b4627a86fcb92f7826dcbe83071d3f0e0a10ba364bf48e458b58d5569cd0675e7f
   languageName: node
   linkType: hard
 
