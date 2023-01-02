@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>jrolfs/renovate:npm.json5"],
+  "gitIgnoredAuthors": ["robot@rolfs.sh"],
   "packageRules": [
     {
       "matchPackagePatterns": ["^@react-three"],

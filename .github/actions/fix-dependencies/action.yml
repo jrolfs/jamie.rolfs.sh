@@ -9,7 +9,7 @@ inputs:
     required: true
   email:
     description: 'Email for dependency fix commit'
-    default: 'jamie@rolfs.sh'
+    default: 'robot@rolfs.sh'
   name:
     description: 'Name for dependency fix commit'
     default: 'manypkg'
