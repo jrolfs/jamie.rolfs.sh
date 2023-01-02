@@ -40,7 +40,7 @@
     "@jrolfs/three": "0.0.3",
     "@react-three/drei": "^9.49.0",
     "@react-three/fiber": "^8.9.2",
-    "@types/three": "^0.146.0",
+    "@types/three": "^0.147.1",
     "@vanilla-extract/css": "^1.9.2",
     "debug": "^4.3.4",
     "next": "^13.1.1",
