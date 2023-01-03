@@ -4,7 +4,7 @@
 
 sleep 1
 
-x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :$1 -forever -bg -rfbauth /home/macintosh/.vnc/passwd -rfbport $((59000 + $1)) -clip 1024x684+8+8 &
+x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :$1 -forever -rfbauth /home/macintosh/.vnc/passwd -rfbport $((59000 + $1)) -clip 1024x684+8+8 -flag /tmp/.x11vnc-ports/X11VNC$1 -rmflag /tmp/.x11vnc-ports/X11VNC$1 &
 
 sleep 1
 
