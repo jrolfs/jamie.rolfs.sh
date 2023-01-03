@@ -14927,6 +14927,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jotai@npm:^1.12.1":
+  version: 1.12.1
+  resolution: "jotai@npm:1.12.1"
+  peerDependencies:
+    "@babel/core": "*"
+    "@babel/template": "*"
+    jotai-immer: "*"
+    jotai-optics: "*"
+    jotai-redux: "*"
+    jotai-tanstack-query: "*"
+    jotai-urql: "*"
+    jotai-valtio: "*"
+    jotai-xstate: "*"
+    jotai-zustand: "*"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@babel/template":
+      optional: true
+    jotai-immer:
+      optional: true
+    jotai-optics:
+      optional: true
+    jotai-redux:
+      optional: true
+    jotai-tanstack-query:
+      optional: true
+    jotai-urql:
+      optional: true
+    jotai-valtio:
+      optional: true
+    jotai-xstate:
+      optional: true
+    jotai-zustand:
+      optional: true
+  checksum: 11375791c9719ae321227fc44c794c89951fc1c2585568f52f59c769cea6f699924fcd06c22e7c82006c485c738f057e47f2e1c9a3d4520b8dacf99cb4ee6d38
+  languageName: node
+  linkType: hard
+
 "joycon@npm:^3.1.1":
   version: 3.1.1
   resolution: "joycon@npm:3.1.1"
@@ -20191,6 +20231,7 @@ __metadata:
     "@vanilla-extract/css": ^1.9.2
     "@vanilla-extract/next-plugin": ^2.1.1
     debug: ^4.3.4
+    jotai: ^1.12.1
     next: ^13.1.1
     npm-run-all: ^4.1.5
     react: ^18.2.0
