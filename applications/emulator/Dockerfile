@@ -11,7 +11,7 @@ RUN apt-get update && echo $TZ > /etc/timezone && \
   rm /etc/localtime && \
   ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
   dpkg-reconfigure -f noninteractive tzdata && \
-  apt-get install -y x11vnc sudo bash xvfb && \
+  apt-get install -y x11vnc sudo bash xvfb procps && \
   useradd -ms /bin/bash macintosh && echo 'macintosh:macintosh' | chpasswd && \
   echo "macintosh ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && apt-get clean
 
