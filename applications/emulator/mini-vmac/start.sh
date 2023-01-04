@@ -8,4 +8,4 @@ x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :$1 -forever -rfbauth /home
 
 sleep 1
 
-DISPLAY=:$1 /mini-vmac/mini-vmac-4x
+/mini-vmac/executables/mini-vmac-4x --rom /mini-vmac/roms/system-6.rom -d /mini-vmac/disks --display :$1
