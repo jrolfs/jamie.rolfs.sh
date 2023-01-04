@@ -2709,7 +2709,7 @@ __metadata:
     "@types/debug": ^4
     "@types/react-dom": ^18.0.10
     "@types/react-reconciler": ^0.28.1
-    "@types/three": ^0.146.0
+    "@types/three": ^0.148.0
     "@vanilla-extract/css": ^1.9.2
     chromatic: ^6.14.0
     debug: ^4.3.4
@@ -2719,7 +2719,7 @@ __metadata:
     react-dom: ^18.2.0
     react-merge-refs: ^2.0.1
     require-from-string: ^2.0.2
-    three: ^0.147.0
+    three: ^0.148.0
     three-stdlib: ^2.21.5
     tslib: ^2.4.1
     typescript: ^4.9.4
@@ -5921,15 +5921,6 @@ __metadata:
   version: 1.0.8
   resolution: "@types/tapable@npm:1.0.8"
   checksum: b4b754dd0822c407b8f29ef6b766490721c276880f9e976d92ee2b3ef915f11a05a2442ae36c8978bcd872ad6bc833b0a2c4d267f2d611590668a366bad50652
-  languageName: node
-  linkType: hard
-
-"@types/three@npm:^0.146.0":
-  version: 0.146.0
-  resolution: "@types/three@npm:0.146.0"
-  dependencies:
-    "@types/webxr": "*"
-  checksum: f8ea5ba032f6aaa1cb5ad7dfbbd13851e8cba04365bc7fa9a5320ea7e9a2538ea5f2426391f690f0465347ade15cc145d5dc84b1730d8cceea89f746231f667c
   languageName: node
   linkType: hard
 
@@ -21585,13 +21576,6 @@ __metadata:
   peerDependencies:
     three: ">=0.122.0"
   checksum: 1d757032edd10a7cb16419c5fec2df18d0b1b78b2efef89c901bd45a46b923b4627a86fcb92f7826dcbe83071d3f0e0a10ba364bf48e458b58d5569cd0675e7f
-  languageName: node
-  linkType: hard
-
-"three@npm:^0.147.0":
-  version: 0.147.0
-  resolution: "three@npm:0.147.0"
-  checksum: 9d4abdf2125e8b20cd67200a826f23bc1e8f6fc2d325768f8233c24fab7d621968bbe2274a45acd6ca709c076dd271c92d3c9dc4fe2439e4a6b2fae0ba1e6828
   languageName: node
   linkType: hard
 
