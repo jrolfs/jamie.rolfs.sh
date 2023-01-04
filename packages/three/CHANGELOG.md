@@ -1,5 +1,12 @@
 # @jrolfs/three
 
+## 0.0.4
+
+### Patch Changes
+
+- 9b3596b: Replace console with `debug` in `Macintosh` and log the thing we're
+  really going to care about (`uv` coordinates)
+
 ## 0.0.3
 
 ### Patch Changes

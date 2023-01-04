@@ -1,5 +1,0 @@
----
-'site': minor
----
-
-Add favicon
