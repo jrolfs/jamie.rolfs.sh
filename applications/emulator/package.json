@@ -29,7 +29,7 @@
     "@preconstruct/hook": "^0.4.0",
     "@swc-node/register": "^1.5.4",
     "@swc/cli": "^0.1.59",
-    "@swc/core": "^1.3.23",
+    "@swc/core": "^1.3.24",
     "@types/getenv": "^1",
     "@types/node": "^18.11.18",
     "nodemon": "^2.0.20",
