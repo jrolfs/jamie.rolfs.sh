@@ -17,7 +17,7 @@
     "start": "docker compose -f ../../docker-compose.yml -f docker-compose.yml up --build emulator",
     "start:develop": "nodemon src/index.ts",
     "start:develop:manual": "nodemon --config nodemon.manual.json src/index.ts",
-    "start:manual": "docker compose -f ../../docker-compose.yml -f docker-compose.yml run --build -it --name emulator --service-ports emulator bash",
+    "start:manual": "docker compose -f ../../docker-compose.yml -f docker-compose.yml run --build -it --name emulator --service-ports --rm emulator bash",
     "start:production": "node build/index.js",
     "start:types": "tsc -b -w --preserveWatchOutput",
     "test": "hover-scripts test --no-watch",
