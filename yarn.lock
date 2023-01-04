@@ -5933,6 +5933,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/three@npm:^0.148.0":
+  version: 0.148.0
+  resolution: "@types/three@npm:0.148.0"
+  dependencies:
+    "@types/webxr": "*"
+  checksum: c5747a8cc353c8560196052f1a035c7d641e4a953ac63c1c8d9d91c5489da2dbe8b9c4b70670eef891f8597e9ae882c450e6270abe49e807920644abdea08ddb
+  languageName: node
+  linkType: hard
+
 "@types/tough-cookie@npm:*":
   version: 4.0.2
   resolution: "@types/tough-cookie@npm:4.0.2"
@@ -14445,7 +14454,7 @@ __metadata:
     "@types/eslint": ^8.4.10
     husky: ^8.0.3
     npm-run-all: ^4.1.5
-    three: ^0.147.0
+    three: ^0.148.0
     turbo: ^1.6.3
   languageName: unknown
   linkType: soft
@@ -20288,7 +20297,7 @@ __metadata:
     "@types/debug": ^4
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.10
-    "@types/three": ^0.146.0
+    "@types/three": ^0.148.0
     "@vanilla-extract/css": ^1.9.2
     "@vanilla-extract/next-plugin": ^2.1.1
     debug: ^4.3.4
@@ -20298,7 +20307,7 @@ __metadata:
     react-dom: ^18.2.0
     rimraf: ^3.0.2
     socket.io-client: ^4.5.4
-    three: ^0.147.0
+    three: ^0.148.0
     tiny-invariant: ^1.3.1
     typescript: ^4.9.4
   languageName: unknown
@@ -21583,6 +21592,13 @@ __metadata:
   version: 0.147.0
   resolution: "three@npm:0.147.0"
   checksum: 9d4abdf2125e8b20cd67200a826f23bc1e8f6fc2d325768f8233c24fab7d621968bbe2274a45acd6ca709c076dd271c92d3c9dc4fe2439e4a6b2fae0ba1e6828
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.148.0":
+  version: 0.148.0
+  resolution: "three@npm:0.148.0"
+  checksum: 3f6359585c006c6f78b2fc1adeb90559d9b7cd6daf5cf916e81494ff228f4a9beffe37136bd8d5b0afbf377ac070b70624245bec2e9ee557035e2c485ce05197
   languageName: node
   linkType: hard
 
