@@ -19,7 +19,7 @@
     "start:develop:manual": "nodemon --config nodemon.manual.json src/index.ts",
     "start:production": "node build/index.js",
     "start:source": "docker compose -f ../../docker-compose.yml -f docker-compose.yml up --build emulator",
-    "start:source:manual": "docker compose -f ../../docker-compose.yml -f docker-compose.yml -f docker-compose.manual.yml run --build -it --service-ports emulator /bin/bash",
+    "start:source:manual": "docker compose -f ../../docker-compose.yml -f docker-compose.yml run --build -it --name emulator --service-ports emulator bash",
     "start:types": "tsc -b -w --preserveWatchOutput",
     "test": "hover-scripts test --no-watch",
     "test:update": "hover-scripts test --updateSnapshot",
