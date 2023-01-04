@@ -8520,7 +8520,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chevrotain@npm:^10.2.0":
+"chevrotain@npm:^10.4.2":
   version: 10.4.2
   resolution: "chevrotain@npm:10.4.2"
   dependencies:
