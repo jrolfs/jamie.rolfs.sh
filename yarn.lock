@@ -2697,7 +2697,7 @@ __metadata:
     "@jrolfs/utilities": ^0.16.0
     "@preconstruct/hook": ^0.4.0
     "@react-spring/three": ^9.6.1
-    "@react-three/drei": ^9.51.22
+    "@react-three/drei": ^9.51.23
     "@react-three/fiber": ^8.10.0
     "@react-three/test-renderer": ^8.1.0
     "@storybook/addon-essentials": ^6.5.15
@@ -3609,9 +3609,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:^9.51.22":
-  version: 9.51.22
-  resolution: "@react-three/drei@npm:9.51.22"
+"@react-three/drei@npm:^9.51.23":
+  version: 9.51.23
+  resolution: "@react-three/drei@npm:9.51.23"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
@@ -3640,7 +3640,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 299d89daf36b6866585ad7374531fddd164a20821403400f883be79424bb6b486635492f52137a40d71936c16fba3d691812b2d76b7ca400c2e488a975a22b4e
+  checksum: 555b56fa42c1d04bbf1e8ec2c88f4ea5cd98a07f36354e00bd3ecd74028df0ca7366407f67c7b5eb126eddd2964e542232a3f4625278d04bed39ad5cf9be0314
   languageName: node
   linkType: hard
 
@@ -20294,7 +20294,7 @@ __metadata:
     "@jrolfs/core": 0.0.2
     "@jrolfs/three": 0.0.3
     "@preconstruct/next": ^4.0.0
-    "@react-three/drei": ^9.51.22
+    "@react-three/drei": ^9.51.23
     "@react-three/fiber": ^8.10.0
     "@types/debug": ^4
     "@types/react": ^18.0.26
