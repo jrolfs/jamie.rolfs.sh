@@ -42,6 +42,7 @@
     "@types/three": "^0.148.0",
     "@vanilla-extract/css": "^1.9.2",
     "debug": "^4.3.4",
+    "jotai": "^1.12.1",
     "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

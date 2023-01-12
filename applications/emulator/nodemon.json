@@ -5,12 +5,7 @@
   "execMap": {
     "ts": "node -r @swc-node/register"
   },
-  "events": {
-    "restart": ""
-  },
+  "events": { "restart": "" },
   "watch": ["src/**/*", ".env"],
-  "env": {
-    "NODE_ENV": "development"
-  },
   "ext": "ts,js,cjs,mjs,json"
 }

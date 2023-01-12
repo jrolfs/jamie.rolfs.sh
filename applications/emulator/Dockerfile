@@ -11,7 +11,7 @@ RUN apt-get update && echo $TZ > /etc/timezone && \
   rm /etc/localtime && \
   ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
   dpkg-reconfigure -f noninteractive tzdata && \
-  apt-get install -y x11vnc sudo bash xvfb && \
+  apt-get install -y x11vnc sudo bash xvfb procps && \
   useradd -ms /bin/bash macintosh && echo 'macintosh:macintosh' | chpasswd && \
   echo "macintosh ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && apt-get clean
 
@@ -23,9 +23,7 @@ COPY /applications/emulator/mini-vmac/ /mini-vmac/
 RUN mkdir -vp /home/macintosh/.vnc > /dev/null 2>&1
 RUN x11vnc -storepasswd mini-vmac /home/macintosh/.vnc/passwd > /dev/null 2>&1
 
-RUN sudo chmod +x /mini-vmac/start.sh \
-  /mini-vmac/mini-vmac-1x \
-  /mini-vmac/mini-vmac-4x
+RUN sudo chmod +x /mini-vmac/start.sh /mini-vmac/executables/*
 
 EXPOSE 4000
 EXPOSE 59000
