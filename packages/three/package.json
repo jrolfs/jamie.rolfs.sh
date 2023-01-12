@@ -52,7 +52,7 @@
     "@types/babel__core": "^7",
     "@types/debug": "^4",
     "@types/react-dom": "^18.0.10",
-    "@types/react-reconciler": "^0.28.1",
+    "@types/react-reconciler": "^0.28.2",
     "@types/three": "^0.148.0",
     "@vanilla-extract/css": "^1.9.2",
     "chromatic": "^6.14.0",

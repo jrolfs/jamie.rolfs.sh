@@ -2708,7 +2708,7 @@ __metadata:
     "@types/babel__core": ^7
     "@types/debug": ^4
     "@types/react-dom": ^18.0.10
-    "@types/react-reconciler": ^0.28.1
+    "@types/react-reconciler": ^0.28.2
     "@types/three": ^0.148.0
     "@vanilla-extract/css": ^1.9.2
     chromatic: ^6.14.0
@@ -5835,12 +5835,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-reconciler@npm:^0.28.0, @types/react-reconciler@npm:^0.28.1":
+"@types/react-reconciler@npm:^0.28.0":
   version: 0.28.1
   resolution: "@types/react-reconciler@npm:0.28.1"
   dependencies:
     "@types/react": "*"
   checksum: a60dbef3074e75d5edc1a9d52ce671a4ecb0feeeb2e6ac6f4d95f33e52ec8fdbd996d4bcd78ec3d3720c30a3ac602e24a601acb9504dd93c7b1e176b554949a5
+  languageName: node
+  linkType: hard
+
+"@types/react-reconciler@npm:^0.28.2":
+  version: 0.28.2
+  resolution: "@types/react-reconciler@npm:0.28.2"
+  dependencies:
+    "@types/react": "*"
+  checksum: 9720f76a334ce4f25205d5bb72303a04f458bb2981cb9bd7f9ed0c16513f6c6ab809099bb5f46dc13e443d4c54e3a77a6038316a127a4dc844db2273f287a669
   languageName: node
   linkType: hard
 
