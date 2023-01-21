@@ -3644,41 +3644,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/fiber@npm:^8.10.0":
-  version: 8.10.0
-  resolution: "@react-three/fiber@npm:8.10.0"
-  dependencies:
-    "@babel/runtime": ^7.17.8
-    "@types/react-reconciler": ^0.26.7
-    its-fine: ^1.0.6
-    react-reconciler: ^0.27.0
-    react-use-measure: ^2.1.1
-    scheduler: ^0.21.0
-    suspend-react: ^0.0.8
-    zustand: ^3.7.1
-  peerDependencies:
-    expo: ">=43.0"
-    expo-asset: ">=8.4"
-    expo-gl: ">=11.0"
-    react: ">=18.0"
-    react-dom: ">=18.0"
-    react-native: ">=0.64"
-    three: ">=0.133"
-  peerDependenciesMeta:
-    expo:
-      optional: true
-    expo-asset:
-      optional: true
-    expo-gl:
-      optional: true
-    react-dom:
-      optional: true
-    react-native:
-      optional: true
-  checksum: 6ab56a378adad052b95994dec7479329b29d2629f382440a8f2b51dfcba9bdcb4030d6ae1e7e9e50ec0c656b42b229243902d28b35cc4b55d1ca7595dc1c926e
-  languageName: node
-  linkType: hard
-
 "@react-three/fiber@npm:^8.10.1":
   version: 8.10.1
   resolution: "@react-three/fiber@npm:8.10.1"
@@ -20339,7 +20304,7 @@ __metadata:
     "@jrolfs/three": 0.0.3
     "@preconstruct/next": ^4.0.0
     "@react-three/drei": ^9.51.24
-    "@react-three/fiber": ^8.10.0
+    "@react-three/fiber": ^8.10.1
     "@types/debug": ^4
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
