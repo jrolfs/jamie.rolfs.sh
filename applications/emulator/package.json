@@ -24,7 +24,7 @@
     "test:watch": "hover-scripts test"
   },
   "devDependencies": {
-    "@hover/javascript": "7.0.0-beta.10",
+    "@hover/javascript": "7.0.0-beta.11",
     "@jest/globals": "^29.3.1",
     "@preconstruct/hook": "^0.4.0",
     "@swc-node/register": "^1.5.5",

@@ -21,7 +21,7 @@
     "test:watch": "hover-scripts test"
   },
   "devDependencies": {
-    "@hover/javascript": "7.0.0-beta.10",
+    "@hover/javascript": "7.0.0-beta.11",
     "expect-type": "^0.15.0",
     "typescript": "^4.9.4"
   },
