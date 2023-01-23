@@ -2710,7 +2710,7 @@ __metadata:
     "@types/react-dom": ^18.0.10
     "@types/react-reconciler": ^0.28.2
     "@types/three": ^0.148.0
-    "@vanilla-extract/css": ^1.9.2
+    "@vanilla-extract/css": ^1.9.3
     chromatic: ^6.14.0
     debug: ^4.3.4
     leva: ^0.9.34
