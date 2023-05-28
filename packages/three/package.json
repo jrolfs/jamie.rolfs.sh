@@ -71,7 +71,7 @@
     "@react-three/drei": "^9.51.24",
     "@storybook/manager-webpack5": "^6.5.16",
     "debug": "^4.3.4",
-    "react-merge-refs": "^2.0.1",
+    "react-merge-refs": "^2.0.2",
     "require-from-string": "^2.0.2",
     "tslib": "^2.4.1"
   }
