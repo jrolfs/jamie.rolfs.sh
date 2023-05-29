@@ -1,6 +1,6 @@
 {
   "name": "@jrolfs/three",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/jrolfs-three.cjs.js",
   "module": "dist/jrolfs-three.esm.js",
   "exports": {

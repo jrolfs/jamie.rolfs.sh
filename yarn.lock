@@ -2687,7 +2687,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jrolfs/three@0.0.3, @jrolfs/three@workspace:packages/three":
+"@jrolfs/three@0.0.4, @jrolfs/three@workspace:packages/three":
   version: 0.0.0-use.local
   resolution: "@jrolfs/three@workspace:packages/three"
   dependencies:
@@ -20301,7 +20301,7 @@ __metadata:
   dependencies:
     "@hover/javascript": 7.0.0-beta.10
     "@jrolfs/core": 0.0.2
-    "@jrolfs/three": 0.0.3
+    "@jrolfs/three": 0.0.4
     "@preconstruct/next": ^4.0.0
     "@react-three/drei": ^9.51.24
     "@react-three/fiber": ^8.10.0
