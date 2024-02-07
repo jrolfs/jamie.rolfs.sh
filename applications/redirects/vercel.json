@@ -1,16 +1,19 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/twitter",
-      "destination": "https://twitter.com/tom_swift"
+      "destination": "https://twitter.com/jrolfs",
+      "permanent": true
     },
     {
       "source": "/bluesky",
-      "destination": "https://bsky.app/profile/jamie.rolfs.sh"
+      "destination": "https://bluesky.com/jrolfs",
+      "permanent": true
     },
     {
       "source": "/mastodon",
-      "destination": "https://hachyderm.io/@jrolfs"
+      "destination": "https://mastodon.social/@jrolfs",
+      "permanent": true
     },
     {
       "source": "/(.*)",
