@@ -16,6 +16,16 @@
       "permanent": true
     },
     {
+      "source": "/spotify",
+      "destination": "https://open.spotify.com/user/jamierolfs",
+      "permanent": true
+    },
+    {
+      "source": "/linkedin",
+      "destination": "https://www.linkedin.com/in/jamierolfs/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "destination": "https://github.com/jrolfs/$1"
     }
