@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/tom_swift"
+    },
+    {
+      "source": "/bluesky",
+      "destination": "https://bsky.app/profile/jamie.rolfs.sh"
+    },
+    {
+      "source": "/mastodon",
+      "destination": "https://hachyderm.io/@jrolfs"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://github.com/jrolfs/$1"
+    }
+  ]
+}
