@@ -2235,6 +2235,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fastify/jwt@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "@fastify/jwt@npm:5.0.1"
+  dependencies:
+    "@lukeed/ms": ^2.0.0
+    fast-jwt: ^1.5.1
+    fastify-plugin: ^3.0.1
+    http-errors: ^2.0.0
+    steed: ^1.1.3
+  checksum: 0a3b8e5bbf6600a5802d28dcb9dd633cb40cf7fd733fcc2a3f9d85ed4a3e922156da7ceff193b5a2c806f7200e71c489bc6058c26a84f9f0ecd99c2dfa692318
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -10511,6 +10524,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "emulator@workspace:applications/emulator"
   dependencies:
+    "@fastify/jwt": ^5.0.0
     "@hover/javascript": 7.0.0-beta.10
     "@jest/globals": ^29.3.1
     "@jrolfs/core": ^0.0.2
@@ -10524,7 +10538,6 @@ __metadata:
     dotenv: ^16.0.3
     dotenv-expand: ^10.0.0
     fastify: ^4.11.0
-    fastify-jwt: ^4.2.0
     getenv: ^1.0.0
     nodemon: ^2.0.22
     npm-run-all: ^4.1.5
@@ -11617,7 +11630,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-jwt@npm:^1.4.0":
+"fast-jwt@npm:^1.5.1":
   version: 1.7.2
   resolution: "fast-jwt@npm:1.7.2"
   dependencies:
@@ -11674,30 +11687,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fastify-jwt-deprecated@npm:fastify-jwt@4.1.3":
-  version: 4.1.3
-  resolution: "fastify-jwt@npm:4.1.3"
-  dependencies:
-    "@lukeed/ms": ^2.0.0
-    fast-jwt: ^1.4.0
-    fastify-plugin: ^3.0.0
-    http-errors: ^2.0.0
-    steed: ^1.1.3
-  checksum: fcf1770ec5a58880df4a631a19265229c76dc68ac5223c74cd8f400726e0f238687f665b5b531dbbe3c5668797c18cd56e31645e1996216ae5f7de88f4f91866
-  languageName: node
-  linkType: hard
-
-"fastify-jwt@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "fastify-jwt@npm:4.2.0"
-  dependencies:
-    fastify-jwt-deprecated: "npm:fastify-jwt@4.1.3"
-    process-warning: ^1.0.0
-  checksum: 0a8924f234e8fd4d44be166261e1db06d5ff104ddc48fda356c0fbf798ea912901ce1a0e251efdcb026e515679e45d15734be129cffab3bbb04eaf16dcb59565
-  languageName: node
-  linkType: hard
-
-"fastify-plugin@npm:^3.0.0":
+"fastify-plugin@npm:^3.0.1":
   version: 3.0.1
   resolution: "fastify-plugin@npm:3.0.1"
   checksum: 131ba0a388f777829c3fb0fd5b75cf057688ce6d0ca354fb1ebf829767a8c853b0825762b9185b5200097454df0ede2f3095da2efe1aa1b3736d07f194e6d374
@@ -18516,13 +18506,6 @@ __metadata:
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
   checksum: 1d38588e520dab7cea67cbbe2efdd86a10cc7a074c09657635e34f035277b59fbb57d09d8638346bf7090f8e8ebc070c96fa5fd183b777fff4f5edff5e9466cf
-  languageName: node
-  linkType: hard
-
-"process-warning@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "process-warning@npm:1.0.0"
-  checksum: c708a03241deec3cabaeee39c4f9ee8c4d71f1c5ef9b746c8252cdb952a6059068cfcdaf348399775244cbc441b6ae5e26a9c87ed371f88335d84f26d19180f9
   languageName: node
   linkType: hard
 
