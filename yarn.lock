@@ -2710,7 +2710,7 @@ __metadata:
     "@types/react-dom": ^18.0.10
     "@types/react-reconciler": ^0.28.2
     "@types/three": ^0.148.0
-    "@vanilla-extract/css": ^1.9.2
+    "@vanilla-extract/css": ^1.9.3
     chromatic: ^6.14.0
     debug: ^4.3.4
     leva: ^0.9.34
@@ -6207,6 +6207,25 @@ __metadata:
     media-query-parser: ^2.0.2
     outdent: ^0.8.0
   checksum: 8444134def22e46021ac3de94ee275528354cc44297ebe2da1b61df27a6f1d3088832b52e8a1ad65cfb81203be7ce085177a80a0681371e902158081ac222685
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/css@npm:^1.9.3":
+  version: 1.9.3
+  resolution: "@vanilla-extract/css@npm:1.9.3"
+  dependencies:
+    "@emotion/hash": ^0.9.0
+    "@vanilla-extract/private": ^1.0.3
+    ahocorasick: 1.0.2
+    chalk: ^4.1.1
+    css-what: ^5.0.1
+    cssesc: ^3.0.0
+    csstype: ^3.0.7
+    deep-object-diff: ^1.1.0
+    deepmerge: ^4.2.2
+    media-query-parser: ^2.0.2
+    outdent: ^0.8.0
+  checksum: 0f465f5200e7b5400fe56da2cd13a62fec1e66efa03bd57aa50e7d1c1a9f492c18e0c4b7c5fd266b15c092379bbd26ba9cdbead796c4eed63fe43ac57d089e78
   languageName: node
   linkType: hard
 
@@ -20309,7 +20328,7 @@ __metadata:
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
     "@types/three": ^0.148.0
-    "@vanilla-extract/css": ^1.9.2
+    "@vanilla-extract/css": ^1.9.3
     "@vanilla-extract/next-plugin": ^2.1.1
     debug: ^4.3.4
     next: ^13.1.4
