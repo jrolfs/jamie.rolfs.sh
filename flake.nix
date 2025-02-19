@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/master";
+    nixpkgs.url = "github:NixOS/nixpkgs/d98abf5cf5914e5e4e9d57205e3af55ca90ffc1d";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -49,8 +49,8 @@
         devShell = with pkgs; pkgs.mkShell {
           buildInputs = [
             flyctl
-            nodejs-18_x
-            (yarn.override { nodejs = nodejs-18_x; })
+            nodejs_22
+            (yarn.override { nodejs = nodejs_22; })
           ];
         };
       });
