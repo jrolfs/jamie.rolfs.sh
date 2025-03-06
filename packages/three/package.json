@@ -17,7 +17,7 @@
   "author": "Jamie Rolfs <jamie@rolfs.sh>",
   "license": "MIT",
   "scripts": {
-    "build:storybook": "storybook build -s assets",
+    "build:storybook": "storybook build",
     "build:types": "tsc",
     "commit": "hover-scripts commit",
     "format": "hover-scripts format",
@@ -57,7 +57,7 @@
     "@types/react-reconciler": "^0.28.2",
     "@types/three": "^0.148.0",
     "@vanilla-extract/css": "^1.9.2",
-    "chromatic": "^6.14.0",
+    "chromatic": "^11.27.0",
     "leva": "^0.9.34",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
