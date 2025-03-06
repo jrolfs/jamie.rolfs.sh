@@ -14,8 +14,12 @@ overrides:
       import/no-extraneous-dependencies:
         - error
         - devDependencies: true
+      import/no-default-export: off
   - files:
       - '**/*.stories.ts?(x)'
     rules:
       'import/no-default-export': off
       'import/prefer-default-export': error
+
+ignorePatterns:
+  - '!.storybook'

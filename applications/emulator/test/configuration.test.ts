@@ -38,9 +38,7 @@ test('throws with invalid environment', () => {
       name === 'NODE_ENV' ? 'notproduction' : mockGetenv('string')(name),
     );
 
-  expect(() => configure({})).toThrowError(
-    /configuration: invalid environment/,
-  );
+  expect(() => configure({})).toThrow(/configuration: invalid environment/);
 });
 
 test('throws when secret is not set in production', () => {
@@ -50,7 +48,7 @@ test('throws when secret is not set in production', () => {
     return name === 'SECRET' ? 'secret' : mockGetenv('string')(name);
   });
 
-  expect(() => configure({})).toThrowError(/configuration: secret is required/);
+  expect(() => configure({})).toThrow(/configuration: secret is required/);
 });
 
 test('supports arrays for `clientOrigin`', () => {

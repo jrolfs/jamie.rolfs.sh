@@ -17,7 +17,8 @@ jobs:
       - uses: ./.github/actions/install
 
       - name: Publish @jrolfs/three to Chromatic
-        uses: chromaui/action@v1
+        uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN__THREE }}
           workingDir: packages/three
+          buildScriptName: build:storybook

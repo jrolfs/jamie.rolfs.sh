@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { Vector3 } from 'three';
 
 import { withStage } from '../../storybook';
@@ -17,12 +17,10 @@ export default {
   argTypes: {
     color: { control: 'color' },
   },
-} as ComponentMeta<typeof Macintosh>;
+} as Meta<typeof Macintosh>;
 
-const Template: ComponentStory<typeof Macintosh> = args => (
-  <Macintosh {...args} />
-);
+type Story = StoryObj<typeof Macintosh>;
 
-export const Default = Template.bind({});
-Default.args = {};
-Default.storyName = 'Macintosh';
+export const Default: Story = {
+  storyName: 'Macintosh',
+};

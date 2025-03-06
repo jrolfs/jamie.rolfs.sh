@@ -41,16 +41,23 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@changesets/cli": "^2.26.1",
-    "@hover/javascript": "7.0.0-beta.10",
+    "@hover/javascript": "^8.0.0-next.3",
     "@manypkg/cli": "0.19.2",
     "@preconstruct/cli": "^2.3.0",
     "@preconstruct/hook": "^0.4.0",
     "@types/babel__core": "^7",
     "@types/babel__preset-env": "^7.9.2",
     "@types/eslint": "^8.4.10",
+    "@typescript-eslint/eslint-plugin": "link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser": "link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/parser",
+    "eslint-config-airbnb": "link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb",
+    "eslint-config-airbnb-typescript": "link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb-typescript",
+    "eslint-plugin-import": "link:./node_modules/@hover/javascript/node_modules/eslint-plugin-import",
+    "eslint-plugin-jest": "link:./node_modules/@hover/javascript/node_modules/eslint-plugin-jest",
+    "eslint-plugin-prettier": "link:./node_modules/@hover/javascript/node_modules/eslint-plugin-prettier",
     "husky": "^8.0.3",
     "npm-run-all": "^4.1.5",
-    "three": "^0.148.0",
+    "three": "^0.162.0",
     "turbo": "^1.6.3"
   },
   "workspaces": [
@@ -63,10 +70,7 @@
     ]
   },
   "resolutions": {
-    "@mdx-js/loader": "^2.2.1",
-    "@mdx-js/react": "^2.2.1",
-    "@types/react": "^18.0.27",
-    "chevrotain": "^10.4.2"
+    "react": "^18.2.0"
   },
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@4.7.0"
 }

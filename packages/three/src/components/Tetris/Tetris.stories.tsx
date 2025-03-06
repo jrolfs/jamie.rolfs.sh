@@ -1,4 +1,4 @@
-import { ComponentStory } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { Vector3 } from 'three';
 
 import { withStage } from '../../storybook';
@@ -35,28 +35,26 @@ export default {
     attenuationColor: '#fff',
     attenuationDistance: 1,
   },
+} as Meta<typeof Tetris>;
+
+type Story = StoryObj<typeof Tetris>;
+
+export const I: Story = {
+  args: { type: 'I' },
 };
 
-const Template: ComponentStory<typeof Tetris> = args => (
-  // const ref = useTurntable();
+export const L: Story = {
+  args: { type: 'L' },
+};
 
-  <>
-    <Tetris {...args} />
-    {/* <gridHelper args={[200, 40]} /> */}
-  </>
-);
+export const O: Story = {
+  args: { type: 'O' },
+};
 
-export const I = Template.bind({});
-I.args = { type: 'I' };
+export const T: Story = {
+  args: { type: 'T' },
+};
 
-export const L = Template.bind({});
-L.args = { type: 'L' };
-
-export const O = Template.bind({});
-O.args = { type: 'O' };
-
-export const T = Template.bind({});
-T.args = { type: 'T' };
-
-export const Z = Template.bind({});
-Z.args = { type: 'Z' };
+export const Z: Story = {
+  args: { type: 'Z' },
+};

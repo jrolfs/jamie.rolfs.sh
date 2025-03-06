@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
 
 import { withStage } from '../../storybook';
@@ -12,13 +12,17 @@ export default {
   argTypes: {
     color: { control: 'color' },
   },
-} as ComponentMeta<typeof Box>;
+} as Meta<typeof Box>;
 
-const Template: ComponentStory<typeof Box> = args => <Box {...args} />;
+type Story = StoryObj<typeof Box>;
 
-export const Default = Template.bind({});
-Default.args = {};
-Default.storyName = 'Box';
+export const Default: Story = {
+  args: {},
+  name: 'Box',
+};
 
-export const Spinning = Template.bind({});
-Spinning.args = { spin: !isChromatic() };
+export const Spinning: Story = {
+  args: {
+    spin: !isChromatic(),
+  },
+};
