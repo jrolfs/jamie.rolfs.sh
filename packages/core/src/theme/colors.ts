@@ -103,13 +103,13 @@ export const neutral = {
   900: '#161515',
 } as const;
 
-export type Green = typeof green[keyof typeof green];
-export type Yellow = typeof yellow[keyof typeof yellow];
-export type Orange = typeof orange[keyof typeof orange];
-export type Red = typeof red[keyof typeof red];
-export type Purple = typeof purple[keyof typeof purple];
-export type Blue = typeof blue[keyof typeof blue];
-export type Neutral = typeof neutral[keyof typeof neutral];
+export type Green = (typeof green)[keyof typeof green];
+export type Yellow = (typeof yellow)[keyof typeof yellow];
+export type Orange = (typeof orange)[keyof typeof orange];
+export type Red = (typeof red)[keyof typeof red];
+export type Purple = (typeof purple)[keyof typeof purple];
+export type Blue = (typeof blue)[keyof typeof blue];
+export type Neutral = (typeof neutral)[keyof typeof neutral];
 
 export type Color = Green | Yellow | Orange | Red | Purple | Blue | Neutral;
 
