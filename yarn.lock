@@ -6022,6 +6022,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/eslint-plugin@link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/eslint-plugin::locator=jamie.rolfs.sh%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "@typescript-eslint/eslint-plugin@link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/eslint-plugin::locator=jamie.rolfs.sh%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "@typescript-eslint/eslint-plugin@npm:^5.62.0":
   version: 5.62.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.62.0"
@@ -6046,26 +6052,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@portal:./node_modules/@hover/javascript/node_modules/@typescript-eslint/eslint-plugin::locator=jamie.rolfs.sh%40workspace%3A.":
+"@typescript-eslint/parser@link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/parser::locator=jamie.rolfs.sh%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@typescript-eslint/eslint-plugin@portal:./node_modules/@hover/javascript/node_modules/@typescript-eslint/eslint-plugin::locator=jamie.rolfs.sh%40workspace%3A."
-  dependencies:
-    "@eslint-community/regexpp": "npm:^4.4.0"
-    "@typescript-eslint/scope-manager": "npm:5.62.0"
-    "@typescript-eslint/type-utils": "npm:5.62.0"
-    "@typescript-eslint/utils": "npm:5.62.0"
-    debug: "npm:^4.3.4"
-    graphemer: "npm:^1.4.0"
-    ignore: "npm:^5.2.0"
-    natural-compare-lite: "npm:^1.4.0"
-    semver: "npm:^7.3.7"
-    tsutils: "npm:^3.21.0"
-  peerDependencies:
-    "@typescript-eslint/parser": ^5.0.0
-    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
+  resolution: "@typescript-eslint/parser@link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/parser::locator=jamie.rolfs.sh%40workspace%3A."
   languageName: node
   linkType: soft
 
@@ -6085,22 +6074,6 @@ __metadata:
   checksum: 10/b6ca629d8f4e6283ff124501731cc886703eb4ce2c7d38b3e4110322ea21452b9d9392faf25be6bd72f54b89de7ffc72a40d9b159083ac54345a3d04b4fa5394
   languageName: node
   linkType: hard
-
-"@typescript-eslint/parser@portal:./node_modules/@hover/javascript/node_modules/@typescript-eslint/parser::locator=jamie.rolfs.sh%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "@typescript-eslint/parser@portal:./node_modules/@hover/javascript/node_modules/@typescript-eslint/parser::locator=jamie.rolfs.sh%40workspace%3A."
-  dependencies:
-    "@typescript-eslint/scope-manager": "npm:5.62.0"
-    "@typescript-eslint/types": "npm:5.62.0"
-    "@typescript-eslint/typescript-estree": "npm:5.62.0"
-    debug: "npm:^4.3.4"
-  peerDependencies:
-    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  languageName: node
-  linkType: soft
 
 "@typescript-eslint/scope-manager@npm:5.46.1":
   version: 5.46.1
@@ -10334,6 +10307,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-airbnb-typescript@link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb-typescript::locator=jamie.rolfs.sh%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-airbnb-typescript@link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb-typescript::locator=jamie.rolfs.sh%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "eslint-config-airbnb-typescript@npm:^17.1.0":
   version: 17.1.0
   resolution: "eslint-config-airbnb-typescript@npm:17.1.0"
@@ -10348,16 +10327,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb-typescript@portal:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb-typescript::locator=jamie.rolfs.sh%40workspace%3A.":
+"eslint-config-airbnb@link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb::locator=jamie.rolfs.sh%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "eslint-config-airbnb-typescript@portal:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb-typescript::locator=jamie.rolfs.sh%40workspace%3A."
-  dependencies:
-    eslint-config-airbnb-base: "npm:^15.0.0"
-  peerDependencies:
-    "@typescript-eslint/eslint-plugin": ^5.13.0 || ^6.0.0
-    "@typescript-eslint/parser": ^5.0.0 || ^6.0.0
-    eslint: ^7.32.0 || ^8.2.0
-    eslint-plugin-import: ^2.25.3
+  resolution: "eslint-config-airbnb@link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb::locator=jamie.rolfs.sh%40workspace%3A."
   languageName: node
   linkType: soft
 
@@ -10377,22 +10349,6 @@ __metadata:
   checksum: 10/f2086523cfd20c42fd620c757281bd028aa8ce9dadc7293c5c23ea60947a2d3ca04404ede77b40f5a65250fe3c04502acafc4f2f6946819fe6c257d76d9644e5
   languageName: node
   linkType: hard
-
-"eslint-config-airbnb@portal:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb::locator=jamie.rolfs.sh%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-airbnb@portal:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb::locator=jamie.rolfs.sh%40workspace%3A."
-  dependencies:
-    eslint-config-airbnb-base: "npm:^15.0.0"
-    object.assign: "npm:^4.1.2"
-    object.entries: "npm:^1.1.5"
-  peerDependencies:
-    eslint: ^7.32.0 || ^8.2.0
-    eslint-plugin-import: ^2.25.3
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.28.0
-    eslint-plugin-react-hooks: ^4.3.0
-  languageName: node
-  linkType: soft
 
 "eslint-config-prettier@npm:^8.10.0":
   version: 8.10.0
@@ -10428,6 +10384,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-import@link:./node_modules/@hover/javascript/node_modules/eslint-plugin-import::locator=jamie.rolfs.sh%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "eslint-plugin-import@link:./node_modules/@hover/javascript/node_modules/eslint-plugin-import::locator=jamie.rolfs.sh%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "eslint-plugin-import@npm:^2.31.0":
   version: 2.31.0
   resolution: "eslint-plugin-import@npm:2.31.0"
@@ -10457,31 +10419,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-import::locator=jamie.rolfs.sh%40workspace%3A.":
+"eslint-plugin-jest@link:./node_modules/@hover/javascript/node_modules/eslint-plugin-jest::locator=jamie.rolfs.sh%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "eslint-plugin-import@portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-import::locator=jamie.rolfs.sh%40workspace%3A."
-  dependencies:
-    "@rtsao/scc": "npm:^1.1.0"
-    array-includes: "npm:^3.1.8"
-    array.prototype.findlastindex: "npm:^1.2.5"
-    array.prototype.flat: "npm:^1.3.2"
-    array.prototype.flatmap: "npm:^1.3.2"
-    debug: "npm:^3.2.7"
-    doctrine: "npm:^2.1.0"
-    eslint-import-resolver-node: "npm:^0.3.9"
-    eslint-module-utils: "npm:^2.12.0"
-    hasown: "npm:^2.0.2"
-    is-core-module: "npm:^2.15.1"
-    is-glob: "npm:^4.0.3"
-    minimatch: "npm:^3.1.2"
-    object.fromentries: "npm:^2.0.8"
-    object.groupby: "npm:^1.0.3"
-    object.values: "npm:^1.2.0"
-    semver: "npm:^6.3.1"
-    string.prototype.trimend: "npm:^1.0.8"
-    tsconfig-paths: "npm:^3.15.0"
-  peerDependencies:
-    eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9
+  resolution: "eslint-plugin-jest@link:./node_modules/@hover/javascript/node_modules/eslint-plugin-jest::locator=jamie.rolfs.sh%40workspace%3A."
   languageName: node
   linkType: soft
 
@@ -10502,23 +10442,6 @@ __metadata:
   checksum: 10/bca54347280c06c56516faea76042134dd74355c2de6c23361ba0e8736ecc01c62b144eea7eda7570ea4f4ee511c583bb8dab00d7153a1bd1740eb77b0038fd4
   languageName: node
   linkType: hard
-
-"eslint-plugin-jest@portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-jest::locator=jamie.rolfs.sh%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "eslint-plugin-jest@portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-jest::locator=jamie.rolfs.sh%40workspace%3A."
-  dependencies:
-    "@typescript-eslint/utils": "npm:^5.10.0"
-  peerDependencies:
-    "@typescript-eslint/eslint-plugin": ^5.0.0 || ^6.0.0 || ^7.0.0
-    eslint: ^7.0.0 || ^8.0.0
-    jest: "*"
-  peerDependenciesMeta:
-    "@typescript-eslint/eslint-plugin":
-      optional: true
-    jest:
-      optional: true
-  languageName: node
-  linkType: soft
 
 "eslint-plugin-jsx-a11y@npm:^6.10.2":
   version: 6.10.2
@@ -10545,6 +10468,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-prettier@link:./node_modules/@hover/javascript/node_modules/eslint-plugin-prettier::locator=jamie.rolfs.sh%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "eslint-plugin-prettier@link:./node_modules/@hover/javascript/node_modules/eslint-plugin-prettier::locator=jamie.rolfs.sh%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "eslint-plugin-prettier@npm:^4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-prettier@npm:4.2.1"
@@ -10559,20 +10488,6 @@ __metadata:
   checksum: 10/d387f85dd1bfcb6bc6b794845fee6afb9ebb2375653de6bcde6e615892fb97f85121a7c012a4651b181fc09953bdf54c9bc70cab7ad297019d89ae87dd007e28
   languageName: node
   linkType: hard
-
-"eslint-plugin-prettier@portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-prettier::locator=jamie.rolfs.sh%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "eslint-plugin-prettier@portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-prettier::locator=jamie.rolfs.sh%40workspace%3A."
-  dependencies:
-    prettier-linter-helpers: "npm:^1.0.0"
-  peerDependencies:
-    eslint: ">=7.28.0"
-    prettier: ">=2.0.0"
-  peerDependenciesMeta:
-    eslint-config-prettier:
-      optional: true
-  languageName: node
-  linkType: soft
 
 "eslint-plugin-react-hooks@npm:^4.6.2":
   version: 4.6.2
@@ -13658,13 +13573,13 @@ __metadata:
     "@types/babel__core": "npm:^7"
     "@types/babel__preset-env": "npm:^7.9.2"
     "@types/eslint": "npm:^8.4.10"
-    "@typescript-eslint/eslint-plugin": "portal:./node_modules/@hover/javascript/node_modules/@typescript-eslint/eslint-plugin"
-    "@typescript-eslint/parser": "portal:./node_modules/@hover/javascript/node_modules/@typescript-eslint/parser"
-    eslint-config-airbnb: "portal:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb"
-    eslint-config-airbnb-typescript: "portal:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb-typescript"
-    eslint-plugin-import: "portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-import"
-    eslint-plugin-jest: "portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-jest"
-    eslint-plugin-prettier: "portal:./node_modules/@hover/javascript/node_modules/eslint-plugin-prettier"
+    "@typescript-eslint/eslint-plugin": "link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/eslint-plugin"
+    "@typescript-eslint/parser": "link:./node_modules/@hover/javascript/node_modules/@typescript-eslint/parser"
+    eslint-config-airbnb: "link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb"
+    eslint-config-airbnb-typescript: "link:./node_modules/@hover/javascript/node_modules/eslint-config-airbnb-typescript"
+    eslint-plugin-import: "link:./node_modules/@hover/javascript/node_modules/eslint-plugin-import"
+    eslint-plugin-jest: "link:./node_modules/@hover/javascript/node_modules/eslint-plugin-jest"
+    eslint-plugin-prettier: "link:./node_modules/@hover/javascript/node_modules/eslint-plugin-prettier"
     husky: "npm:^8.0.3"
     npm-run-all: "npm:^4.1.5"
     three: "npm:^0.162.0"
