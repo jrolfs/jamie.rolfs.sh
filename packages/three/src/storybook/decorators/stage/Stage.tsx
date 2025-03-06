@@ -33,7 +33,7 @@ const controlToVector = ({ x, y, z }: { x: number; y: number; z: number }) =>
 
 const defaults: Required<StageProps> = {
   background: theme.colors.neutral[700],
-  cameraPosition: new Vector3(-5, 5, 5),
+  cameraPosition: new Vector3(-10, 5, 5),
   zoom: 10,
   orbit: true,
   lights: true,
@@ -112,7 +112,12 @@ const Stage: FunctionComponent<PropsWithChildren<StageProps>> = props => {
 
   return (
     <Suspense fallback="loading...">
-      <Canvas dpr={window.devicePixelRatio} shadows {...rest}>
+      <Canvas
+        dpr={window.devicePixelRatio}
+        shadows
+        style={{ height: '100vh', width: '100vw' }}
+        {...rest}
+      >
         <color args={[controls.background]} attach="background" />
         <OrthographicCamera
           makeDefault

@@ -2,7 +2,7 @@ import { theme } from '@jrolfs/core';
 import { animated } from '@react-spring/three';
 import { Extrude } from '@react-three/drei';
 import { forwardRef, useMemo } from 'react';
-import { Object3D } from 'three';
+import { Mesh } from 'three';
 
 import { THICKNESS, shapes } from './shapes';
 
@@ -32,7 +32,7 @@ const EXTRUDE_SETTINGS = {
  *
  * @see https://github.com/winkerVSbecks/storybook-blocks
  */
-export const Tetris = forwardRef<Object3D, TetrisProps>(
+export const Tetris = forwardRef<Mesh, TetrisProps>(
   (
     {
       type,

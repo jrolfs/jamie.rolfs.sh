@@ -6,6 +6,7 @@
     "incremental": true,
     "isolatedModules": true,
     "noEmit": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "skipLibCheck": true
   }
 }

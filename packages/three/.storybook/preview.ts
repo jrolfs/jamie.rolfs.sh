@@ -1,7 +1,7 @@
-import { Parameters } from '@storybook/addons';
+import { Parameters } from '@storybook/react';
 
 export const parameters: Parameters = {
-  actions: { argTypesRegex: '^on(?!.*(Pointer|Wheel|Render))[A-Z].*' },
+  // actions: { argTypesRegex: '^on(?!.*(Pointer|Wheel|Render))[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,

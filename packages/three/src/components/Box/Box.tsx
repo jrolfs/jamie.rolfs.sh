@@ -2,7 +2,7 @@ import { theme } from '@jrolfs/core';
 import { MeshProps, useFrame } from '@react-three/fiber';
 import { forwardRef, useRef, useState } from 'react';
 import { mergeRefs } from 'react-merge-refs';
-import { Object3D } from 'three';
+import { Mesh, Object3D } from 'three';
 
 export interface BoxProps extends MeshProps {
   color?: theme.Color;
@@ -10,7 +10,7 @@ export interface BoxProps extends MeshProps {
   spin?: boolean;
 }
 
-const Box = forwardRef<Object3D, BoxProps>(
+const Box = forwardRef<Mesh, BoxProps>(
   (
     {
       color = theme.colors.blue[600],
